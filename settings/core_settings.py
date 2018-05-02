@@ -122,22 +122,22 @@ path_to_key = os.path.join(BASE_DIR, './settings/local_env/secret_key.txt')
 try:
     # Attempt to read key.
     SECRET_KEY = open(path_to_key, 'r').read().strip()
-    print('Secret Key Found.')
+    debug_print('Secret Key Found.')
 except:
     try:
         # Generate new key.
-        print('Creating Secret Key...')
+        debug_print('Creating Secret Key...')
         allowed_chars = string.ascii_letters + string.digits
         SECRET_KEY = get_random_string(50, allowed_chars)
-        print('Secret Key created.')
+        debug_print('Secret Key created.')
 
         # Save key to file.
         secret_file = open(path_to_key, 'w+')
         secret_file.write(SECRET_KEY)
         secret_file.close()
-        print('Secret Key saved.')
+        debug_print('Secret Key saved.')
     except:
-        print('Error generating secret key.')
+        debug_print('Error generating secret key.')
         exit(1)
 
 
