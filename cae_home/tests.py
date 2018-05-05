@@ -9,6 +9,8 @@ from django.test import TestCase
 from . import models
 
 
+#region Model Tests
+
 class ProfileModelTests(TestCase):
     """
     Tests to ensure valid Profile Model creation/logic.
@@ -96,3 +98,18 @@ class PhoneNumberModelTests(TestCase):
             models.PhoneNumber.objects.create(phone_number='123456789')
         with self.assertRaises(ValidationError):
             models.PhoneNumber.objects.create(phone_number='9876543210987654')
+
+#endregion Model Tests
+
+
+#region View Tests
+
+class HomeViewTests(TestCase):
+    """
+    Tests to ensure views load as expected.
+    """
+    def test_index(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+
+#endregion View Tests

@@ -1,0 +1,47 @@
+
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+
+  {% block head %}
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      {% block title %}
+        <title>
+          {% block title_page_name %}{% endblock title_page_name %}
+          {% block title_app_name %}{% endblock title_app_name %}
+          {% block title_site_name %}{% endblock title_site_name %}
+        </title>
+      {% endblock title %}
+
+      {% block base_fonts %}{% endblock base_fonts %}
+      {% block extra_fonts %}{% endblock extra_fonts %}
+
+      {% block base_styles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'cae_home/css/base.css' %}">
+      {% endblock base_styles %}
+      {% block extra_styles %}{% endblock extra_styles %}
+
+      {% block base_scripts %}{% endblock base_scripts %}
+    </head>
+  {% endblock head %}
+
+  {% block body %}
+    <body>
+      {% block header %}
+        {% include 'cae_home/header.html' %}
+      {% endblock header %}
+
+      {% block main %}{% endblock main %}
+
+      {% block footer %}
+        {% include 'cae_home/footer.html' %}
+      {% endblock footer %}
+
+      {% block extra_scripts %}{% endblock extra_scripts %}
+    </body>
+  {% endblock body %}
+
+</html>
