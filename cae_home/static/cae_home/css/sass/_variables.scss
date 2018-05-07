@@ -1,0 +1,113 @@
+
+//=======================//
+//==== Variables CSS ====//
+//=======================//
+
+// Declares variables that are universally used in other .scss files.
+
+
+//================================================================================//
+//==================================== Colors ====================================//
+//================================================================================//
+
+//===============================//
+//==== START GreyScale Block ====//
+//===============================//
+
+$color_grey_00: #000000;
+$color_grey_10: #191919;
+$color_grey_20: #333333;
+$color_grey_30: #4C4C4C;
+$color_grey_40: #666666;
+$color_grey_50: #7F7F7F;
+$color_grey_60: #999999;
+$color_grey_70: #B2B2B2;
+$color_grey_80: #CCCCCC;
+$color_grey_90: #E5E5E5;
+$color_grey_100: #FFFFFF;
+
+//===============================//
+//===== END GreyScale Block =====//
+//===============================//
+
+
+//===========================================//
+//==== START "WMU Approved" Colors Block ====//
+//===========================================//
+
+// To be added.
+
+//=========================================//
+//==== END "WMU Approved" Colors Block ====//
+//=========================================//
+
+//================================================================================//
+//==================================== Themes ====================================//
+//================================================================================//
+
+//================================//
+//==== START Base Theme Block ====//
+//================================//
+
+//== Main Elements ==//
+
+$theme_background_main: $color_grey_30;
+$theme_background_main_accent: $color_grey_40;
+
+$theme_border_main: $color_grey_10;
+$theme_border_main_invert: $color_grey_90;
+
+$theme_text_main: $color_grey_100;
+
+
+//== Extra Nav Elements ==//
+
+$theme_background_nav: $color_grey_90;
+$theme_background_nav_accent: $color_grey_100;
+
+$theme_text_nav: $color_grey_00;
+
+
+//== Content Areas ==//
+
+$theme_background_content: $color_grey_100;
+$theme_background_content_accent: $color_grey_90;
+
+$theme_border_content: $color_grey_10;
+$theme_border_content_accent: $color_grey_30;
+$theme_border_content_invert: $color_grey_80;
+
+$theme_text_content: $color_grey_00;
+$theme_text_subtle: $color_grey_50;
+
+//================================//
+//==== START Base Theme Block ====//
+//================================//
+
+
+//================================================================================//
+//================================== ScreenSize ==================================//
+//================================================================================//
+
+// Phone
+$screen_phone_small: 475px;
+$screen_phone_mid: 550px;
+$screen_phone_max: 699px;
+
+// Tablet
+$screen_tablet_min: 700px;
+$screen_tablet_mid: 869px;
+$screen_tablet_max: 1024px;
+
+// Laptop
+$screen_laptop_min: 1025px;
+$screen_laptop_mid: 1350px;
+$screen_laptop_max: 1600px;
+
+// Desktop
+$screen_desktop_min: 1601px;
+$screen_desktop_mid: 2000px;
+$screen_desktop_max: 3839px;
+
+// 4k
+$screen_4k_min: 3840px;
