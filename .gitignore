@@ -9,3 +9,4 @@ DEBUG
 
 # Do not track local environment settings.
 settings/local_env/*
+.venv/
