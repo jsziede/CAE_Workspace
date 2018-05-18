@@ -24,8 +24,13 @@ else:
     sys.exit(1)
 
 
-# Set up logging configuration.
+# Set up logging directories.
 log_dir = os.path.join(BASE_DIR, 'settings/local_env/logs/')
+if not os.path.exists(log_dir):
+    debug_print('Creating logging folder.')
+    os.makedirs(log_dir)
+
+# Set up logging configuration.
 LOGGING = {
     'version': 1,
     'formatters': {

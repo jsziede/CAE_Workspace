@@ -18,7 +18,7 @@ def debug_print(*args, **kwargs):
     :param kwargs:
     :return:
     """
-    runserver_true = len(sys.argv) > 1 and sys.argv[1] in ['runserver']
+    runserver_true = len(sys.argv) > 1 and sys.argv[1] in ['runserver', 'test', 'migrate', 'makemigrations']
 
     if runserver_true:
         print(*args, **kwargs)
