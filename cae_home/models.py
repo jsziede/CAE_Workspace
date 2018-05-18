@@ -20,7 +20,7 @@ class User(AbstractUser):
     An extension of Django's default user, but allows for additional functionality.
     Contains user authentication related information.
     """
-    # TODO: LDAP Authentication here. Likely need to change to AbstraceBaseUser inheritance.
+    # TODO: LDAP Authentication here. Likely need to change to AbstractBaseUser inheritance.
     pass
 
 
