@@ -4,120 +4,94 @@ h1, h2, h3, h4, h5, h6,
 ol, ul, li,
 div, span, p, img, a {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 h1 {
-  padding-top: 10px;
-}
+  padding-top: 10px; }
 
 html, body, hgroup, header, footer, nav,
 article, section, aside, figure, figcaption,
 h1, h2, h3, h4, h5, h6,
 ol, ul, li,
 div, span, p, img, a {
-  font-size: 4.5vw;
-}
-@media only screen and (min-width: 400px) and (max-width: 475px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 3.8vw;
-  }
-}
-@media only screen and (min-width: 475px) and (max-width: 550px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 3.4vw;
-  }
-}
-@media only screen and (min-width: 550px) and (max-width: 699px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 2.7vw;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 2.1vw;
-  }
-}
-@media only screen and (min-width: 869px) and (max-width: 1024px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 1.8vw;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1350px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 1.4vw;
-  }
-}
-@media only screen and (min-width: 1350px) and (max-width: 1600px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 1.1vw;
-  }
-}
-@media only screen and (min-width: 1601px) {
-  html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-    font-size: 0.9vw;
-  }
-}
+  font-size: 4.5vw; }
+  @media only screen and (min-width: 400px) and (max-width: 475px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 3.8vw; } }
+  @media only screen and (min-width: 475px) and (max-width: 550px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 3.4vw; } }
+  @media only screen and (min-width: 550px) and (max-width: 699px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 2.7vw; } }
+  @media only screen and (min-width: 700px) and (max-width: 1024px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 2.1vw; } }
+  @media only screen and (min-width: 869px) and (max-width: 1024px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 1.8vw; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1350px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 1.4vw; } }
+  @media only screen and (min-width: 1350px) and (max-width: 1600px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 1.1vw; } }
+  @media only screen and (min-width: 1601px) {
+    html, body, hgroup, header, footer, nav,
+    article, section, aside, figure, figcaption,
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    div, span, p, img, a {
+      font-size: 0.9vw; } }
 
 h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
-  font-size: 200%;
-}
+  font-size: 200%; }
 
 h2 {
-  font-size: 174%;
-}
+  font-size: 174%; }
 
 h3 {
-  font-size: 151%;
-}
+  font-size: 151%; }
 
 h4 {
-  font-size: 132%;
-}
+  font-size: 132%; }
 
 h5 {
-  font-size: 115%;
-}
+  font-size: 115%; }
 
 h6 {
-  font-size: 100%;
-}
+  font-size: 100%; }
 
 html, body, hgroup, header, footer, nav,
 article, section, aside, figure, figcaption,
@@ -125,7 +99,217 @@ h1, h2, h3, h4, h5, h6,
 ol, ul, li,
 div, span, p, img, a {
   vertical-align: baseline;
-  border: 0;
-}
+  border: 0; }
 
-/*# sourceMappingURL=css/base.css.map */
+html {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-height: 100vh; }
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+body main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+body main #content-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+body main #content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+body {
+  color: #000000; }
+
+body #content {
+  background-color: #ffffff; }
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between; }
+
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around; }
+
+footer {
+  background-color: #e5e5e5; }
+
+header nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -justify-content: space-around;
+  -mox-justify-content: space-evenly;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+header nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+header nav ul > li {
+  padding-right: 5px;
+  padding-left: 5px; }
+header nav ul > li > ul {
+  position: absolute;
+  display: none;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around; }
+header nav ul > li > ul > li {
+  padding: 2px; }
+header nav ul > li:hover > ul, header nav ul > li:hover > ul:hover {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+header nav a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px; }
+
+header nav a {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none; }
+
+header nav ul {
+  list-style-type: none;
+  background-color: #e5e5e5; }
+
+/*# sourceMappingURL=base.css.map */
