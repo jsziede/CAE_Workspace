@@ -266,12 +266,62 @@ header .header-bottom {
   display: none;
 }
 
+header .site-logo > nav {
+  height: 100%;
+}
+header .site-logo > nav > ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+header .site-logo nav > ul > li > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+header .site-logo img {
+  max-width: 100px;
+  max-height: 26px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media only screen and (min-width: 869px) {
+  header .site-logo img {
+    max-width: 100px;
+    max-height: 22px;
+  }
+}
+
 header {
   background-color: #e5e5e5;
 }
 
 header .header-bottom {
   border-top: 1px solid #cccccc;
+}
+
+header .site-logo nav > ul > li > ul > li {
+  border: 1px solid #cccccc;
+  border-top: 0;
+}
+header .site-logo nav > ul > li > ul > li:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 footer {
@@ -562,7 +612,18 @@ header nav a, .mobile-nav-overlay nav a {
 //========================================//*/
 header nav ul {
   list-style-type: none;
+}
+header nav li {
   background-color: #e5e5e5;
+}
+
+header .header-top nav > ul > li > ul > li {
+  border: 1px solid #cccccc;
+  border-top: 0;
+}
+header .header-top nav > ul > li > ul > li:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .mobile-nav-icon {
