@@ -170,7 +170,6 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
-
 body main {
   display: -webkit-box;
   display: -moz-box;
@@ -246,7 +245,6 @@ header {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
-
 header .header-top {
   display: -webkit-box;
   display: -moz-box;
@@ -266,10 +264,10 @@ header .header-bottom {
   display: none;
 }
 
-header .site-logo > nav {
+header .site-logo nav {
   height: 100%;
 }
-header .site-logo > nav > ul {
+header .site-logo nav > ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -294,14 +292,14 @@ header .site-logo nav > ul > li > div {
   width: 100%;
   height: 100%;
 }
-header .site-logo img {
+header .site-logo nav img {
   max-width: 100px;
   max-height: 26px;
   margin-right: 10px;
   margin-left: 10px;
 }
 @media only screen and (min-width: 869px) {
-  header .site-logo img {
+  header .site-logo nav img {
     max-width: 100px;
     max-height: 22px;
   }
@@ -310,16 +308,15 @@ header .site-logo img {
 header {
   background-color: #e5e5e5;
 }
-
 header .header-bottom {
   border-top: 1px solid #cccccc;
 }
 
-header .site-logo nav > ul > li > ul > li {
+header .site-logo > nav > ul > li > ul > li {
   border: 1px solid #cccccc;
   border-top: 0;
 }
-header .site-logo nav > ul > li > ul > li:last-child {
+header .site-logo > nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -477,7 +474,6 @@ header nav a, header nav p {
     display: none;
   }
 }
-
 .mobile-nav-icon hr {
   width: 100%;
   margin-top: auto;
@@ -486,6 +482,10 @@ header nav a, header nav p {
 }
 
 .header-bottom nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .header-bottom nav ul {
@@ -512,70 +512,7 @@ header nav a, header nav p {
   flex-wrap: wrap;
 }
 
-/*//========================================//
-//==== START Mobile Nav Overlay Block ====//
-//========================================//
-
-.mobile-nav-overlay {
-    position: absolute;
-
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(center);
-    @include align-items(center);
-
-    min-width: 100vw;
-    min-height: 100vh;
-}
-
-.mobile-nav-overlay {
-
-    nav {
-        @include display-flex;
-        @include flex-direction(column);
-        @include justify-content(center);
-        @include align-items(center);
-
-        width: 75vw;
-        height: 75vh;
-    }
-
-    nav {
-
-        ul {
-            @include display-flex;
-            @include flex-direction(column);
-            @include justify-content(center);
-            @include align-items(center);
-        }
-
-        > ul {
-            width: 90%;
-        }
-
-        li {
-            @include display-flex;
-            @include flex-direction(column);
-            @include justify-content(center);
-            @include align-items(center);
-
-            width: 100%;
-        }
-
-        a {
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-
-            width: 100%;
-        }
-    }
-}
-
-//========================================//
-//===== END Mobile Nav Overlay Block =====//
-//========================================//
-*/
-header nav a, header nav p, .mobile-nav-overlay nav a, .mobile-nav-overlay nav p {
+header nav a, header nav p {
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -586,31 +523,6 @@ header nav a, header nav p, .mobile-nav-overlay nav a, .mobile-nav-overlay nav p
   font-size: 80%;
 }
 
-/*//========================================//
-//==== START Mobile Nav Overlay Block ====//
-//========================================//
-
-.mobile-nav-overlay {
-
-    nav {
-
-        a {
-            font-size: 150%;
-            font-weight: bold;
-            color: $theme-nav-text;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        ul > li > ul a {
-            font-size: 125%;
-        }
-    }
-}
-
-//========================================//
-//===== END Mobile Nav Overlay Block =====//
-//========================================//*/
 header nav ul {
   list-style-type: none;
 }
@@ -631,7 +543,6 @@ header .header-top nav > ul > li > ul > li:last-child {
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
-
 .mobile-nav-icon hr {
   border: 0;
   border-top: 1px solid #cccccc;
@@ -644,39 +555,6 @@ header .header-top nav > ul > li > ul > li:last-child {
   border: 0px;
 }
 
-/*//========================================//
-//==== START Mobile Nav Overlay Block ====//
-//========================================//
-
-.mobile-nav-overlay {
-    background-color: $theme-nav-overlay-background;
-}
-
-.mobile-nav-overlay {
-
-    nav {
-        background-color: $theme-nav-overlay-foreground;
-    }
-
-    nav {
-
-        ul {
-            list-style-type: none;
-        }
-
-        > ul > li {
-            border-bottom: 1px solid $theme-nav-overlay-background;
-        }
-
-        > ul > li:first-child {
-            border-top: 1px solid $theme-nav-overlay-background;
-        }
-    }
-}
-
-//========================================//
-//===== END Mobile Nav Overlay Block =====//
-//========================================//*/
 .mobile-nav-icon {
   cursor: pointer;
 }
