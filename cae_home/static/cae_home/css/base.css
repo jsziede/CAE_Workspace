@@ -396,6 +396,7 @@ header nav ul {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    margin-right: 1vw;
   }
 }
 header nav ul > li {
@@ -424,7 +425,7 @@ header nav ul > li:hover > ul, header nav ul > li:hover > ul:hover {
   display: -webkit-flex;
   display: flex;
 }
-header nav a {
+header nav a, header nav p {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -574,7 +575,7 @@ header nav a {
 //===== END Mobile Nav Overlay Block =====//
 //========================================//
 */
-header nav a, .mobile-nav-overlay nav a {
+header nav a, header nav p, .mobile-nav-overlay nav a, .mobile-nav-overlay nav p {
   font-weight: bold;
   color: #000000;
   text-align: center;
