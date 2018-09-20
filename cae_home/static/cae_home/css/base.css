@@ -484,5 +484,25 @@ header .header-top nav > ul > li > ul > li:last-child {
 
 #content ul {
   padding-left: 20px; }
+#content table {
+  border: 1px solid #cccccc;
+  border-collapse: collapse; }
+#content td {
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  border: 1px solid #cccccc; }
+
+#content .center {
+  -webkit-flex-direction: center;
+  -moz-flex-direction: center;
+  -ms-flex-direction: center;
+  flex-direction: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center; }
 
 /*# sourceMappingURL=base.css.map */
