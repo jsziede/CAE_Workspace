@@ -9,74 +9,87 @@ div, span, p, img, a {
 h1, h2, h3, h4, h5, h6 {
   padding-top: 10px; }
 
-html {
-  font-family: 'Source Sans Pro', 'Open Sans', 'Lato', sans-serif; }
+@page {
+  margin: 1.5cm; }
+@media only screen {
+  html {
+    font-family: 'Source Sans Pro', 'Open Sans', 'Lato', sans-serif; }
 
-p {
-  font-family: 'Open Sans', 'Lato', 'Source Sans Pro', sans-serif; }
-
-html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
-  font-size: 4.5vw; }
-  @media only screen and (min-width: 400px) and (max-width: 475px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 3.8vw; } }
-  @media only screen and (min-width: 475px) and (max-width: 550px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 3.4vw; } }
-  @media only screen and (min-width: 550px) and (max-width: 699px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 2.7vw; } }
-  @media only screen and (min-width: 700px) and (max-width: 1024px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 2.1vw; } }
-  @media only screen and (min-width: 869px) and (max-width: 1024px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 1.8vw; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1350px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 1.4vw; } }
-  @media only screen and (min-width: 1350px) and (max-width: 1600px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 1.1vw; } }
-  @media only screen and (min-width: 1601px) {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a {
-      font-size: 0.9vw; } }
+  p {
+    font-family: 'Open Sans', 'Lato', 'Source Sans Pro', sans-serif; } }
+@media only print {
+  html {
+    font-family: 'Lora', 'PT Serif', serif; } }
+@media only screen {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 4.5vw; } }
+@media only screen and (min-width: 400px) and (max-width: 475px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 3.8vw; } }
+@media only screen and (min-width: 475px) and (max-width: 550px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 3.4vw; } }
+@media only screen and (min-width: 550px) and (max-width: 699px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 2.7vw; } }
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 2.1vw; } }
+@media only screen and (min-width: 869px) and (max-width: 1024px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 1.8vw; } }
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 1.4vw; } }
+@media only screen and (min-width: 1350px) and (max-width: 1600px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 1.1vw; } }
+@media only screen and (min-width: 1601px) {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 0.9vw; } }
+@media only print {
+  html, body, hgroup, header, footer, nav,
+  article, section, aside, figure, figcaption,
+  h1, h2, h3, h4, h5, h6,
+  ol, ul, li,
+  div, span, p, img, a {
+    font-size: 11px; } }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center; }
@@ -123,6 +136,9 @@ html {
   -ms-flex: 1;
   flex: 1;
   min-height: 100vh; }
+  @media only print {
+    html {
+      display: block; } }
 
 body {
   position: relative;
@@ -130,32 +146,51 @@ body {
   grid-template-columns: 5% 45% 45% 5%;
   grid-template-rows: 40px auto auto 35px;
   grid-template-areas: "header header header header" "main_placeholder_left main main main_placeholder_right" "main_placeholder_left main main main_placeholder_right" "footer footer footer footer";
-  min-height: 100vh; }
+  min-height: 100vh;
+  height: auto; }
   @media only screen and (min-width: 869px) {
     body {
       grid-template-columns: 15% 35% 35% 15%;
       grid-template-rows: 35px auto auto 35px; } }
+  @media only print {
+    body {
+      display: block; } }
   body header {
     position: relative;
     z-index: 10;
     grid-area: header; }
+    @media only print {
+      body header {
+        display: none; } }
   body main {
     position: relative;
     z-index: 5;
     grid-area: main; }
+    @media only print {
+      body main {
+        display: block; } }
   body #main_placeholder_left {
     position: relative;
     z-index: 5;
     grid-area: main_placeholder_left; }
+    @media only print {
+      body #main_placeholder_left {
+        display: none; } }
   body #main_placeholder_right {
     position: relative;
     z-index: 5;
     grid-area: main_placeholder_right; }
+    @media only print {
+      body #main_placeholder_right {
+        display: none; } }
   body footer {
     position: relative;
     z-index: 10;
     margin-top: 10px;
     grid-area: footer; }
+    @media only print {
+      body footer {
+        display: none; } }
 
 body {
   color: #000000; }
@@ -493,6 +528,12 @@ header .header-top nav > ul > li > ul > li:last-child {
   padding-bottom: 5px;
   padding-left: 8px; }
 
+@media only print {
+  #content .display-only-web {
+    display: none !important; } }
+@media only screen {
+  #content .display-only-print {
+    display: none !important; } }
 #content .center {
   -webkit-flex-direction: center;
   -moz-flex-direction: center;
