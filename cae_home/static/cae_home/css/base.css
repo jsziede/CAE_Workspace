@@ -145,7 +145,7 @@ body {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
   grid-template-rows: 40px auto auto 35px;
-  grid-template-areas: "header header header header" "main_placeholder_left main main main_placeholder_right" "main_placeholder_left main main main_placeholder_right" "footer footer footer footer";
+  grid-template-areas: "header header header header" "main-placeholder-left main main main-placeholder-right" "main-placeholder-left main main main-placeholder-right" "footer footer footer footer";
   min-height: 100vh;
   height: auto; }
   @media only screen and (min-width: 869px) {
@@ -169,19 +169,19 @@ body {
     @media only print {
       body main {
         display: block; } }
-  body #main_placeholder_left {
+  body #main-placeholder-left {
     position: relative;
     z-index: 5;
-    grid-area: main_placeholder_left; }
+    grid-area: main-placeholder-left; }
     @media only print {
-      body #main_placeholder_left {
+      body #main-placeholder-left {
         display: none; } }
-  body #main_placeholder_right {
+  body #main-placeholder-right {
     position: relative;
     z-index: 5;
-    grid-area: main_placeholder_right; }
+    grid-area: main-placeholder-right; }
     @media only print {
-      body #main_placeholder_right {
+      body #main-placeholder-right {
         display: none; } }
   body footer {
     position: relative;
