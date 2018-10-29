@@ -237,19 +237,24 @@ header {
 
 header .site-logo {
   height: 100%; }
-  header .site-logo nav {
+  header .site-logo > nav {
+    width: 100%;
     height: 100%; }
-    header .site-logo nav > ul {
+    header .site-logo > nav > ul {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      margin-right: 1vw;
+      margin-left: 1vw;
+      width: 100%;
       height: 100%; }
-    header .site-logo nav > ul > li {
+    header .site-logo > nav > ul > li {
+      width: 100%;
       padding-top: 3px;
       padding-bottom: 3px; }
-    header .site-logo nav > ul > li > div {
+    header .site-logo > nav > ul > li > div {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -263,18 +268,22 @@ header .site-logo {
       -moz-justify-content: center;
       -ms-justify-content: center;
       justify-content: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
       width: 100%;
       height: 100%; }
-    header .site-logo nav > ul > li > ul {
+    header .site-logo > nav > ul > li > ul {
       top: 40px; }
-    header .site-logo nav img {
-      max-width: 100px;
+    header .site-logo > nav img {
+      max-width: 66px;
       max-height: 26px;
       margin-right: 10px;
       margin-left: 10px; }
       @media only screen and (min-width: 869px) {
-        header .site-logo nav img {
-          max-width: 100px;
+        header .site-logo > nav img {
+          max-width: 66px;
           max-height: 22px; } }
 
 header {
@@ -289,6 +298,17 @@ header .site-logo > nav > ul > li > ul > li {
 header .site-logo > nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
+
+header li, header li:link, header li:visited, header li:hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+header li:before, header li:after {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 footer {
   display: -webkit-box;
@@ -361,12 +381,15 @@ header nav {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        margin-right: 1vw; } }
+        margin-right: 1vw;
+        margin-left: 1vw; } }
   header nav > ul > hr {
     padding: 0;
     margin: 0;
     margin-top: 3px;
-    margin-bottom: 3px; }
+    margin-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 2px; }
     @media only screen and (max-width: 869px) {
       header nav > ul > hr {
         display: none; } }
@@ -378,6 +401,8 @@ header nav {
     padding-left: 10px; }
   header nav > ul > li > ul {
     position: absolute;
+    right: 0;
+    left: 0;
     display: none;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -501,6 +526,8 @@ header nav ul {
   list-style-type: none; }
 header nav li {
   background-color: #e5e5e5; }
+header nav li:hover {
+  background-color: #f2f2f2; }
 
 header .header-top nav > ul > li > ul > li {
   border: 1px solid #cccccc;
@@ -519,7 +546,8 @@ header .header-top nav > ul > li > ul > li:last-child {
 .header-bottom nav ul > li {
   border-bottom: 1px solid #cccccc; }
 .header-bottom nav ul > li > ul > li {
-  border: 0px; }
+  border: 0px;
+  border-radius: 3px; }
 
 .mobile-nav-icon {
   cursor: pointer; }
