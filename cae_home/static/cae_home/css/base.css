@@ -278,7 +278,8 @@ header .site-logo {
           max-height: 22px; } }
 
 header {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #cccccc; }
   header .header-bottom {
     border-top: 1px solid #cccccc; }
 
@@ -309,7 +310,8 @@ footer {
   align-items: center; }
 
 footer {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  border-top: 1px solid #cccccc; }
 
 header nav {
   display: -webkit-box;
