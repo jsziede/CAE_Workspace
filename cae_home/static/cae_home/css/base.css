@@ -338,7 +338,8 @@ header nav {
       -ms-justify-content: space-around;
       -justify-content: space-around;
       -mox-justify-content: space-evenly; } }
-  header nav ul {
+  header nav > ul {
+    position: relative;
     display: none;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -354,27 +355,28 @@ header nav {
     -ms-flex: 1;
     flex: 1; }
     @media only screen and (min-width: 869px) {
-      header nav ul {
+      header nav > ul {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         margin-right: 1vw; } }
-  header nav ul > hr {
+  header nav > ul > hr {
     padding: 0;
     margin: 0;
     margin-top: 3px;
     margin-bottom: 3px; }
     @media only screen and (max-width: 869px) {
-      header nav ul > hr {
+      header nav > ul > hr {
         display: none; } }
-  header nav ul > li {
+  header nav > ul > li {
+    position: relative;
     padding-top: 3px;
-    padding-right: 5px;
+    padding-right: 10px;
     padding-bottom: 3px;
-    padding-left: 5px; }
-  header nav ul > li > ul {
+    padding-left: 10px; }
+  header nav > ul > li > ul {
     position: absolute;
     display: none;
     -webkit-flex-direction: column;
@@ -384,13 +386,16 @@ header nav {
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px; }
     @media only screen and (min-width: 869px) {
-      header nav ul > li > ul {
-        top: 40px; } }
-  header nav ul > li > ul > li {
+      header nav > ul > li > ul {
+        top: 39px; } }
+  header nav > ul > li > ul > li {
+    position: relative;
     padding: 2px; }
-  header nav ul > li:hover > ul, header nav ul > li:hover > ul:hover {
+  header nav > ul > li:hover > ul, header nav ul > li:hover > ul:hover {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
