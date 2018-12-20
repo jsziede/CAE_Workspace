@@ -552,6 +552,50 @@ header .header-top nav > ul > li > ul > li:last-child {
 .mobile-nav-icon {
   cursor: pointer; }
 
+#status-message-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 0 !important; }
+  #status-message-container .message {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px; }
+
 #content ul {
   padding-left: 20px; }
 #content table {
@@ -589,6 +633,32 @@ header .header-top nav > ul > li > ul > li:last-child {
   font-weight: bold;
   text-align: center; }
 
+#status-message-container {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+  #status-message-container li {
+    list-style-type: none; }
+  #status-message-container .message {
+    background-color: #e5e5e5;
+    border: 1px solid #cccccc; }
+  #status-message-container .message:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  #status-message-container .message.info {
+    background-color: #d2d2f9;
+    border: 1px solid #a5a5f3; }
+  #status-message-container .message.success {
+    background-color: #d2f9d2;
+    border: 1px solid #a5f3a5; }
+  #status-message-container .message.warning {
+    background-color: #f9ecd2;
+    border: 1px solid #f2d9a6; }
+  #status-message-container .message.error {
+    background-color: #f9d2d2;
+    border: 1px solid #f2a6a6; }
+
 #content table {
   border: 1px solid #cccccc;
   border-collapse: collapse; }
@@ -597,5 +667,8 @@ header .header-top nav > ul > li > ul > li:last-child {
 
 #content .javascript-warn {
   background-color: #b91233; }
+
+#status-message-container .message {
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=base.css.map */
