@@ -192,6 +192,90 @@ body {
       body footer {
         display: none; } }
 
+#content-bar-left, #content-bar-right {
+  position: absolute;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 100%;
+  /*.rotation-wrapper-outer {
+      /*background-color: pink;*/
+        /*display: table;*
+        position: relative;
+    }
+
+    .rotation-wrapper-inner {
+        /*background-color: red;*
+        position: relative;
+        padding: 50% 0;
+        height: 0;
+    }
+
+    .rotation-wrapper-inner > * {
+        /*display: block;*
+        transform-origin: 50% 50%;
+        transform: rotate(-90deg) translate(-100%);
+        /*margin-top: -50%;*
+        white-space: nowrap;
+
+        font-size: 80%;
+        background-color: pink;
+        border: 1px solid black;
+    }*/
+  /*
+      > div:first-child > * {
+          font-size: 80%;
+          height: auto;
+          /*padding: 50% 0;     // CSS trick to make element's height equal to width when rotated.
+          //transform: rotate(-90deg) translate(-100%);
+          //transform-origin: 50% 50%;
+  
+          background-color: red;
+      }*/
+    /*h2, h3 {
+        position: absolute;
+
+        font-size: 80%;
+        transform: rotate(90deg);
+    }*/ }
+  #content-bar-left .content-bar-header, #content-bar-right .content-bar-header {
+    position: relative;
+    background-color: blue; }
+  #content-bar-left .content-bar-header > *, #content-bar-right .content-bar-header > * {
+    position: relative; }
+  #content-bar-left .content-bar-header > * > *, #content-bar-right .content-bar-header > * > * {
+    /*position: absolute;*/
+    /*position: relative;*/
+    /*bottom: 0;*/
+    background-color: red;
+    font-size: 80%;
+    /*transform-origin: 50% 50%;*/
+    transform-origin: top left;
+    transform: rotate(90deg);
+    white-space: nowrap; }
+  #content-bar-left .content-bar-header > * > * > *, #content-bar-right .content-bar-header > * > * > * {
+    transform: rotate(180deg); }
+  #content-bar-left > div:nth-child(2), #content-bar-right > div:nth-child(2) {
+    background-color: green; }
+  #content-bar-left .content-bar-content, #content-bar-right .content-bar-content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+#content-bar-right {
+  right: 0; }
+
+#content-bar-left {
+  left: 0; }
+
 body {
   color: #000000; }
 
