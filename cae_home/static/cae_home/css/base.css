@@ -646,6 +646,8 @@ header .header-top nav > ul > li > ul > li:last-child {
     padding: 0 !important;
     margin: 0 !important; }
 
+#content .hover-highlight:hover {
+  background-color: #e5e5e5; }
 #content .javascript-warn {
   font-weight: bold;
   text-align: center; }
@@ -701,6 +703,9 @@ header .header-top nav > ul > li > ul > li:last-child {
   box-sizing: border-box; }
   #status-message-container .message .exit {
     cursor: pointer; }
+
+#content .hover-highlight:hover {
+  cursor: pointer; }
 
 .fade-in {
   -webkit-transition: opacity 1.5s linear, visibility 0s 1.5s;
