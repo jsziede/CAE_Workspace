@@ -552,6 +552,51 @@ header .header-top nav > ul > li > ul > li:last-child {
 .mobile-nav-icon {
   cursor: pointer; }
 
+#content {
+  padding-bottom: 10px; }
+  #content ul {
+    padding-left: 20px; }
+  #content table {
+    margin-right: auto;
+    margin-left: auto; }
+  #content td {
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-left: 8px; }
+
+@media only print {
+  #content .display-only-web {
+    display: none !important; } }
+@media only screen {
+  #content .display-only-print {
+    display: none !important; } }
+#content .center {
+  -webkit-flex-direction: center;
+  -moz-flex-direction: center;
+  -ms-flex-direction: center;
+  flex-direction: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center; }
+#content .javascript-warn {
+  margin-right: auto;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-bottom: 25px; }
+
+.hidden {
+  display: none !important; }
+
+.fade-out {
+  padding: 0 !important;
+  margin: 0 !important; }
+  .fade-out > p {
+    padding: 0 !important;
+    margin: 0 !important; }
+
 #status-message-container {
   position: relative;
   display: -webkit-box;
@@ -602,51 +647,6 @@ header .header-top nav > ul > li > ul > li:last-child {
       right: 0;
       padding: 5px;
       margin-right: 1%; }
-
-#content {
-  padding-bottom: 10px; }
-  #content ul {
-    padding-left: 20px; }
-  #content table {
-    margin-right: auto;
-    margin-left: auto; }
-  #content td {
-    padding-top: 5px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-left: 8px; }
-
-@media only print {
-  #content .display-only-web {
-    display: none !important; } }
-@media only screen {
-  #content .display-only-print {
-    display: none !important; } }
-#content .center {
-  -webkit-flex-direction: center;
-  -moz-flex-direction: center;
-  -ms-flex-direction: center;
-  flex-direction: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  text-align: center; }
-#content .javascript-warn {
-  margin-right: auto;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-bottom: 25px; }
-
-.hidden {
-  display: none !important; }
-
-.fade-out {
-  padding: 0 !important;
-  margin: 0 !important; }
-  .fade-out > p {
-    padding: 0 !important;
-    margin: 0 !important; }
 
 #content-bar-left, #content-bar-right {
   position: absolute;
@@ -700,6 +700,23 @@ header .header-top nav > ul > li > ul > li:last-child {
 #content-bar-left > .bar-nav p:hover, #content-bar-right > .bar-nav p:hover {
   color: #000000; }
 
+#content table {
+  border: 1px solid #cccccc;
+  border-collapse: collapse; }
+#content td {
+  border: 1px solid #cccccc; }
+
+#content .javascript-warn {
+  background-color: #b91233; }
+
+.fade-in {
+  opacity: 1;
+  visibility: visible; }
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden; }
+
 #status-message-container {
     /*background-color: $color-grey-90;
     border: 1px solid $theme-border;
@@ -727,32 +744,10 @@ header .header-top nav > ul > li > ul > li:last-child {
     background-color: #f9d2d2;
     border: 1px solid #f2a6a6; }
 
-#content table {
-  border: 1px solid #cccccc;
-  border-collapse: collapse; }
-#content td {
-  border: 1px solid #cccccc; }
-
-#content .javascript-warn {
-  background-color: #b91233; }
-
-.fade-in {
-  opacity: 1;
-  visibility: visible; }
-
-.fade-out {
-  opacity: 0;
-  visibility: hidden; }
-
 #content-bar-left > .bar-content, #content-bar-right > .bar-content {
   background-color: #e5e5e5;
   border-right: 1px solid #cccccc;
   border-left: 1px solid #cccccc; }
-
-#status-message-container .message {
-  box-sizing: border-box; }
-  #status-message-container .message .exit {
-    cursor: pointer; }
 
 #content .hover-highlight:hover {
   cursor: pointer; }
@@ -773,6 +768,11 @@ header .header-top nav > ul > li > ul > li:last-child {
     -moz-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     -o-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     transition: padding 1.5s, margin 1.5s, font-size 1.5s; }
+
+#status-message-container .message {
+  box-sizing: border-box; }
+  #status-message-container .message .exit {
+    cursor: pointer; }
 
 #content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
   cursor: pointer; }
