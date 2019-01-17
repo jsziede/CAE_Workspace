@@ -186,7 +186,6 @@ body {
   body footer {
     position: relative;
     z-index: 10;
-    margin-top: 10px;
     grid-area: footer; }
     @media only print {
       body footer {
@@ -604,16 +603,18 @@ header .header-top nav > ul > li > ul > li:last-child {
       padding: 5px;
       margin-right: 1%; }
 
-#content ul {
-  padding-left: 20px; }
-#content table {
-  margin-right: auto;
-  margin-left: auto; }
-#content td {
-  padding-top: 5px;
-  padding-right: 8px;
-  padding-bottom: 5px;
-  padding-left: 8px; }
+#content {
+  padding-bottom: 10px; }
+  #content ul {
+    padding-left: 20px; }
+  #content table {
+    margin-right: auto;
+    margin-left: auto; }
+  #content td {
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-left: 8px; }
 
 @media only print {
   #content .display-only-web {
@@ -647,6 +648,43 @@ header .header-top nav > ul > li > ul > li:last-child {
     padding: 0 !important;
     margin: 0 !important; }
 
+#content-bar-left, #content-bar-right {
+  position: absolute;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%; }
+  #content-bar-left > .bar-nav, #content-bar-right > .bar-nav {
+    padding-top: 15px; }
+  #content-bar-left > .bar-content, #content-bar-right > .bar-content {
+    min-height: 100%;
+    padding: 5px; }
+
+#content-bar-left {
+  left: 0; }
+  #content-bar-left > .bar-nav {
+    left: 0;
+    order: 1; }
+
+#content-bar-right {
+  right: 0;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end; }
+  #content-bar-right > .bar-nav {
+    right: 0; }
+
+.arrow-right:hover, .arrow-left:hover {
+  background-color: white; }
+
 #content .hover-highlight:hover {
   background-color: #e5e5e5; }
 #content .javascript-warn {
@@ -655,6 +693,12 @@ header .header-top nav > ul > li > ul > li:last-child {
 
 .fade-out > p {
   font-size: 0px; }
+
+#content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
+  font-size: 150%;
+  color: #e5e5e5; }
+#content-bar-left > .bar-nav p:hover, #content-bar-right > .bar-nav p:hover {
+  color: #000000; }
 
 #status-message-container {
     /*background-color: $color-grey-90;
@@ -700,6 +744,11 @@ header .header-top nav > ul > li > ul > li:last-child {
   opacity: 0;
   visibility: hidden; }
 
+#content-bar-left > .bar-content, #content-bar-right > .bar-content {
+  background-color: #e5e5e5;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc; }
+
 #status-message-container .message {
   box-sizing: border-box; }
   #status-message-container .message .exit {
@@ -724,5 +773,8 @@ header .header-top nav > ul > li > ul > li:last-child {
     -moz-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     -o-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     transition: padding 1.5s, margin 1.5s, font-size 1.5s; }
+
+#content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
+  cursor: pointer; }
 
 /*# sourceMappingURL=base.css.map */
