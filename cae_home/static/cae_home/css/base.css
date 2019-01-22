@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   html {
     font-family: 'Source Sans Pro', 'Open Sans', 'Lato', sans-serif; }
 
-  p {
+  p, button, .button {
     font-family: 'Open Sans', 'Lato', 'Source Sans Pro', sans-serif; } }
 @media only print {
   html {
@@ -25,70 +25,70 @@ h1, h2, h3, h4, h5, h6 {
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 4.5vw; } }
 @media only screen and (min-width: 400px) and (max-width: 475px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 3.8vw; } }
 @media only screen and (min-width: 475px) and (max-width: 550px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 3.4vw; } }
 @media only screen and (min-width: 550px) and (max-width: 699px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 2.7vw; } }
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 2.1vw; } }
 @media only screen and (min-width: 869px) and (max-width: 1024px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 1.8vw; } }
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 1.4vw; } }
 @media only screen and (min-width: 1350px) and (max-width: 1600px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 1.1vw; } }
 @media only screen and (min-width: 1601px) {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 0.9vw; } }
 @media only print {
   html, body, hgroup, header, footer, nav,
   article, section, aside, figure, figcaption,
   h1, h2, h3, h4, h5, h6,
   ol, ul, li,
-  div, span, p, img, a {
+  div, span, p, img, a, button {
     font-size: 11px; } }
 
 h1, h2, h3, h4, h5, h6 {
@@ -597,6 +597,19 @@ header .header-top nav > ul > li > ul > li:last-child {
     padding: 0 !important;
     margin: 0 !important; }
 
+button {
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px; }
+
+.button {
+  display: inline-block;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px; }
+
 #status-message-container {
   position: relative;
   display: -webkit-box;
@@ -694,6 +707,19 @@ header .header-top nav > ul > li > ul > li:last-child {
 .fade-out > p {
   font-size: 0px; }
 
+button {
+  color: #333333; }
+
+button:hover {
+  color: #000000; }
+
+.button {
+  color: #333333;
+  text-decoration: none; }
+
+.button:hover {
+  color: #000000; }
+
 #content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
   font-size: 150%;
   color: #e5e5e5; }
@@ -717,32 +743,113 @@ header .header-top nav > ul > li > ul > li:last-child {
   opacity: 0;
   visibility: hidden; }
 
-#status-message-container {
-    /*background-color: $color-grey-90;
-    border: 1px solid $theme-border;
+button {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
 
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;*/ }
-  #status-message-container li {
-    list-style-type: none; }
-  #status-message-container .message {
-    background-color: #e5e5e5;
-    border: 1px solid #cccccc; }
-  #status-message-container .message:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; }
-  #status-message-container .message.info {
-    background-color: #d2d2f9;
-    border: 1px solid #a5a5f3; }
-  #status-message-container .message.success {
-    background-color: #d2f9d2;
-    border: 1px solid #a5f3a5; }
-  #status-message-container .message.warning {
-    background-color: #f9ecd2;
-    border: 1px solid #f2d9a6; }
-  #status-message-container .message.error {
-    background-color: #f9d2d2;
-    border: 1px solid #f2a6a6; }
+button:hover {
+  background-color: #cccccc; }
+
+button.info {
+  background-color: #d2d2f9;
+  border: 1px solid #a5a5f3; }
+
+button.info:hover {
+  background-color: #a5a5f3; }
+
+button.success {
+  background-color: #d2f9d2;
+  border: 1px solid #a5f3a5; }
+
+button.success:hover {
+  background-color: #a5f3a5; }
+
+button.warning {
+  background-color: #f9ecd2;
+  border: 1px solid #f2d9a6; }
+
+button.warning:hover {
+  background-color: #f2d9a6; }
+
+button.error {
+  background-color: #f9d2d2;
+  border: 1px solid #f2a6a6; }
+
+button.error:hover {
+  background-color: #f2a6a6; }
+
+button.danger {
+  background-color: #f9d2d2;
+  border: 1px solid #f2a6a6; }
+
+button.danger:hover {
+  background-color: #f2a6a6; }
+
+.button {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
+
+.button:hover {
+  background-color: #cccccc; }
+
+.button.info {
+  background-color: #d2d2f9;
+  border: 1px solid #a5a5f3; }
+
+.button.info:hover {
+  background-color: #a5a5f3; }
+
+.button.success {
+  background-color: #d2f9d2;
+  border: 1px solid #a5f3a5; }
+
+.button.success:hover {
+  background-color: #a5f3a5; }
+
+.button.warning {
+  background-color: #f9ecd2;
+  border: 1px solid #f2d9a6; }
+
+.button.warning:hover {
+  background-color: #f2d9a6; }
+
+.button.error {
+  background-color: #f9d2d2;
+  border: 1px solid #f2a6a6; }
+
+.button.error:hover {
+  background-color: #f2a6a6; }
+
+.button.danger {
+  background-color: #f9d2d2;
+  border: 1px solid #f2a6a6; }
+
+.button.danger:hover {
+  background-color: #f2a6a6; }
+
+#status-message-container li {
+  list-style-type: none; }
+#status-message-container .message:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+#status-message-container .message, form .message {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc; }
+#status-message-container .message.info, form .message.info {
+  background-color: #d2d2f9;
+  border: 1px solid #a5a5f3; }
+#status-message-container .message.success, form .message.success {
+  background-color: #d2f9d2;
+  border: 1px solid #a5f3a5; }
+#status-message-container .message.warning, form .message.warning {
+  background-color: #f9ecd2;
+  border: 1px solid #f2d9a6; }
+#status-message-container .message.error, form .message.error {
+  background-color: #f9d2d2;
+  border: 1px solid #f2a6a6; }
 
 #content-bar-left > .bar-content, #content-bar-right > .bar-content {
   background-color: #e5e5e5;
@@ -768,6 +875,13 @@ header .header-top nav > ul > li > ul > li:last-child {
     -moz-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     -o-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
     transition: padding 1.5s, margin 1.5s, font-size 1.5s; }
+
+button, .button {
+  cursor: pointer;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s; }
 
 #status-message-container .message {
   box-sizing: border-box; }
