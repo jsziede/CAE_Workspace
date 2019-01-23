@@ -157,7 +157,7 @@ body {
   @media only screen and (min-width: 869px) {
     body {
       grid-template-columns: 15% 35% 35% 15%;
-      grid-template-rows: 35px auto auto 35px; } }
+      grid-template-rows: 40px auto auto 35px; } }
   @media only print {
     body {
       display: block; } }
@@ -256,8 +256,7 @@ header .site-logo {
       display: flex;
       margin-right: 1vw;
       margin-left: 1vw;
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
     header .site-logo > nav > ul > li {
       width: 100%;
       padding-top: 3px;
@@ -281,7 +280,7 @@ header .site-logo {
       -ms-align-items: center;
       align-items: center;
       width: 100%;
-      height: 100%; }
+      height: 34px; }
     header .site-logo > nav > ul > li > ul {
       top: 40px; }
     header .site-logo > nav img {
@@ -383,6 +382,10 @@ header nav {
     -moz-justify-content: flex-end;
     -ms-justify-content: flex-end;
     justify-content: flex-end;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -398,6 +401,7 @@ header nav {
         margin-right: 1vw;
         margin-left: 1vw; } }
   header nav > ul > hr {
+    height: 25px;
     padding: 0;
     margin: 0;
     margin-top: 3px;
@@ -427,6 +431,7 @@ header nav {
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
     justify-content: space-around;
+    /*@include align-items(center);*/
     margin-left: 5px;
     margin-right: 5px; }
     @media only screen and (min-width: 869px) {
@@ -455,6 +460,10 @@ header nav {
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
     justify-content: space-around;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -479,6 +488,10 @@ header nav {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   width: 28px;
   height: 20px;
   padding: 5px;
@@ -611,7 +624,7 @@ header .header-top nav > ul > li > ul > li:last-child {
 .fade-out {
   padding: 0 !important;
   margin: 0 !important; }
-  .fade-out > p {
+  .fade-out * {
     padding: 0 !important;
     margin: 0 !important; }
 
@@ -703,6 +716,11 @@ div.panel {
   -ms-align-items: center;
   align-items: center;
   padding: 0 !important; }
+  #status-message-container a {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px; }
   #status-message-container .message {
     position: relative;
     display: -webkit-box;
@@ -714,10 +732,6 @@ div.panel {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
@@ -728,11 +742,38 @@ div.panel {
     align-items: center;
     width: 100%;
     padding: 10px; }
+    #status-message-container .message > p:first-child {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
     #status-message-container .message .exit {
-      position: absolute;
+      position: relative;
       right: 0;
-      padding: 5px;
-      margin-right: 1%; }
+      padding-top: 3px;
+      padding-right: 8px;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      margin-right: 0.5%;
+      margin-left: 0.5%; }
 
 #content-bar-left, #content-bar-right {
   position: absolute;
@@ -777,7 +818,7 @@ div.panel {
   font-weight: bold;
   text-align: center; }
 
-.fade-out > p {
+.fade-out * {
   font-size: 0px; }
 
 button {
@@ -811,6 +852,33 @@ div.panel.warning a {
   color: #df9f20; }
 
 div.panel.error a, div.panel.danger a {
+  color: #ec7979; }
+
+#status-message-container .message a {
+  font-weight: bold;
+  color: #7f7f7f;
+  text-decoration: none; }
+#status-message-container .message .exit {
+  font-weight: bold;
+  color: #7f7f7f; }
+#status-message-container .message .exit:hover {
+  font-weight: bold;
+  color: #000000 !important; }
+#status-message-container .message.info a {
+  color: #4b4be7; }
+#status-message-container .message.info .exit {
+  color: #4b4be7; }
+#status-message-container .message.success a {
+  color: #18b418; }
+#status-message-container .message.success .exit {
+  color: #18b418; }
+#status-message-container .message.warning a {
+  color: #df9f20; }
+#status-message-container .message.warning .exit {
+  color: #df9f20; }
+#status-message-container .message.error a, #status-message-container .message.danger a {
+  color: #ec7979; }
+#status-message-container .message.error .exit, #status-message-container .message.danger .exit {
   color: #ec7979; }
 
 #content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
@@ -979,25 +1047,46 @@ div.panel.error:hover, .panel.danger:hover {
 
 #status-message-container li {
   list-style-type: none; }
+#status-message-container a, #status-message-container .exit {
+  border-radius: 5em; }
+#status-message-container .message {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc; }
+  #status-message-container .message a:hover, #status-message-container .message .exit:hover {
+    background-color: #e5e5e5; }
 #status-message-container .message:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
-
-#status-message-container .message, form .message {
-  background-color: #e5e5e5;
-  border: 1px solid #cccccc; }
-#status-message-container .message.info, form .message.info {
+#status-message-container .message:hover {
+  background-color: #f2f2f2; }
+#status-message-container .message.info {
   background-color: #d7d7f9;
   border: 1px solid #a5a5f3; }
-#status-message-container .message.success, form .message.success {
+  #status-message-container .message.info a:hover, #status-message-container .message.info .exit:hover {
+    background-color: #d7d7f9; }
+#status-message-container .message.info:hover {
+  background-color: #e9e9fc; }
+#status-message-container .message.success {
   background-color: #c9f8c9;
   border: 1px solid #a5f3a5; }
-#status-message-container .message.warning, form .message.warning {
+  #status-message-container .message.success a:hover, #status-message-container .message.success .exit:hover {
+    background-color: #c9f8c9; }
+#status-message-container .message.success:hover {
+  background-color: #e9fce9; }
+#status-message-container .message.warning {
   background-color: #f8e8c9;
   border: 1px solid #f2d9a6; }
-#status-message-container .message.error, #status-message-container .message.danger, form .message.error, form .message.danger {
+  #status-message-container .message.warning a:hover, #status-message-container .message.warning .exit:hover {
+    background-color: #f8e8c9; }
+#status-message-container .message.warning:hover {
+  background-color: #fcf5e9; }
+#status-message-container .message.error, #status-message-container .message.danger {
   background-color: #f9d2d2;
   border: 1px solid #f2a6a6; }
+  #status-message-container .message.error a:hover, #status-message-container .message.error .exit:hover, #status-message-container .message.danger a:hover, #status-message-container .message.danger .exit:hover {
+    background-color: #f9d2d2; }
+#status-message-container .message.error:hover, #status-message-container .message.danger:hover {
+  background-color: #fce9e9; }
 
 #content-bar-left > .bar-content, #content-bar-right > .bar-content {
   background-color: #e5e5e5;
@@ -1008,21 +1097,21 @@ div.panel.error:hover, .panel.danger:hover {
   cursor: pointer; }
 
 .fade-in {
-  -webkit-transition: opacity 1.5s linear, visibility 0s 1.5s;
-  -moz-transition: opacity 1.5s linear, visibility 0s 1.5s;
-  -o-transition: opacity 1.5s linear, visibility 0s 1.5s;
-  transition: opacity 1.5s linear, visibility 0s 1.5s; }
+  -webkit-transition: opacity 1s linear, visibility 0s 1s;
+  -moz-transition: opacity 1s linear, visibility 0s 1s;
+  -o-transition: opacity 1s linear, visibility 0s 1s;
+  transition: opacity 1s linear, visibility 0s 1s; }
 
 .fade-out {
-  -webkit-transition: padding 1.5s, margin 1.5s, opacity 1.5s linear, visibility 0s 1.5s;
-  -moz-transition: padding 1.5s, margin 1.5s, opacity 1.5s linear, visibility 0s 1.5s;
-  -o-transition: padding 1.5s, margin 1.5s, opacity 1.5s linear, visibility 0s 1.5s;
-  transition: padding 1.5s, margin 1.5s, opacity 1.5s linear, visibility 0s 1.5s; }
-  .fade-out > p {
-    -webkit-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
-    -moz-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
-    -o-transition: padding 1.5s, margin 1.5s, font-size 1.5s;
-    transition: padding 1.5s, margin 1.5s, font-size 1.5s; }
+  -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s, opacity 0.9s linear, visibility 0s 0.9s;
+  -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s, opacity 0.9s linear, visibility 0s 0.9s;
+  -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s, opacity 0.9s linear, visibility 0s 0.9s;
+  transition: padding 0.9s, margin 0.9s, font-size 0.9s, opacity 0.9s linear, visibility 0s 0.9s; }
+  .fade-out * {
+    -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s;
+    -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s;
+    -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s;
+    transition: padding 0.9s, margin 0.9s, font-size 0.9s; }
 
 button, a.button {
   cursor: pointer;
@@ -1043,8 +1132,21 @@ div.panel {
     transition: background-color 0.5s; }
 
 #status-message-container .message {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s; }
+  #status-message-container .message a {
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
   #status-message-container .message .exit {
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
     cursor: pointer; }
 
 #content-bar-left > .bar-nav p, #content-bar-right > .bar-nav p {
