@@ -614,10 +614,37 @@ button {
   padding-top: 6px;
   padding-right: 12px;
   padding-bottom: 6px;
-  padding-left: 12px; }
+  padding-left: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px; }
 
 a.button {
   display: inline-block;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+.alert {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   padding-top: 6px;
   padding-right: 12px;
   padding-bottom: 6px;
@@ -816,6 +843,28 @@ a.button {
 a.button:hover {
   color: #000000; }
 
+.alert {
+  color: #333333; }
+  .alert a {
+    font-weight: bold;
+    color: #7f7f7f;
+    text-decoration: none; }
+
+.alert:hover {
+  color: #000000; }
+
+.alert.info a {
+  color: #5c5cd6; }
+
+.alert.success a {
+  color: #18b418; }
+
+.alert.warning a {
+  color: #df9f20; }
+
+.alert.error a, .alert.danger a {
+  color: #ec8379; }
+
 div.panel a {
   font-weight: bold;
   color: #7f7f7f;
@@ -958,6 +1007,41 @@ a.button.error, .button.danger {
 a.button.error:hover, .button.danger:hover {
   background-color: #f0c9c2; }
 
+.alert {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc; }
+
+.alert:hover {
+  background-color: #f2f2f2; }
+
+.alert.info {
+  background-color: #ddddf4;
+  border: 1px solid #c1c1f0; }
+
+.alert.info:hover {
+  background-color: #e9e9fc; }
+
+.alert.success {
+  background-color: #d1f0d1;
+  border: 1px solid #adebad; }
+
+.alert.success:hover {
+  background-color: #e9fce9; }
+
+.alert.warning {
+  background-color: #f9f2d2;
+  border: 1px solid #eee2aa; }
+
+.alert.warning:hover {
+  background-color: #fcf5e9; }
+
+.alert.error, .alert.danger {
+  background-color: #f5dbd6;
+  border: 1px solid #f0c9c2; }
+
+.alert.error:hover, .alert.danger:hover {
+  background-color: #fce9e9; }
+
 div.panel {
   background-color: #e5e5e5;
   border: 1px solid #cccccc; }
@@ -1097,6 +1181,12 @@ div.panel.error:hover, .panel.danger:hover {
 
 button, a.button {
   cursor: pointer;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s; }
+
+.alert {
   -webkit-transition: color 0.5s, background-color 0.5s;
   -moz-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
