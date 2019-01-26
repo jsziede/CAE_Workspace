@@ -587,15 +587,7 @@ header .header-top nav > ul > li > ul > li:last-child {
     padding: 0 !important;
     margin: 0 !important; }
 
-button {
-  padding-top: 6px;
-  padding-right: 12px;
-  padding-bottom: 6px;
-  padding-left: 12px;
-  margin-top: 2px;
-  margin-bottom: 2px; }
-
-a.button {
+button, a.button {
   display: inline-block;
   padding-top: 6px;
   padding-right: 12px;
@@ -807,17 +799,12 @@ div.panel {
 .fade-out * {
   font-size: 0px; }
 
-button {
-  color: #333333; }
-
-button:hover {
-  color: #000000; }
-
-a.button {
+button, a.button {
   color: #333333;
+  font-size: 1rem;
   text-decoration: none; }
 
-a.button:hover {
+button:hover, a.button:hover {
   color: #000000; }
 
 .alert {
@@ -912,75 +899,41 @@ div.panel.error a, div.panel.danger a {
   opacity: 0;
   visibility: hidden; }
 
-button {
+button, a.button {
   background-color: #e5e5e5;
   border: 1px solid #cccccc;
   border-radius: 5px; }
 
-button:hover {
+button:hover, a.button:hover {
   background-color: #cccccc; }
 
-button.info {
+button.info, a.button.info {
   background-color: #ddddf4;
   border: 1px solid #c1c1f0; }
 
-button.info:hover {
+button.info:hover, a.button.info:hover {
   background-color: #c1c1f0; }
 
-button.success {
+button.success, a.button.success {
   background-color: #d1f0d1;
   border: 1px solid #adebad; }
 
-button.success:hover {
+button.success:hover, a.button.success:hover {
   background-color: #adebad; }
 
-button.warning {
+button.warning, a.button.warning {
   background-color: #f9f2d2;
   border: 1px solid #eee2aa; }
 
-button.warning:hover {
+button.warning:hover, a.button.warning:hover {
   background-color: #eee2aa; }
 
-button.error, button.danger {
-  background-color: #f5dbd6;
-  border: 1px solid #f0c9c2; }
-
-button.error:hover, button.danger:hover {
-  background-color: #f0c9c2; }
-
-a.button {
-  background-color: #e5e5e5;
-  border: 1px solid #cccccc;
-  border-radius: 5px; }
-
-a.button:hover {
-  background-color: #cccccc; }
-
-a.button.info {
-  background-color: #ddddf4;
-  border: 1px solid #c1c1f0; }
-
-a.button.info:hover {
-  background-color: #c1c1f0; }
-
-a.button.success {
-  background-color: #d1f0d1;
-  border: 1px solid #adebad; }
-
-a.button.success:hover {
-  background-color: #adebad; }
-
-a.button.warning {
-  background-color: #f9f2d2;
-  border: 1px solid #eee2aa; }
-
-a.button.warning:hover {
-  background-color: #eee2aa; }
-
+button.error, button.danger,
 a.button.error, .button.danger {
   background-color: #f5dbd6;
   border: 1px solid #f0c9c2; }
 
+button.error:hover, button.danger:hover,
 a.button.error:hover, .button.danger:hover {
   background-color: #f0c9c2; }
 
