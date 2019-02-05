@@ -593,8 +593,7 @@ button, a.button {
   padding-right: 12px;
   padding-bottom: 6px;
   padding-left: 12px;
-  margin-top: 2px;
-  margin-bottom: 2px; }
+  margin: 2px; }
 
 .alert {
   display: -webkit-box;
@@ -618,17 +617,27 @@ button, a.button {
   padding-right: 12px;
   padding-bottom: 6px;
   padding-left: 12px; }
+  .alert a:not(.button) {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px; }
+  .alert p > a:not(.button) {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0; }
 
 div.panel {
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px; }
-  div.panel a {
+  div.panel a:not(.button) {
     padding-top: 5px;
     padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 10px; }
-  div.panel p > a {
+  div.panel p > a:not(.button) {
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -652,8 +661,12 @@ div.panel {
     -ms-align-items: center;
     align-items: center;
     padding: 10px; }
+    div.panel > .header > h1, div.panel > .header h2, div.panel > .header h3, div.panel > .header h4, div.panel > .header h5, div.panel > .header h6 {
+      padding-top: 0; }
   div.panel > .content {
     padding: 10px; }
+  div.panel > div.panel {
+    margin: 15px; }
   div.panel > .footer {
     display: -webkit-box;
     display: -moz-box;
@@ -673,6 +686,10 @@ div.panel {
     -ms-align-items: center;
     align-items: center;
     padding: 10px; }
+
+#content > div.panel {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 #status-message-container {
   position: relative;
@@ -829,7 +846,9 @@ button:hover, a.button:hover {
 .alert.error a, .alert.danger a {
   color: #ec8379; }
 
-div.panel a {
+div.panel a.button, div.panel button {
+  font-weight: normal; }
+div.panel a:not(.button) {
   font-weight: bold;
   color: #7f7f7f;
   text-decoration: none; }
@@ -837,16 +856,16 @@ div.panel > .header {
   font-size: 110%;
   font-weight: bold; }
 
-div.panel.info a {
+div.panel.info a:not(.button) {
   color: #5c5cd6; }
 
-div.panel.success a {
+div.panel.success a:not(.button) {
   color: #18b418; }
 
-div.panel.warning a {
+div.panel.warning a:not(.button) {
   color: #df9f20; }
 
-div.panel.error a, div.panel.danger a {
+div.panel.error a:not(.button), div.panel.danger a:not(.button) {
   color: #ec8379; }
 
 #status-message-container .message a {
@@ -907,46 +926,54 @@ button, a.button {
 button:hover, a.button:hover {
   background-color: #cccccc; }
 
-button.info, a.button.info {
+button.info, a.button.info, .info button, .info a.button {
   background-color: #ddddf4;
   border: 1px solid #c1c1f0; }
 
-button.info:hover, a.button.info:hover {
+button.info:hover, a.button.info:hover, .info button:hover, .info a.button:hover {
   background-color: #c1c1f0; }
 
-button.success, a.button.success {
+button.success, a.button.success, .success button, .success a.button {
   background-color: #d1f0d1;
   border: 1px solid #adebad; }
 
-button.success:hover, a.button.success:hover {
+button.success:hover, a.button.success:hover, .success button:hover, .success a.button:hover {
   background-color: #adebad; }
 
-button.warning, a.button.warning {
+button.warning, a.button.warning, .warning button, .warning a.button {
   background-color: #f9f2d2;
   border: 1px solid #eee2aa; }
 
-button.warning:hover, a.button.warning:hover {
+button.warning:hover, a.button.warning:hover, .warning button:hover, .warning a.button:hover {
   background-color: #eee2aa; }
 
-button.error, button.danger,
-a.button.error, .button.danger {
+button.error, a.button.error, .error button, .error a.button,
+button.danger, .button.danger, .danger button, .danger a.button {
   background-color: #f5dbd6;
   border: 1px solid #f0c9c2; }
 
-button.error:hover, button.danger:hover,
-a.button.error:hover, .button.danger:hover {
+button.error:hover, a.button.error:hover, .error button:hover, .error a.button:hover,
+button.danger:hover, .button.danger:hover, .danger button:hover, .danger a.button:hover {
   background-color: #f0c9c2; }
 
 .alert {
   background-color: #e5e5e5;
   border: 1px solid #cccccc; }
+  .alert a:not(.button) {
+    border-radius: 5em; }
+  .alert a:hover:not(.button) {
+    background-color: #e5e5e5; }
 
 .alert:hover {
   background-color: #f2f2f2; }
+  .alert:hover a:hover:not(.button) {
+    background-color: #e5e5e5; }
 
 .alert.info {
   background-color: #ddddf4;
   border: 1px solid #c1c1f0; }
+  .alert.info a:hover:not(.button) {
+    background-color: #ddddf4; }
 
 .alert.info:hover {
   background-color: #e9e9fc; }
@@ -954,6 +981,8 @@ a.button.error:hover, .button.danger:hover {
 .alert.success {
   background-color: #d1f0d1;
   border: 1px solid #adebad; }
+  .alert.success a:hover:not(.button) {
+    background-color: #d1f0d1; }
 
 .alert.success:hover {
   background-color: #e9fce9; }
@@ -961,6 +990,8 @@ a.button.error:hover, .button.danger:hover {
 .alert.warning {
   background-color: #f9f2d2;
   border: 1px solid #eee2aa; }
+  .alert.warning a:hover:not(.button) {
+    background-color: #f9f2d2; }
 
 .alert.warning:hover {
   background-color: #fcf5e9; }
@@ -968,6 +999,8 @@ a.button.error:hover, .button.danger:hover {
 .alert.error, .alert.danger {
   background-color: #f5dbd6;
   border: 1px solid #f0c9c2; }
+  .alert.error a:hover:not(.button), .alert.danger a:hover:not(.button) {
+    background-color: #f5dbd6; }
 
 .alert.error:hover, .alert.danger:hover {
   background-color: #fce9e9; }
@@ -975,9 +1008,9 @@ a.button.error:hover, .button.danger:hover {
 div.panel {
   background-color: #e5e5e5;
   border: 1px solid #cccccc; }
-  div.panel a {
+  div.panel a:not(.button) {
     border-radius: 5em; }
-  div.panel a:hover {
+  div.panel a:hover:not(.button) {
     background-color: #e5e5e5; }
   div.panel > .header {
     border-bottom: 1px solid #cccccc; }
@@ -992,7 +1025,7 @@ div.panel:hover {
 div.panel.info {
   background-color: #ddddf4;
   border: 1px solid #c1c1f0; }
-  div.panel.info a:hover {
+  div.panel.info a:hover:not(.button) {
     background-color: #ddddf4; }
   div.panel.info > .header {
     border-bottom: 1px solid #c1c1f0; }
@@ -1005,7 +1038,7 @@ div.panel.info:hover {
 div.panel.success {
   background-color: #d1f0d1;
   border: 1px solid #adebad; }
-  div.panel.success a:hover {
+  div.panel.success a:hover:not(.button) {
     background-color: #d1f0d1; }
   div.panel.success > .header {
     border-bottom: 1px solid #adebad; }
@@ -1018,7 +1051,7 @@ div.panel.success:hover {
 div.panel.warning {
   background-color: #f9f2d2;
   border: 1px solid #eee2aa; }
-  div.panel.warning a:hover {
+  div.panel.warning a:hover:not(.button) {
     background-color: #f9f2d2; }
   div.panel.warning > .header {
     border-bottom: 1px solid #eee2aa; }
@@ -1031,7 +1064,7 @@ div.panel.warning:hover {
 div.panel.error, .panel.danger {
   background-color: #f5dbd6;
   border: 1px solid #f0c9c2; }
-  div.panel.error a:hover, .panel.danger a:hover {
+  div.panel.error a:hover:not(.button), .panel.danger a:hover:not(.button) {
     background-color: #f5dbd6; }
   div.panel.error > .header, .panel.danger > .header {
     border-bottom: 1px solid #f0c9c2; }
@@ -1121,6 +1154,11 @@ button, a.button {
   -moz-transition: color 0.5s, background-color 0.5s;
   -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s; }
+  .alert a {
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
 
 div.panel {
   box-shadow: 1px 1px 5px #e5e5e5;
