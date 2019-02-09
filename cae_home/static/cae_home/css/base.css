@@ -1,3 +1,4 @@
+/*$theme-status-warn: #f9f2d2;*/
 html, body, hgroup, header, footer, nav,
 article, section, aside, figure, figcaption,
 h1, h2, h3, h4, h5, h6,
@@ -97,6 +98,7 @@ div, span, p, img, a {
   vertical-align: baseline;
   border: 0; }
 
+/*$theme-status-warn: #f9f2d2;*/
 html {
   display: -webkit-box;
   display: -moz-box;
@@ -174,6 +176,7 @@ body {
 body #content {
   background-color: #ffffff; }
 
+/*$theme-status-warn: #f9f2d2;*/
 header {
   display: -webkit-box;
   display: -moz-box;
@@ -285,6 +288,7 @@ header li:before, header li:after {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
+/*$theme-status-warn: #f9f2d2;*/
 footer {
   display: -webkit-box;
   display: -moz-box;
@@ -308,6 +312,7 @@ footer {
   background-color: #e5e5e5;
   border-top: 1px solid #cccccc; }
 
+/*$theme-status-warn: #f9f2d2;*/
 header nav {
   display: -webkit-box;
   display: -moz-box;
@@ -542,6 +547,7 @@ header .header-top nav > ul > li > ul > li:last-child {
 .mobile-nav-icon {
   cursor: pointer; }
 
+/*$theme-status-warn: #f9f2d2;*/
 #content {
   padding-bottom: 10px; }
   #content ul {
@@ -941,7 +947,7 @@ button.success:hover, a.button.success:hover, .success button:hover, .success a.
   background-color: #adebad; }
 
 button.warning, a.button.warning, .warning button, .warning a.button {
-  background-color: #f9f2d2;
+  background-color: #faf2d1;
   border: 1px solid #eee2aa; }
 
 button.warning:hover, a.button.warning:hover, .warning button:hover, .warning a.button:hover {
@@ -988,10 +994,10 @@ button.danger:hover, .button.danger:hover, .danger button:hover, .danger a.butto
   background-color: #e9fce9; }
 
 .alert.warning {
-  background-color: #f9f2d2;
+  background-color: #faf2d1;
   border: 1px solid #eee2aa; }
   .alert.warning a:hover:not(.button) {
-    background-color: #f9f2d2; }
+    background-color: #faf2d1; }
 
 .alert.warning:hover {
   background-color: #fcf5e9; }
@@ -1049,10 +1055,10 @@ div.panel.success:hover {
   background-color: #e9fce9; }
 
 div.panel.warning {
-  background-color: #f9f2d2;
+  background-color: #faf2d1;
   border: 1px solid #eee2aa; }
   div.panel.warning a:hover:not(.button) {
-    background-color: #f9f2d2; }
+    background-color: #faf2d1; }
   div.panel.warning > .header {
     border-bottom: 1px solid #eee2aa; }
   div.panel.warning > .footer {
@@ -1103,10 +1109,10 @@ div.panel.error:hover, .panel.danger:hover {
 #status-message-container .message.success:hover {
   background-color: #e9fce9; }
 #status-message-container .message.warning {
-  background-color: #f9f2d2;
+  background-color: #faf2d1;
   border: 1px solid #eee2aa; }
   #status-message-container .message.warning a:hover, #status-message-container .message.warning .exit:hover {
-    background-color: #f9f2d2; }
+    background-color: #faf2d1; }
 #status-message-container .message.warning:hover {
   background-color: #fcf5e9; }
 #status-message-container .message.error, #status-message-container .message.danger {
@@ -1174,10 +1180,10 @@ div.panel {
 
 #status-message-container .message {
   box-sizing: border-box;
-  -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  transition: padding 0.9s, margin 0.9s, font-size 0.9s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s; }
+  -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s, background-color 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s, background-color 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s, background-color 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
+  transition: padding 0.9s, margin 0.9s, font-size 0.9s, background-color 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s; }
   #status-message-container .message a {
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
