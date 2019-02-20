@@ -134,35 +134,30 @@ body {
       display: block; } }
   body header {
     position: relative;
-    z-index: 10;
     grid-area: header; }
     @media only print {
       body header {
         display: none; } }
   body main {
     position: relative;
-    z-index: 5;
     grid-area: main; }
     @media only print {
       body main {
         display: block; } }
   body #main-placeholder-left {
     position: relative;
-    z-index: 5;
     grid-area: main-placeholder-left; }
     @media only print {
       body #main-placeholder-left {
         display: none; } }
   body #main-placeholder-right {
     position: relative;
-    z-index: 5;
     grid-area: main-placeholder-right; }
     @media only print {
       body #main-placeholder-right {
         display: none; } }
   body footer {
     position: relative;
-    z-index: 10;
     grid-area: footer; }
     @media only print {
       body footer {
@@ -216,6 +211,7 @@ header {
   justify-content: space-between;
   height: 40px; }
   header .header-top {
+    z-index: 10;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -235,6 +231,7 @@ header {
     align-items: center;
     height: 40px; }
   header .header-bottom {
+    z-index: 10;
     display: none; }
 
 header .site-logo {
@@ -298,46 +295,46 @@ header .site-logo {
 .theme-dark header {
   color: white; }
 
-.theme-wmu header {
+.theme-wmu header hr {
+  border-style: solid;
+  border-color: #986516; }
+.theme-wmu header .header-top {
   background-color: #c48b04;
   border-bottom: 1px solid #986516; }
-  .theme-wmu header hr {
-    border-style: solid;
-    border-color: #986516; }
-  .theme-wmu header .header-bottom {
-    border-top: 1px solid theme-border("wmu", "border"); }
-.theme-cae header {
+.theme-wmu header .header-bottom {
+  border-top: 1px solid theme-border("wmu", "border"); }
+.theme-cae header hr {
+  border-style: solid;
+  border-color: #9b5b27; }
+.theme-cae header .header-top {
   background-color: #663300;
   border-bottom: 1px solid #9b5b27; }
-  .theme-cae header hr {
-    border-style: solid;
-    border-color: #9b5b27; }
-  .theme-cae header .header-bottom {
-    border-top: 1px solid theme-border("cae", "border"); }
-.theme-bootstrap header {
+.theme-cae header .header-bottom {
+  border-top: 1px solid theme-border("cae", "border"); }
+.theme-bootstrap header hr {
+  border-style: solid;
+  border-color: #999999; }
+.theme-bootstrap header .header-top {
   background-color: #563d7c;
   border-bottom: 1px solid #999999; }
-  .theme-bootstrap header hr {
-    border-style: solid;
-    border-color: #999999; }
-  .theme-bootstrap header .header-bottom {
-    border-top: 1px solid theme-border("bootstrap", "border"); }
-.theme-light header {
+.theme-bootstrap header .header-bottom {
+  border-top: 1px solid theme-border("bootstrap", "border"); }
+.theme-light header hr {
+  border-style: solid;
+  border-color: #b2b2b2; }
+.theme-light header .header-top {
   background-color: #e5e5e5;
   border-bottom: 1px solid #b2b2b2; }
-  .theme-light header hr {
-    border-style: solid;
-    border-color: #b2b2b2; }
-  .theme-light header .header-bottom {
-    border-top: 1px solid theme-border("light", "border"); }
-.theme-dark header {
+.theme-light header .header-bottom {
+  border-top: 1px solid theme-border("light", "border"); }
+.theme-dark header hr {
+  border-style: solid;
+  border-color: #4c4c4c; }
+.theme-dark header .header-top {
   background-color: #333333;
   border-bottom: 1px solid #4c4c4c; }
-  .theme-dark header hr {
-    border-style: solid;
-    border-color: #4c4c4c; }
-  .theme-dark header .header-bottom {
-    border-top: 1px solid theme-border("dark", "border"); }
+.theme-dark header .header-bottom {
+  border-top: 1px solid theme-border("dark", "border"); }
 
 .theme-wmu header .site-logo > nav > ul > li > ul > li {
   border: 1px solid theme-border("wmu", "border");
@@ -399,6 +396,25 @@ footer {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
+  footer > div {
+    z-index: 10;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center; }
 
 .theme-wmu footer {
   font-weight: bold;
@@ -1038,6 +1054,7 @@ div.panel {
 
 #content-bar-left, #content-bar-right {
   position: absolute;
+  z-index: 5;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1072,6 +1089,34 @@ div.panel {
 
 .arrow-right:hover, .arrow-left:hover {
   background-color: white; }
+
+#overlay-modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  #overlay-modal-container > #overlay-modal {
+    min-width: 50px;
+    min-height: 50px; }
 
 .theme-wmu #content {
   color: black; }
@@ -2628,6 +2673,24 @@ div.panel {
   border-right: 1px solid #4c4c4c;
   border-left: 1px solid #4c4c4c; }
 
+#overlay-modal-container {
+  background-color: rgba(127, 127, 127, 0.75); }
+  .theme-wmu #overlay-modal-container > #overlay-modal {
+    background-color: white;
+    border: 1px solid #986516; }
+  .theme-cae #overlay-modal-container > #overlay-modal {
+    background-color: #331900;
+    border: 1px solid #9b5b27; }
+  .theme-bootstrap #overlay-modal-container > #overlay-modal {
+    background-color: white;
+    border: 1px solid #999999; }
+  .theme-light #overlay-modal-container > #overlay-modal {
+    background-color: white;
+    border: 1px solid #b2b2b2; }
+  .theme-dark #overlay-modal-container > #overlay-modal {
+    background-color: #262626;
+    border: 1px solid #4c4c4c; }
+
 #content a {
   -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
   -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
@@ -2677,36 +2740,6 @@ div.panel {
   -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
   -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
   transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  .theme-wmu div.panel {
-    /*box-shadow: 1px 1px 5px theme-background($theme, 'border');*/ }
-  div.panel > div {
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  .theme-cae div.panel {
-    /*box-shadow: 1px 1px 5px theme-background($theme, 'border');*/ }
-  div.panel > div {
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  .theme-bootstrap div.panel {
-    /*box-shadow: 1px 1px 5px theme-background($theme, 'border');*/ }
-  div.panel > div {
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  .theme-light div.panel {
-    /*box-shadow: 1px 1px 5px theme-background($theme, 'border');*/ }
-  div.panel > div {
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  .theme-dark div.panel {
-    /*box-shadow: 1px 1px 5px theme-background($theme, 'border');*/ }
   div.panel > div {
     -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
     -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
@@ -2720,10 +2753,10 @@ div.panel {
 
 #status-message-container .message {
   box-sizing: border-box;
-  -webkit-transition: padding 0.9s, margin 0.9s, font-size 0.9s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  -moz-transition: padding 0.9s, margin 0.9s, font-size 0.9s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  -o-transition: padding 0.9s, margin 0.9s, font-size 0.9s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s;
-  transition: padding 0.9s, margin 0.9s, font-size 0.9s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.9s linear, visibility 0s 0.9s; }
+  -webkit-transition: padding 0.7s, margin 0.7s, font-size 0.7s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.7s linear, visibility 0s 0.7s;
+  -moz-transition: padding 0.7s, margin 0.7s, font-size 0.7s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.7s linear, visibility 0s 0.7s;
+  -o-transition: padding 0.7s, margin 0.7s, font-size 0.7s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.7s linear, visibility 0s 0.7s;
+  transition: padding 0.7s, margin 0.7s, font-size 0.7s, color 0.5s, background-color 0.5s, border 0.5s, border-radius 0.5s, opacity 0.7s linear, visibility 0s 0.7s; }
   #status-message-container .message a {
     -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
     -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
