@@ -196,9 +196,9 @@ body.theme-light {
   body.theme-light #content {
     background-color: white; }
 body.theme-dark {
-  background-color: #262626; }
+  background-color: #1f1f1f; }
   body.theme-dark #content {
-    background-color: #262626; }
+    background-color: #1f1f1f; }
 
 header {
   display: -webkit-box;
@@ -710,31 +710,36 @@ header nav {
 .theme-wmu header nav ul {
   list-style-type: none; }
 .theme-wmu header nav li {
-  background-color: #c48b04; }
+  background-color: #c48b04;
+  border-bottom: 1px solid #986516; }
 .theme-wmu header nav li:hover {
   background-color: #fcc30f; }
 .theme-cae header nav ul {
   list-style-type: none; }
 .theme-cae header nav li {
-  background-color: #663300; }
+  background-color: #663300;
+  border-bottom: 1px solid #9b5b27; }
 .theme-cae header nav li:hover {
   background-color: #994c00; }
 .theme-bootstrap header nav ul {
   list-style-type: none; }
 .theme-bootstrap header nav li {
-  background-color: #563d7c; }
+  background-color: #563d7c;
+  border-bottom: 1px solid #999999; }
 .theme-bootstrap header nav li:hover {
   background-color: #cbbde2; }
 .theme-light header nav ul {
   list-style-type: none; }
 .theme-light header nav li {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #b2b2b2; }
 .theme-light header nav li:hover {
   background-color: #f2f2f2; }
 .theme-dark header nav ul {
   list-style-type: none; }
 .theme-dark header nav li {
-  background-color: #333333; }
+  background-color: #333333;
+  border-bottom: 1px solid #4c4c4c; }
 .theme-dark header nav li:hover {
   background-color: #4c4c4c; }
 
@@ -1177,19 +1182,19 @@ article {
     padding-top: 0; }
 
 .theme-wmu #content article {
-  background-color: #fcc30f;
+  background-color: #fde392;
   border: 1px solid #986516; }
 .theme-cae #content article {
-  background-color: #994c00;
+  background-color: #422000;
   border: 1px solid #9b5b27; }
 .theme-bootstrap #content article {
-  background-color: #cbbde2;
+  background-color: #f2f2f2;
   border: 1px solid #999999; }
 .theme-light #content article {
   background-color: #f2f2f2;
   border: 1px solid #b2b2b2; }
 .theme-dark #content article {
-  background-color: #4c4c4c;
+  background-color: #262626;
   border: 1px solid #4c4c4c; }
 
 button, a.button {
@@ -1582,7 +1587,7 @@ button, a.button {
     background-color: white;
     border: 1px solid #b2b2b2; }
   .theme-dark #overlay-modal-container > #overlay-modal {
-    background-color: #262626;
+    background-color: #1f1f1f;
     border: 1px solid #4c4c4c; }
 
 #content div.panel {
