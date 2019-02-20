@@ -1553,21 +1553,23 @@ button, a.button {
     background-color: #262626;
     border: 1px solid #4c4c4c; }
 
-div.panel {
+#content div.panel {
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  div.panel a:not(.button) {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  #content div.panel > div.panel {
+    margin: 15px; }
+  #content div.panel a:not(.button) {
     padding-top: 5px;
     padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 10px; }
-  div.panel p > a:not(.button) {
+  #content div.panel p > a:not(.button) {
     padding-top: 1px;
     padding-right: 7px;
     padding-bottom: 1px;
     padding-left: 7px; }
-  div.panel > .header {
+  #content div.panel > .header {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1586,13 +1588,9 @@ div.panel {
     -ms-align-items: center;
     align-items: center;
     padding: 10px; }
-    div.panel > .header > h1, div.panel > .header h2, div.panel > .header h3, div.panel > .header h4, div.panel > .header h5, div.panel > .header h6 {
+    #content div.panel > .header > h1, #content div.panel > .header h2, #content div.panel > .header h3, #content div.panel > .header h4, #content div.panel > .header h5, #content div.panel > .header h6 {
       padding-top: 0; }
-  div.panel > .content {
-    padding: 10px; }
-  div.panel > div.panel {
-    margin: 15px; }
-  div.panel > .footer {
+  #content div.panel > .head {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1611,10 +1609,50 @@ div.panel {
     -ms-align-items: center;
     align-items: center;
     padding: 10px; }
-
-#content > div.panel {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+    #content div.panel > .head > h1, #content div.panel > .head h2, #content div.panel > .head h3, #content div.panel > .head h4, #content div.panel > .head h5, #content div.panel > .head h6 {
+      padding-top: 0; }
+  #content div.panel > .content {
+    padding: 10px; }
+  #content div.panel > .body {
+    padding: 10px; }
+  #content div.panel > .footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 10px; }
+  #content div.panel > .foot {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 10px; }
 
 .theme-wmu #content div.panel a.button, .theme-wmu #content div.panel button {
   font-weight: normal; }
@@ -1628,15 +1666,33 @@ div.panel {
   font-size: 110%;
   font-weight: bold;
   color: #fde392; }
+  .theme-wmu #content div.panel > .header > h1, .theme-wmu #content div.panel > .header h2, .theme-wmu #content div.panel > .header h3, .theme-wmu #content div.panel > .header h4, .theme-wmu #content div.panel > .header h5, .theme-wmu #content div.panel > .header h6 {
+    font-size: 110%; }
+.theme-wmu #content div.panel > .head {
+  font-size: 110%;
+  font-weight: bold;
+  color: #fde392; }
+  .theme-wmu #content div.panel > .head > h1, .theme-wmu #content div.panel > .head h2, .theme-wmu #content div.panel > .head h3, .theme-wmu #content div.panel > .head h4, .theme-wmu #content div.panel > .head h5, .theme-wmu #content div.panel > .head h6 {
+    font-size: 110%; }
 .theme-wmu #content div.panel > .content a:not(.button) {
   color: #986516; }
 .theme-wmu #content div.panel > .content a:not(.button):hover {
   color: white; }
+.theme-wmu #content div.panel > .body a:not(.button) {
+  color: #986516; }
+.theme-wmu #content div.panel > .body a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel > .footer {
+  color: #fde392; }
+.theme-wmu #content div.panel > .foot {
   color: #fde392; }
 .theme-wmu #content div.panel:hover > .header {
   color: white; }
+.theme-wmu #content div.panel:hover > .head {
+  color: white; }
 .theme-wmu #content div.panel:hover > .footer {
+  color: white; }
+.theme-wmu #content div.panel:hover > .foot {
   color: white; }
 .theme-wmu #content div.panel.info a:not(.button) {
   color: #003962; }
@@ -1664,15 +1720,33 @@ div.panel {
   font-size: 110%;
   font-weight: bold;
   color: white; }
+  .theme-cae #content div.panel > .header > h1, .theme-cae #content div.panel > .header h2, .theme-cae #content div.panel > .header h3, .theme-cae #content div.panel > .header h4, .theme-cae #content div.panel > .header h5, .theme-cae #content div.panel > .header h6 {
+    font-size: 110%; }
+.theme-cae #content div.panel > .head {
+  font-size: 110%;
+  font-weight: bold;
+  color: white; }
+  .theme-cae #content div.panel > .head > h1, .theme-cae #content div.panel > .head h2, .theme-cae #content div.panel > .head h3, .theme-cae #content div.panel > .head h4, .theme-cae #content div.panel > .head h5, .theme-cae #content div.panel > .head h6 {
+    font-size: 110%; }
 .theme-cae #content div.panel > .content a:not(.button) {
   color: #986516; }
 .theme-cae #content div.panel > .content a:not(.button):hover {
   color: #d68d1f; }
+.theme-cae #content div.panel > .body a:not(.button) {
+  color: #986516; }
+.theme-cae #content div.panel > .body a:not(.button):hover {
+  color: #d68d1f; }
 .theme-cae #content div.panel > .footer {
+  color: white; }
+.theme-cae #content div.panel > .foot {
   color: white; }
 .theme-cae #content div.panel:hover > .header {
   color: white; }
+.theme-cae #content div.panel:hover > .head {
+  color: white; }
 .theme-cae #content div.panel:hover > .footer {
+  color: white; }
+.theme-cae #content div.panel:hover > .foot {
   color: white; }
 .theme-cae #content div.panel.info a:not(.button) {
   color: #9289ff; }
@@ -1700,15 +1774,33 @@ div.panel {
   font-size: 110%;
   font-weight: bold;
   color: black; }
+  .theme-bootstrap #content div.panel > .header > h1, .theme-bootstrap #content div.panel > .header h2, .theme-bootstrap #content div.panel > .header h3, .theme-bootstrap #content div.panel > .header h4, .theme-bootstrap #content div.panel > .header h5, .theme-bootstrap #content div.panel > .header h6 {
+    font-size: 110%; }
+.theme-bootstrap #content div.panel > .head {
+  font-size: 110%;
+  font-weight: bold;
+  color: black; }
+  .theme-bootstrap #content div.panel > .head > h1, .theme-bootstrap #content div.panel > .head h2, .theme-bootstrap #content div.panel > .head h3, .theme-bootstrap #content div.panel > .head h4, .theme-bootstrap #content div.panel > .head h5, .theme-bootstrap #content div.panel > .head h6 {
+    font-size: 110%; }
 .theme-bootstrap #content div.panel > .content a:not(.button) {
   color: #737373; }
 .theme-bootstrap #content div.panel > .content a:not(.button):hover {
   color: #191919; }
+.theme-bootstrap #content div.panel > .body a:not(.button) {
+  color: #737373; }
+.theme-bootstrap #content div.panel > .body a:not(.button):hover {
+  color: #191919; }
 .theme-bootstrap #content div.panel > .footer {
+  color: black; }
+.theme-bootstrap #content div.panel > .foot {
   color: black; }
 .theme-bootstrap #content div.panel:hover > .header {
   color: black; }
+.theme-bootstrap #content div.panel:hover > .head {
+  color: black; }
 .theme-bootstrap #content div.panel:hover > .footer {
+  color: black; }
+.theme-bootstrap #content div.panel:hover > .foot {
   color: black; }
 .theme-bootstrap #content div.panel.info a:not(.button) {
   color: #0c5460; }
@@ -1736,15 +1828,33 @@ div.panel {
   font-size: 110%;
   font-weight: bold;
   color: black; }
+  .theme-light #content div.panel > .header > h1, .theme-light #content div.panel > .header h2, .theme-light #content div.panel > .header h3, .theme-light #content div.panel > .header h4, .theme-light #content div.panel > .header h5, .theme-light #content div.panel > .header h6 {
+    font-size: 110%; }
+.theme-light #content div.panel > .head {
+  font-size: 110%;
+  font-weight: bold;
+  color: black; }
+  .theme-light #content div.panel > .head > h1, .theme-light #content div.panel > .head h2, .theme-light #content div.panel > .head h3, .theme-light #content div.panel > .head h4, .theme-light #content div.panel > .head h5, .theme-light #content div.panel > .head h6 {
+    font-size: 110%; }
 .theme-light #content div.panel > .content a:not(.button) {
   color: #0000ee; }
 .theme-light #content div.panel > .content a:not(.button):hover {
   color: #0000ee; }
+.theme-light #content div.panel > .body a:not(.button) {
+  color: #0000ee; }
+.theme-light #content div.panel > .body a:not(.button):hover {
+  color: #0000ee; }
 .theme-light #content div.panel > .footer {
+  color: black; }
+.theme-light #content div.panel > .foot {
   color: black; }
 .theme-light #content div.panel:hover > .header {
   color: black; }
+.theme-light #content div.panel:hover > .head {
+  color: black; }
 .theme-light #content div.panel:hover > .footer {
+  color: black; }
+.theme-light #content div.panel:hover > .foot {
   color: black; }
 .theme-light #content div.panel.info a:not(.button) {
   color: #4040bf; }
@@ -1772,15 +1882,33 @@ div.panel {
   font-size: 110%;
   font-weight: bold;
   color: white; }
+  .theme-dark #content div.panel > .header > h1, .theme-dark #content div.panel > .header h2, .theme-dark #content div.panel > .header h3, .theme-dark #content div.panel > .header h4, .theme-dark #content div.panel > .header h5, .theme-dark #content div.panel > .header h6 {
+    font-size: 110%; }
+.theme-dark #content div.panel > .head {
+  font-size: 110%;
+  font-weight: bold;
+  color: white; }
+  .theme-dark #content div.panel > .head > h1, .theme-dark #content div.panel > .head h2, .theme-dark #content div.panel > .head h3, .theme-dark #content div.panel > .head h4, .theme-dark #content div.panel > .head h5, .theme-dark #content div.panel > .head h6 {
+    font-size: 110%; }
 .theme-dark #content div.panel > .content a:not(.button) {
   color: #6767e4; }
 .theme-dark #content div.panel > .content a:not(.button):hover {
   color: #a8a8f0; }
+.theme-dark #content div.panel > .body a:not(.button) {
+  color: #6767e4; }
+.theme-dark #content div.panel > .body a:not(.button):hover {
+  color: #a8a8f0; }
 .theme-dark #content div.panel > .footer {
+  color: white; }
+.theme-dark #content div.panel > .foot {
   color: white; }
 .theme-dark #content div.panel:hover > .header {
   color: white; }
+.theme-dark #content div.panel:hover > .head {
+  color: white; }
 .theme-dark #content div.panel:hover > .footer {
+  color: white; }
+.theme-dark #content div.panel:hover > .foot {
   color: white; }
 .theme-dark #content div.panel.info a:not(.button) {
   color: #7575f0; }
@@ -1806,16 +1934,26 @@ div.panel {
     background-color: #7b5f1e; }
   .theme-wmu #content div.panel > .header {
     border-bottom: 1px solid #7b5f1e; }
+  .theme-wmu #content div.panel > .head {
+    border-bottom: 1px solid #7b5f1e; }
   .theme-wmu #content div.panel > .content {
     background-color: #ffffff; }
     .theme-wmu #content div.panel > .content a:hover:not(.button) {
       background-color: #fcc30f; }
+  .theme-wmu #content div.panel > .body {
+    background-color: #ffffff; }
+    .theme-wmu #content div.panel > .body a:hover:not(.button) {
+      background-color: #fcc30f; }
   .theme-wmu #content div.panel > .footer {
+    border-top: 1px solid #7b5f1e; }
+  .theme-wmu #content div.panel > .foot {
     border-top: 1px solid #7b5f1e; }
 .theme-wmu #content div.panel:hover {
   background-color: #fcc30f;
   border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-wmu #content div.panel:hover > .content {
+    background-color: #ffffff; }
+  .theme-wmu #content div.panel:hover > .body {
     background-color: #ffffff; }
 .theme-wmu #content div.panel.info {
   background-color: #0091c1;
@@ -1824,7 +1962,11 @@ div.panel {
     background-color: #0091c1; }
   .theme-wmu #content div.panel.info > .header {
     border-bottom: 1px solid #0073a8; }
+  .theme-wmu #content div.panel.info > .head {
+    border-bottom: 1px solid #0073a8; }
   .theme-wmu #content div.panel.info > .footer {
+    border-top: 1px solid #0073a8; }
+  .theme-wmu #content div.panel.info > .foot {
     border-top: 1px solid #0073a8; }
 .theme-wmu #content div.panel.info:hover {
   background-color: #5ac1f4;
@@ -1836,7 +1978,11 @@ div.panel {
     background-color: #7ab700; }
   .theme-wmu #content div.panel.success > .header {
     border-bottom: 1px solid #478700; }
+  .theme-wmu #content div.panel.success > .head {
+    border-bottom: 1px solid #478700; }
   .theme-wmu #content div.panel.success > .footer {
+    border-top: 1px solid #478700; }
+  .theme-wmu #content div.panel.success > .foot {
     border-top: 1px solid #478700; }
 .theme-wmu #content div.panel.success:hover {
   background-color: #aeea48;
@@ -1848,7 +1994,11 @@ div.panel {
     background-color: #e87f17; }
   .theme-wmu #content div.panel.warning > .header {
     border-bottom: 1px solid #b05100; }
+  .theme-wmu #content div.panel.warning > .head {
+    border-bottom: 1px solid #b05100; }
   .theme-wmu #content div.panel.warning > .footer {
+    border-top: 1px solid #b05100; }
+  .theme-wmu #content div.panel.warning > .foot {
     border-top: 1px solid #b05100; }
 .theme-wmu #content div.panel.warning:hover {
   background-color: #ffaf4c;
@@ -1860,7 +2010,11 @@ div.panel {
     background-color: #b91233; }
   .theme-wmu #content div.panel.error > .header, .theme-wmu #content .panel.danger > .header {
     border-bottom: 1px solid #81000e; }
+  .theme-wmu #content div.panel.error > .head, .theme-wmu #content .panel.danger > .head {
+    border-bottom: 1px solid #81000e; }
   .theme-wmu #content div.panel.error > .footer, .theme-wmu #content .panel.danger > .footer {
+    border-top: 1px solid #81000e; }
+  .theme-wmu #content div.panel.error > .foot, .theme-wmu #content .panel.danger > .foot {
     border-top: 1px solid #81000e; }
 .theme-wmu #content div.panel.error:hover, .theme-wmu #content .panel.danger:hover {
   background-color: #f2515c;
@@ -1874,16 +2028,26 @@ div.panel {
     background-color: #9b5b27; }
   .theme-cae #content div.panel > .header {
     border-bottom: 1px solid #9b5b27; }
+  .theme-cae #content div.panel > .head {
+    border-bottom: 1px solid #9b5b27; }
   .theme-cae #content div.panel > .content {
     background-color: #4d2500; }
     .theme-cae #content div.panel > .content a:hover:not(.button) {
       background-color: #994c00; }
+  .theme-cae #content div.panel > .body {
+    background-color: #4d2500; }
+    .theme-cae #content div.panel > .body a:hover:not(.button) {
+      background-color: #994c00; }
   .theme-cae #content div.panel > .footer {
+    border-top: 1px solid #9b5b27; }
+  .theme-cae #content div.panel > .foot {
     border-top: 1px solid #9b5b27; }
 .theme-cae #content div.panel:hover {
   background-color: #994c00;
   border: 1px solid rgba(255, 255, 255, 0.5); }
   .theme-cae #content div.panel:hover > .content {
+    background-color: #663100; }
+  .theme-cae #content div.panel:hover > .body {
     background-color: #663100; }
 .theme-cae #content div.panel.info {
   background-color: #19194d;
@@ -1892,7 +2056,11 @@ div.panel {
     background-color: #19194d; }
   .theme-cae #content div.panel.info > .header {
     border-bottom: 1px solid #464079; }
+  .theme-cae #content div.panel.info > .head {
+    border-bottom: 1px solid #464079; }
   .theme-cae #content div.panel.info > .footer {
+    border-top: 1px solid #464079; }
+  .theme-cae #content div.panel.info > .foot {
     border-top: 1px solid #464079; }
 .theme-cae #content div.panel.info:hover {
   background-color: #464079;
@@ -1904,7 +2072,11 @@ div.panel {
     background-color: #145214; }
   .theme-cae #content div.panel.success > .header {
     border-bottom: 1px solid #457f3e; }
+  .theme-cae #content div.panel.success > .head {
+    border-bottom: 1px solid #457f3e; }
   .theme-cae #content div.panel.success > .footer {
+    border-top: 1px solid #457f3e; }
+  .theme-cae #content div.panel.success > .foot {
     border-top: 1px solid #457f3e; }
 .theme-cae #content div.panel.success:hover {
   background-color: #457f3e;
@@ -1916,7 +2088,11 @@ div.panel {
     background-color: #a14412; }
   .theme-cae #content div.panel.warning > .header {
     border-bottom: 1px solid #be5a27; }
+  .theme-cae #content div.panel.warning > .head {
+    border-bottom: 1px solid #be5a27; }
   .theme-cae #content div.panel.warning > .footer {
+    border-top: 1px solid #be5a27; }
+  .theme-cae #content div.panel.warning > .foot {
     border-top: 1px solid #be5a27; }
 .theme-cae #content div.panel.warning:hover {
   background-color: #be5a27;
@@ -1928,7 +2104,11 @@ div.panel {
     background-color: #821717; }
   .theme-cae #content div.panel.error > .header, .theme-cae #content .panel.danger > .header {
     border-bottom: 1px solid #a32929; }
+  .theme-cae #content div.panel.error > .head, .theme-cae #content .panel.danger > .head {
+    border-bottom: 1px solid #a32929; }
   .theme-cae #content div.panel.error > .footer, .theme-cae #content .panel.danger > .footer {
+    border-top: 1px solid #a32929; }
+  .theme-cae #content div.panel.error > .foot, .theme-cae #content .panel.danger > .foot {
     border-top: 1px solid #a32929; }
 .theme-cae #content div.panel.error:hover, .theme-cae #content .panel.danger:hover {
   background-color: #b7493e;
@@ -1942,16 +2122,26 @@ div.panel {
     background-color: #bfbfbf; }
   .theme-bootstrap #content div.panel > .header {
     border-bottom: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel > .head {
+    border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel > .content {
     background-color: #fff; }
     .theme-bootstrap #content div.panel > .content a:hover:not(.button) {
       background-color: #cccccc; }
+  .theme-bootstrap #content div.panel > .body {
+    background-color: #fff; }
+    .theme-bootstrap #content div.panel > .body a:hover:not(.button) {
+      background-color: #cccccc; }
   .theme-bootstrap #content div.panel > .footer {
+    border-top: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-bootstrap #content div.panel:hover {
   background-color: #cccccc;
   border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-bootstrap #content div.panel:hover > .content {
+    background-color: #fff; }
+  .theme-bootstrap #content div.panel:hover > .body {
     background-color: #fff; }
 .theme-bootstrap #content div.panel.info {
   background-color: #5bc0de;
@@ -1960,7 +2150,11 @@ div.panel {
     background-color: #5bc0de; }
   .theme-bootstrap #content div.panel.info > .header {
     border-bottom: 1px solid #46b8da; }
+  .theme-bootstrap #content div.panel.info > .head {
+    border-bottom: 1px solid #46b8da; }
   .theme-bootstrap #content div.panel.info > .footer {
+    border-top: 1px solid #46b8da; }
+  .theme-bootstrap #content div.panel.info > .foot {
     border-top: 1px solid #46b8da; }
 .theme-bootstrap #content div.panel.info:hover {
   background-color: #31b0d5;
@@ -1972,7 +2166,11 @@ div.panel {
     background-color: #5cb85c; }
   .theme-bootstrap #content div.panel.success > .header {
     border-bottom: 1px solid #4cae4c; }
+  .theme-bootstrap #content div.panel.success > .head {
+    border-bottom: 1px solid #4cae4c; }
   .theme-bootstrap #content div.panel.success > .footer {
+    border-top: 1px solid #4cae4c; }
+  .theme-bootstrap #content div.panel.success > .foot {
     border-top: 1px solid #4cae4c; }
 .theme-bootstrap #content div.panel.success:hover {
   background-color: #449d44;
@@ -1984,7 +2182,11 @@ div.panel {
     background-color: #f0ad4e; }
   .theme-bootstrap #content div.panel.warning > .header {
     border-bottom: 1px solid #eea236; }
+  .theme-bootstrap #content div.panel.warning > .head {
+    border-bottom: 1px solid #eea236; }
   .theme-bootstrap #content div.panel.warning > .footer {
+    border-top: 1px solid #eea236; }
+  .theme-bootstrap #content div.panel.warning > .foot {
     border-top: 1px solid #eea236; }
 .theme-bootstrap #content div.panel.warning:hover {
   background-color: #ec971f;
@@ -1996,7 +2198,11 @@ div.panel {
     background-color: #d9534f; }
   .theme-bootstrap #content div.panel.error > .header, .theme-bootstrap #content .panel.danger > .header {
     border-bottom: 1px solid #d43f3a; }
+  .theme-bootstrap #content div.panel.error > .head, .theme-bootstrap #content .panel.danger > .head {
+    border-bottom: 1px solid #d43f3a; }
   .theme-bootstrap #content div.panel.error > .footer, .theme-bootstrap #content .panel.danger > .footer {
+    border-top: 1px solid #d43f3a; }
+  .theme-bootstrap #content div.panel.error > .foot, .theme-bootstrap #content .panel.danger > .foot {
     border-top: 1px solid #d43f3a; }
 .theme-bootstrap #content div.panel.error:hover, .theme-bootstrap #content .panel.danger:hover {
   background-color: #c9302c;
@@ -2010,16 +2216,26 @@ div.panel {
     background-color: #cccccc; }
   .theme-light #content div.panel > .header {
     border-bottom: 1px solid #cccccc; }
+  .theme-light #content div.panel > .head {
+    border-bottom: 1px solid #cccccc; }
   .theme-light #content div.panel > .content {
     background-color: #f2f2f2; }
     .theme-light #content div.panel > .content a:hover:not(.button) {
       background-color: #f2f2f2; }
+  .theme-light #content div.panel > .body {
+    background-color: #f2f2f2; }
+    .theme-light #content div.panel > .body a:hover:not(.button) {
+      background-color: #f2f2f2; }
   .theme-light #content div.panel > .footer {
+    border-top: 1px solid #cccccc; }
+  .theme-light #content div.panel > .foot {
     border-top: 1px solid #cccccc; }
 .theme-light #content div.panel:hover {
   background-color: #f2f2f2;
   border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-light #content div.panel:hover > .content {
+    background-color: white; }
+  .theme-light #content div.panel:hover > .body {
     background-color: white; }
 .theme-light #content div.panel.info {
   background-color: #d1d5eb;
@@ -2028,7 +2244,11 @@ div.panel {
     background-color: #d1d5eb; }
   .theme-light #content div.panel.info > .header {
     border-bottom: 1px solid #9cacd3; }
+  .theme-light #content div.panel.info > .head {
+    border-bottom: 1px solid #9cacd3; }
   .theme-light #content div.panel.info > .footer {
+    border-top: 1px solid #9cacd3; }
+  .theme-light #content div.panel.info > .foot {
     border-top: 1px solid #9cacd3; }
 .theme-light #content div.panel.info:hover {
   background-color: #edeff7;
@@ -2040,7 +2260,11 @@ div.panel {
     background-color: #c6ecd0; }
   .theme-light #content div.panel.success > .header {
     border-bottom: 1px solid #66cc81; }
+  .theme-light #content div.panel.success > .head {
+    border-bottom: 1px solid #66cc81; }
   .theme-light #content div.panel.success > .footer {
+    border-top: 1px solid #66cc81; }
+  .theme-light #content div.panel.success > .foot {
     border-top: 1px solid #66cc81; }
 .theme-light #content div.panel.success:hover {
   background-color: #ecf9ef;
@@ -2052,7 +2276,11 @@ div.panel {
     background-color: #fff4cc; }
   .theme-light #content div.panel.warning > .header {
     border-bottom: 1px solid #e1c251; }
+  .theme-light #content div.panel.warning > .head {
+    border-bottom: 1px solid #e1c251; }
   .theme-light #content div.panel.warning > .footer {
+    border-top: 1px solid #e1c251; }
+  .theme-light #content div.panel.warning > .foot {
     border-top: 1px solid #e1c251; }
 .theme-light #content div.panel.warning:hover {
   background-color: #fff9e5;
@@ -2064,7 +2292,11 @@ div.panel {
     background-color: #f4cbbe; }
   .theme-light #content div.panel.error > .header, .theme-light #content .panel.danger > .header {
     border-bottom: 1px solid #e19b84; }
+  .theme-light #content div.panel.error > .head, .theme-light #content .panel.danger > .head {
+    border-bottom: 1px solid #e19b84; }
   .theme-light #content div.panel.error > .footer, .theme-light #content .panel.danger > .footer {
+    border-top: 1px solid #e19b84; }
+  .theme-light #content div.panel.error > .foot, .theme-light #content .panel.danger > .foot {
     border-top: 1px solid #e19b84; }
 .theme-light #content div.panel.error:hover, .theme-light #content .panel.danger:hover {
   background-color: #fbede9;
@@ -2078,16 +2310,26 @@ div.panel {
     background-color: #404040; }
   .theme-dark #content div.panel > .header {
     border-bottom: 1px solid #404040; }
+  .theme-dark #content div.panel > .head {
+    border-bottom: 1px solid #404040; }
   .theme-dark #content div.panel > .content {
     background-color: #262626; }
     .theme-dark #content div.panel > .content a:hover:not(.button) {
       background-color: #4c4c4c; }
+  .theme-dark #content div.panel > .body {
+    background-color: #262626; }
+    .theme-dark #content div.panel > .body a:hover:not(.button) {
+      background-color: #4c4c4c; }
   .theme-dark #content div.panel > .footer {
+    border-top: 1px solid #404040; }
+  .theme-dark #content div.panel > .foot {
     border-top: 1px solid #404040; }
 .theme-dark #content div.panel:hover {
   background-color: #4c4c4c;
   border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-dark #content div.panel:hover > .content {
+    background-color: #333333; }
+  .theme-dark #content div.panel:hover > .body {
     background-color: #333333; }
 .theme-dark #content div.panel.info {
   background-color: #242442;
@@ -2096,7 +2338,11 @@ div.panel {
     background-color: #242442; }
   .theme-dark #content div.panel.info > .header {
     border-bottom: 1px solid #353564; }
+  .theme-dark #content div.panel.info > .head {
+    border-bottom: 1px solid #353564; }
   .theme-dark #content div.panel.info > .footer {
+    border-top: 1px solid #353564; }
+  .theme-dark #content div.panel.info > .foot {
     border-top: 1px solid #353564; }
 .theme-dark #content div.panel.info:hover {
   background-color: #3b3b59;
@@ -2108,7 +2354,11 @@ div.panel {
     background-color: #293d29; }
   .theme-dark #content div.panel.success > .header {
     border-bottom: 1px solid #2d532d; }
+  .theme-dark #content div.panel.success > .head {
+    border-bottom: 1px solid #2d532d; }
   .theme-dark #content div.panel.success > .footer {
+    border-top: 1px solid #2d532d; }
+  .theme-dark #content div.panel.success > .foot {
     border-top: 1px solid #2d532d; }
 .theme-dark #content div.panel.success:hover {
   background-color: #365936;
@@ -2120,7 +2370,11 @@ div.panel {
     background-color: #4d2b19; }
   .theme-dark #content div.panel.warning > .header {
     border-bottom: 1px solid #6a4015; }
+  .theme-dark #content div.panel.warning > .head {
+    border-bottom: 1px solid #6a4015; }
   .theme-dark #content div.panel.warning > .footer {
+    border-top: 1px solid #6a4015; }
+  .theme-dark #content div.panel.warning > .foot {
     border-top: 1px solid #6a4015; }
 .theme-dark #content div.panel.warning:hover {
   background-color: #734026;
@@ -2132,7 +2386,11 @@ div.panel {
     background-color: #471f1f; }
   .theme-dark #content div.panel.error > .header, .theme-dark #content .panel.danger > .header {
     border-bottom: 1px solid #602120; }
+  .theme-dark #content div.panel.error > .head, .theme-dark #content .panel.danger > .head {
+    border-bottom: 1px solid #602120; }
   .theme-dark #content div.panel.error > .footer, .theme-dark #content .panel.danger > .footer {
+    border-top: 1px solid #602120; }
+  .theme-dark #content div.panel.error > .foot, .theme-dark #content .panel.danger > .foot {
     border-top: 1px solid #602120; }
 .theme-dark #content div.panel.error:hover, .theme-dark #content .panel.danger:hover {
   background-color: #6b2e2e;
