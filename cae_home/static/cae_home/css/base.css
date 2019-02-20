@@ -117,18 +117,23 @@ html {
     html {
       display: block; } }
 
-body {
-  position: relative;
+body.grid {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
   grid-template-rows: 40px auto auto 35px;
-  grid-template-areas: "header header header header" "main-placeholder-left main main main-placeholder-right" "main-placeholder-left main main main-placeholder-right" "footer footer footer footer";
-  min-height: 100vh;
-  height: auto; }
+  grid-template-areas: "header header header header" "main-placeholder-left main main main-placeholder-right" "main-placeholder-left main main main-placeholder-right" "footer footer footer footer"; }
   @media only screen and (min-width: 869px) {
-    body {
+    body.grid {
       grid-template-columns: 15% 35% 35% 15%;
       grid-template-rows: 40px auto auto 35px; } }
+
+body.no-grid {
+  display: block; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  height: auto; }
   @media only print {
     body {
       display: block; } }
