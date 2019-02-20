@@ -1587,6 +1587,10 @@ button, a.button {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 10px; }
     #content div.panel > .header > h1, #content div.panel > .header h2, #content div.panel > .header h3, #content div.panel > .header h4, #content div.panel > .header h5, #content div.panel > .header h6 {
       padding-top: 0; }
@@ -1608,6 +1612,10 @@ button, a.button {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 10px; }
     #content div.panel > .head > h1, #content div.panel > .head h2, #content div.panel > .head h3, #content div.panel > .head h4, #content div.panel > .head h5, #content div.panel > .head h6 {
       padding-top: 0; }
@@ -1633,6 +1641,10 @@ button, a.button {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 10px; }
   #content div.panel > .foot {
     display: -webkit-box;
@@ -1652,6 +1664,10 @@ button, a.button {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 10px; }
 
 .theme-wmu #content div.panel a.button, .theme-wmu #content div.panel button {
