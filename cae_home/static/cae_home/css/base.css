@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   html {
     font-family: 'Source Sans Pro', 'Open Sans', 'Lato', sans-serif; }
 
-  p, button, .button {
+  a, p, button, .button {
     font-family: 'Open Sans', 'Lato', 'Source Sans Pro', sans-serif; } }
 @media only print {
   html {
@@ -2970,15 +2970,19 @@ div.panel {
   #content .display-only-print {
     display: none !important; } }
 #content .center {
-  -webkit-flex-direction: center;
-  -moz-flex-direction: center;
-  -ms-flex-direction: center;
-  flex-direction: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  text-align: center; }
+  -webkit-flex-direction: center !important;
+  -moz-flex-direction: center !important;
+  -ms-flex-direction: center !important;
+  flex-direction: center !important;
+  -webkit-justify-content: center !important;
+  -moz-justify-content: center !important;
+  -ms-justify-content: center !important;
+  justify-content: center !important;
+  -webkit-align-items: center !important;
+  -moz-align-items: center !important;
+  -ms-align-items: center !important;
+  align-items: center !important;
+  text-align: center !important; }
 #content .javascript-warn {
   margin-right: auto;
   margin-top: 25px;
