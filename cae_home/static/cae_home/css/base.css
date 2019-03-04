@@ -2949,7 +2949,9 @@ div.panel {
     margin-right: auto;
     margin-bottom: 10px;
     margin-left: auto; }
-    #content table th, #content table td {
+    #content table th > *, #content table td > * {
+      display: inline-block;
+      width: 100%;
       padding-top: 5px;
       padding-right: 3px;
       padding-bottom: 5px;
@@ -2957,7 +2959,7 @@ div.panel {
     @media only screen and (min-width: 869px) {
       #content table {
         width: 100%; }
-        #content table th, #content table td {
+        #content table th > *, #content table td > * {
           padding-right: 8px;
           padding-left: 8px; } }
 
@@ -3003,6 +3005,11 @@ div.panel {
     color: #fde392; }
   .theme-wmu #content table th {
     font-weight: bold; }
+    .theme-wmu #content table th > h1, .theme-wmu #content table th h2, .theme-wmu #content table th h3, .theme-wmu #content table th h4, .theme-wmu #content table th h5, .theme-wmu #content table th h6 {
+      font-size: 115%; }
+  .theme-wmu #content table th > a, .theme-wmu #content table td > a {
+    color: black;
+    text-decoration: none; }
 .theme-cae #content {
   color: white; }
   .theme-cae #content a {
@@ -3013,6 +3020,11 @@ div.panel {
     color: white; }
   .theme-cae #content table th {
     font-weight: bold; }
+    .theme-cae #content table th > h1, .theme-cae #content table th h2, .theme-cae #content table th h3, .theme-cae #content table th h4, .theme-cae #content table th h5, .theme-cae #content table th h6 {
+      font-size: 115%; }
+  .theme-cae #content table th > a, .theme-cae #content table td > a {
+    color: white;
+    text-decoration: none; }
 .theme-bootstrap #content {
   color: black; }
   .theme-bootstrap #content a {
@@ -3023,6 +3035,11 @@ div.panel {
     color: #cbbde2; }
   .theme-bootstrap #content table th {
     font-weight: bold; }
+    .theme-bootstrap #content table th > h1, .theme-bootstrap #content table th h2, .theme-bootstrap #content table th h3, .theme-bootstrap #content table th h4, .theme-bootstrap #content table th h5, .theme-bootstrap #content table th h6 {
+      font-size: 115%; }
+  .theme-bootstrap #content table th > a, .theme-bootstrap #content table td > a {
+    color: black;
+    text-decoration: none; }
 .theme-light #content {
   color: black; }
   .theme-light #content a {
@@ -3033,6 +3050,11 @@ div.panel {
     color: #666666; }
   .theme-light #content table th {
     font-weight: bold; }
+    .theme-light #content table th > h1, .theme-light #content table th h2, .theme-light #content table th h3, .theme-light #content table th h4, .theme-light #content table th h5, .theme-light #content table th h6 {
+      font-size: 115%; }
+  .theme-light #content table th > a, .theme-light #content table td > a {
+    color: black;
+    text-decoration: none; }
 .theme-dark #content {
   color: white; }
   .theme-dark #content a {
@@ -3043,6 +3065,11 @@ div.panel {
     color: white; }
   .theme-dark #content table th {
     font-weight: bold; }
+    .theme-dark #content table th > h1, .theme-dark #content table th h2, .theme-dark #content table th h3, .theme-dark #content table th h4, .theme-dark #content table th h5, .theme-dark #content table th h6 {
+      font-size: 115%; }
+  .theme-dark #content table th > a, .theme-dark #content table td > a {
+    color: white;
+    text-decoration: none; }
 
 #content .javascript-warn {
   font-weight: bold;
@@ -3054,70 +3081,95 @@ div.panel {
 .theme-wmu #content table {
   border: 1px solid #986516;
   border-collapse: collapse; }
-  .theme-wmu #content table th, .theme-wmu #content table td {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
   .theme-wmu #content table thead, .theme-wmu #content table tfoot {
     background-color: #c48b04; }
   .theme-wmu #content table tbody tr:nth-child(odd) {
     background-color: #fde392; }
   .theme-wmu #content table tbody tr:nth-child(even) {
     background-color: white; }
+  .theme-wmu #content table tbody tr:hover {
+    background-color: #c48b04; }
+  .theme-wmu #content table tr {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+  .theme-wmu #content table th {
+    border: 1px solid rgba(0, 0, 0, 0.25); }
 .theme-wmu #content hr {
   border-style: solid;
   border-color: #986516; }
 .theme-cae #content table {
   border: 1px solid #9b5b27;
   border-collapse: collapse; }
-  .theme-cae #content table th, .theme-cae #content table td {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
   .theme-cae #content table thead, .theme-cae #content table tfoot {
     background-color: #663300; }
   .theme-cae #content table tbody tr:nth-child(odd) {
     background-color: #422000; }
   .theme-cae #content table tbody tr:nth-child(even) {
     background-color: #331900; }
+  .theme-cae #content table tbody tr:hover {
+    background-color: #663300; }
+  .theme-cae #content table tr {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25); }
+  .theme-cae #content table th {
+    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-cae #content hr {
   border-style: solid;
   border-color: #9b5b27; }
 .theme-bootstrap #content table {
   border: 1px solid #999999;
   border-collapse: collapse; }
-  .theme-bootstrap #content table th, .theme-bootstrap #content table td {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
   .theme-bootstrap #content table thead, .theme-bootstrap #content table tfoot {
     background-color: #563d7c; }
   .theme-bootstrap #content table tbody tr:nth-child(odd) {
     background-color: #f2f2f2; }
   .theme-bootstrap #content table tbody tr:nth-child(even) {
     background-color: white; }
+  .theme-bootstrap #content table tbody tr:hover {
+    background-color: #d9d9d9; }
+  .theme-bootstrap #content table tr {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+  .theme-bootstrap #content table th {
+    border: 1px solid rgba(0, 0, 0, 0.25); }
 .theme-bootstrap #content hr {
   border-style: solid;
   border-color: #999999; }
 .theme-light #content table {
   border: 1px solid #b2b2b2;
   border-collapse: collapse; }
-  .theme-light #content table th, .theme-light #content table td {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
   .theme-light #content table thead, .theme-light #content table tfoot {
     background-color: #e5e5e5; }
   .theme-light #content table tbody tr:nth-child(odd) {
     background-color: #f2f2f2; }
   .theme-light #content table tbody tr:nth-child(even) {
     background-color: white; }
+  .theme-light #content table tbody tr:hover {
+    background-color: #e5e5e5; }
+  .theme-light #content table tr {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+  .theme-light #content table th {
+    border: 1px solid rgba(0, 0, 0, 0.25); }
 .theme-light #content hr {
   border-style: solid;
   border-color: #b2b2b2; }
 .theme-dark #content table {
   border: 1px solid #4c4c4c;
   border-collapse: collapse; }
-  .theme-dark #content table th, .theme-dark #content table td {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
   .theme-dark #content table thead, .theme-dark #content table tfoot {
     background-color: #333333; }
   .theme-dark #content table tbody tr:nth-child(odd) {
     background-color: #262626; }
   .theme-dark #content table tbody tr:nth-child(even) {
     background-color: #1f1f1f; }
+  .theme-dark #content table tbody tr:hover {
+    background-color: #333333; }
+  .theme-dark #content table tr {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25); }
+  .theme-dark #content table th {
+    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-dark #content hr {
   border-style: solid;
   border-color: #4c4c4c; }
@@ -3178,6 +3230,26 @@ div.panel {
   -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
   -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
   transition: color 0.5s, background-color 0.5s, border 0.5s; }
+#content table {
+  box-sizing: border-box;
+  -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  transition: color 0.5s, background-color 0.5s, border 0.5s; }
+  #content table thead, #content table tbody, #content table tfoot {
+    box-sizing: border-box;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s; }
+  #content table tr, #content table th, #content table td {
+    box-sizing: border-box;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s; }
+    #content table tr > *, #content table th > *, #content table td > * {
+      box-sizing: border-box; }
 
 #content .hover-highlight:hover {
   cursor: pointer; }
