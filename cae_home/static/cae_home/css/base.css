@@ -868,18 +868,22 @@ header nav {
   color: rgba(0, 0, 0, 0.75); }
   .theme-wmu #content .alert a {
     font-weight: bold;
-    color: #fde392;
+    color: #331900;
     text-decoration: none; }
   .theme-wmu #content .alert a:hover {
-    color: white; }
+    color: black; }
 .theme-wmu #content .alert.primary {
-  color: #fcc30f; }
+  color: rgba(0, 0, 0, 0.75); }
   .theme-wmu #content .alert.primary a {
     color: rgba(255, 255, 255, 0.75); }
-.theme-wmu #content .alert.primary:hover {
+.theme-wmu #content .alert.primary:hover a {
   color: white; }
-  .theme-wmu #content .alert.primary:hover a {
-    color: white; }
+.theme-wmu #content .alert.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content .alert.secondary a {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-wmu #content .alert.secondary:hover a {
+  color: white; }
 .theme-wmu #content .alert.info a {
   color: #003962; }
 .theme-wmu #content .alert.success a {
@@ -897,13 +901,17 @@ header nav {
   .theme-cae #content .alert a:hover {
     color: #f9e9d2; }
 .theme-cae #content .alert.primary {
-  color: #c48b04; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content .alert.primary a {
     color: #ffc354; }
-.theme-cae #content .alert.primary:hover {
-  color: white; }
-  .theme-cae #content .alert.primary:hover a {
-    color: #f9e9d2; }
+.theme-cae #content .alert.primary:hover a {
+  color: #f9e9d2; }
+.theme-cae #content .alert.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content .alert.secondary a {
+    color: #ffc354; }
+.theme-cae #content .alert.secondary:hover a {
+  color: #f9e9d2; }
 .theme-cae #content .alert.info a {
   color: #9289ff; }
 .theme-cae #content .alert.success a {
@@ -924,10 +932,14 @@ header nav {
   color: #cbbde2; }
   .theme-bootstrap #content .alert.primary a {
     color: rgba(255, 255, 255, 0.75); }
-.theme-bootstrap #content .alert.primary:hover {
-  color: black; }
-  .theme-bootstrap #content .alert.primary:hover a {
+.theme-bootstrap #content .alert.primary:hover a {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content .alert.secondary {
+  color: #cbbde2; }
+  .theme-bootstrap #content .alert.secondary a {
     color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content .alert.secondary:hover a {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content .alert.info a {
   color: #0c5460; }
 .theme-bootstrap #content .alert.success a {
@@ -945,13 +957,17 @@ header nav {
   .theme-light #content .alert a:hover {
     color: rgba(0, 0, 0, 0.75); }
 .theme-light #content .alert.primary {
-  color: #595959; }
+  color: black; }
   .theme-light #content .alert.primary a {
     color: #737373; }
-.theme-light #content .alert.primary:hover {
+.theme-light #content .alert.primary:hover a {
+  color: rgba(0, 0, 0, 0.75); }
+.theme-light #content .alert.secondary {
   color: black; }
-  .theme-light #content .alert.primary:hover a {
-    color: rgba(0, 0, 0, 0.75); }
+  .theme-light #content .alert.secondary a {
+    color: #737373; }
+.theme-light #content .alert.secondary:hover a {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content .alert.info a {
   color: #4040bf; }
 .theme-light #content .alert.success a {
@@ -972,10 +988,14 @@ header nav {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content .alert.primary a {
     color: rgba(255, 255, 255, 0.5); }
-.theme-dark #content .alert.primary:hover {
-  color: white; }
-  .theme-dark #content .alert.primary:hover a {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content .alert.primary:hover a {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content .alert.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content .alert.secondary a {
+    color: rgba(255, 255, 255, 0.5); }
+.theme-dark #content .alert.secondary:hover a {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content .alert.info a {
   color: #7575f0; }
 .theme-dark #content .alert.success a {
@@ -986,24 +1006,32 @@ header nav {
   color: #ec8379; }
 
 .theme-wmu #content .alert {
-  background-color: #fcc30f;
-  border: 1px solid #d3a103;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
   border-radius: 5px; }
   .theme-wmu #content .alert a:not(.button) {
     border-radius: 5em; }
   .theme-wmu #content .alert a:hover:not(.button) {
-    background-color: #fcc30f; }
+    background-color: #f2f2f2; }
 .theme-wmu #content .alert:hover {
-  background-color: #d3a103;
+  background-color: #d9d9d9;
   border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-wmu #content .alert:hover a:hover:not(.button) {
-    background-color: #fcc30f; }
+    background-color: #f2f2f2; }
 .theme-wmu #content .alert.primary {
+  background-color: #fcc30f;
+  border: 1px solid #d3a103; }
+  .theme-wmu #content .alert.primary a:hover:not(.button) {
+    background-color: #fcc30f; }
+.theme-wmu #content .alert.primary:hover {
+  background-color: #d3a103;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-wmu #content .alert.secondary {
   background-color: #663300;
   border: 1px solid #331900; }
-  .theme-wmu #content .alert.primary a:hover:not(.button) {
+  .theme-wmu #content .alert.secondary a:hover:not(.button) {
     background-color: #663300; }
-.theme-wmu #content .alert.primary:hover {
+.theme-wmu #content .alert.secondary:hover {
   background-color: #986516;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content .alert.info {
@@ -1059,6 +1087,14 @@ header nav {
 .theme-cae #content .alert.primary:hover {
   background-color: #663300;
   border: 1px solid rgba(255, 255, 255, 0.5); }
+.theme-cae #content .alert.secondary {
+  background-color: #331100;
+  border: 1px solid #9b5b27; }
+  .theme-cae #content .alert.secondary a:hover:not(.button) {
+    background-color: #331100; }
+.theme-cae #content .alert.secondary:hover {
+  background-color: #663300;
+  border: 1px solid rgba(255, 255, 255, 0.5); }
 .theme-cae #content .alert.info {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -1106,11 +1142,19 @@ header nav {
     background-color: #d9d9d9; }
 .theme-bootstrap #content .alert.primary {
   background-color: #563d7c;
-  border: 1px solid #bbaad5; }
+  border: 1px solid #bfbfbf; }
   .theme-bootstrap #content .alert.primary a:hover:not(.button) {
     background-color: #563d7c; }
 .theme-bootstrap #content .alert.primary:hover {
-  background-color: #cbbde2;
+  background-color: #744eb1;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-bootstrap #content .alert.secondary {
+  background-color: #563d7c;
+  border: 1px solid #bfbfbf; }
+  .theme-bootstrap #content .alert.secondary a:hover:not(.button) {
+    background-color: #563d7c; }
+.theme-bootstrap #content .alert.secondary:hover {
+  background-color: #744eb1;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content .alert.info {
   background-color: #5bc0de;
@@ -1165,6 +1209,14 @@ header nav {
 .theme-light #content .alert.primary:hover {
   background-color: #e5e5e5;
   border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-light #content .alert.secondary {
+  background-color: #d9d9d9;
+  border: 1px solid #bfbfbf; }
+  .theme-light #content .alert.secondary a:hover:not(.button) {
+    background-color: #d9d9d9; }
+.theme-light #content .alert.secondary:hover {
+  background-color: #e5e5e5;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-light #content .alert.info {
   background-color: #d1d5eb;
   border: 1px solid #9cacd3; }
@@ -1216,6 +1268,14 @@ header nav {
   .theme-dark #content .alert.primary a:hover:not(.button) {
     background-color: #2a2d32; }
 .theme-dark #content .alert.primary:hover {
+  background-color: #36393f;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-dark #content .alert.secondary {
+  background-color: #2a2d32;
+  border: 1px solid #36393f; }
+  .theme-dark #content .alert.secondary a:hover:not(.button) {
+    background-color: #2a2d32; }
+.theme-dark #content .alert.secondary:hover {
   background-color: #36393f;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-dark #content .alert.info {
@@ -1296,103 +1356,99 @@ button, a.button {
   padding-left: 12px;
   margin: 2px; }
 
-.theme-wmu #content {
-  /*// Stylings specific to wmu theme.
-  @if $theme == 'wmu' {
-      button.primary:hover, a.button.primary:hover {
-          color: $color-white;
-      }
-  }*/ }
-  .theme-wmu #content button, .theme-wmu #content a.button {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.75); }
-  .theme-wmu #content button:hover, .theme-wmu #content a.button:hover {
-    color: #fde392; }
-  .theme-wmu #content button.primary, .theme-wmu #content a.button.primary {
-    color: #fcc30f; }
-  .theme-wmu #content button.primary:hover, .theme-wmu #content a.button.primary:hover {
-    color: white; }
-.theme-cae #content {
-  /*// Stylings specific to wmu theme.
-  @if $theme == 'wmu' {
-      button.primary:hover, a.button.primary:hover {
-          color: $color-white;
-      }
-  }*/ }
-  .theme-cae #content button, .theme-cae #content a.button {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-cae #content button:hover, .theme-cae #content a.button:hover {
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-cae #content button.primary, .theme-cae #content a.button.primary {
-    color: #c48b04; }
-  .theme-cae #content button.primary:hover, .theme-cae #content a.button.primary:hover {
-    color: white; }
-.theme-bootstrap #content {
-  /*// Stylings specific to wmu theme.
-  @if $theme == 'wmu' {
-      button.primary:hover, a.button.primary:hover {
-          color: $color-white;
-      }
-  }*/ }
-  .theme-bootstrap #content button, .theme-bootstrap #content a.button {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.75); }
-  .theme-bootstrap #content button:hover, .theme-bootstrap #content a.button:hover {
-    color: black; }
-  .theme-bootstrap #content button.primary, .theme-bootstrap #content a.button.primary {
-    color: #cbbde2; }
-  .theme-bootstrap #content button.primary:hover, .theme-bootstrap #content a.button.primary:hover {
-    color: black; }
-.theme-light #content {
-  /*// Stylings specific to wmu theme.
-  @if $theme == 'wmu' {
-      button.primary:hover, a.button.primary:hover {
-          color: $color-white;
-      }
-  }*/ }
-  .theme-light #content button, .theme-light #content a.button {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.75); }
-  .theme-light #content button:hover, .theme-light #content a.button:hover {
-    color: black; }
-  .theme-light #content button.primary, .theme-light #content a.button.primary {
-    color: #595959; }
-  .theme-light #content button.primary:hover, .theme-light #content a.button.primary:hover {
-    color: black; }
-.theme-dark #content {
-  /*// Stylings specific to wmu theme.
-  @if $theme == 'wmu' {
-      button.primary:hover, a.button.primary:hover {
-          color: $color-white;
-      }
-  }*/ }
-  .theme-dark #content button, .theme-dark #content a.button {
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-dark #content button:hover, .theme-dark #content a.button:hover {
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-dark #content button.primary, .theme-dark #content a.button.primary {
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-dark #content button.primary:hover, .theme-dark #content a.button.primary:hover {
-    color: white; }
+.theme-wmu #content button, .theme-wmu #content a.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75); }
+.theme-wmu #content button:hover, .theme-wmu #content a.button:hover {
+  color: #331900; }
+.theme-wmu #content button.primary, .theme-wmu #content .primary button, .theme-wmu #content a.button.primary, .theme-wmu #content .primary a.button {
+  color: rgba(0, 0, 0, 0.75); }
+.theme-wmu #content button.primary:hover, .theme-wmu #content .primary button:hover, .theme-wmu #content a.button.primary:hover, .theme-wmu #content .primary a.button:hover {
+  color: white; }
+.theme-wmu #content button.secondary, .theme-wmu #content .secondary button, .theme-wmu #content a.button.secondary, .theme-wmu #content .secondary a.button {
+  color: rgba(255, 255, 255, 0.75);
+  /*color: $color-white;*/ }
+.theme-wmu #content button.secondary:hover, .theme-wmu #content .secondary button:hover, .theme-wmu #content a.button.secondary:hover, .theme-wmu #content .secondary a.button:hover {
+  color: white; }
+.theme-cae #content button, .theme-cae #content a.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75); }
+.theme-cae #content button:hover, .theme-cae #content a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-cae #content button.primary, .theme-cae #content .primary button, .theme-cae #content a.button.primary, .theme-cae #content .primary a.button {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-cae #content button.primary:hover, .theme-cae #content .primary button:hover, .theme-cae #content a.button.primary:hover, .theme-cae #content .primary a.button:hover {
+  color: #f9e9d2; }
+.theme-cae #content button.secondary, .theme-cae #content .secondary button, .theme-cae #content a.button.secondary, .theme-cae #content .secondary a.button {
+  color: rgba(255, 255, 255, 0.75);
+  /*color: $color-white;*/ }
+.theme-cae #content button.secondary:hover, .theme-cae #content .secondary button:hover, .theme-cae #content a.button.secondary:hover, .theme-cae #content .secondary a.button:hover {
+  color: #f9e9d2; }
+.theme-bootstrap #content button, .theme-bootstrap #content a.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75); }
+.theme-bootstrap #content button:hover, .theme-bootstrap #content a.button:hover {
+  color: black; }
+.theme-bootstrap #content button.primary, .theme-bootstrap #content .primary button, .theme-bootstrap #content a.button.primary, .theme-bootstrap #content .primary a.button {
+  color: #cbbde2; }
+.theme-bootstrap #content button.primary:hover, .theme-bootstrap #content .primary button:hover, .theme-bootstrap #content a.button.primary:hover, .theme-bootstrap #content .primary a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content button.secondary, .theme-bootstrap #content .secondary button, .theme-bootstrap #content a.button.secondary, .theme-bootstrap #content .secondary a.button {
+  color: #cbbde2;
+  /*color: $color-white;*/ }
+.theme-bootstrap #content button.secondary:hover, .theme-bootstrap #content .secondary button:hover, .theme-bootstrap #content a.button.secondary:hover, .theme-bootstrap #content .secondary a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-light #content button, .theme-light #content a.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75); }
+.theme-light #content button:hover, .theme-light #content a.button:hover {
+  color: black; }
+.theme-light #content button.primary, .theme-light #content .primary button, .theme-light #content a.button.primary, .theme-light #content .primary a.button {
+  color: black; }
+.theme-light #content button.primary:hover, .theme-light #content .primary button:hover, .theme-light #content a.button.primary:hover, .theme-light #content .primary a.button:hover {
+  color: rgba(0, 0, 0, 0.75); }
+.theme-light #content button.secondary, .theme-light #content .secondary button, .theme-light #content a.button.secondary, .theme-light #content .secondary a.button {
+  color: black;
+  /*color: $color-white;*/ }
+.theme-light #content button.secondary:hover, .theme-light #content .secondary button:hover, .theme-light #content a.button.secondary:hover, .theme-light #content .secondary a.button:hover {
+  color: rgba(0, 0, 0, 0.75); }
+.theme-dark #content button, .theme-dark #content a.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content button:hover, .theme-dark #content a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content button.primary, .theme-dark #content .primary button, .theme-dark #content a.button.primary, .theme-dark #content .primary a.button {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content button.primary:hover, .theme-dark #content .primary button:hover, .theme-dark #content a.button.primary:hover, .theme-dark #content .primary a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content button.secondary, .theme-dark #content .secondary button, .theme-dark #content a.button.secondary, .theme-dark #content .secondary a.button {
+  color: rgba(255, 255, 255, 0.75);
+  /*color: $color-white;*/ }
+.theme-dark #content button.secondary:hover, .theme-dark #content .secondary button:hover, .theme-dark #content a.button.secondary:hover, .theme-dark #content .secondary a.button:hover {
+  color: rgba(255, 255, 255, 0.75); }
 
 .theme-wmu #content button, .theme-wmu #content a.button {
-  background-color: #fcc30f;
-  border: 1px solid #d3a103;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
   border-radius: 5px; }
 .theme-wmu #content button:hover, .theme-wmu #content a.button:hover {
-  background-color: #d3a103;
+  background-color: #cccccc;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content button.primary, .theme-wmu #content a.button.primary, .theme-wmu #content .primary button, .theme-wmu #content .primary a.button {
+  background-color: #fcc30f;
+  border: 1px solid #d3a103; }
+.theme-wmu #content button.primary:hover, .theme-wmu #content a.button.primary:hover, .theme-wmu #content .primary button:hover, .theme-wmu #content .primary a.button:hover {
+  background-color: #d3a103;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-wmu #content button.secondary, .theme-wmu #content a.button.secondary, .theme-wmu #content .secondary button, .theme-wmu #content .secondary a.button {
   background-color: #663300;
   border: 1px solid #331900; }
-.theme-wmu #content button.primary:hover, .theme-wmu #content a.button.primary:hover, .theme-wmu #content .primary button:hover, .theme-wmu #content .primary a.button:hover {
+.theme-wmu #content button.secondary:hover, .theme-wmu #content a.button.secondary:hover, .theme-wmu #content .secondary button:hover, .theme-wmu #content .secondary a.button:hover {
   background-color: #331900;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content button.info, .theme-wmu #content a.button.info, .theme-wmu #content .info button, .theme-wmu #content .info a.button {
@@ -1434,6 +1490,12 @@ button, a.button {
 .theme-cae #content button.primary:hover, .theme-cae #content a.button.primary:hover, .theme-cae #content .primary button:hover, .theme-cae #content .primary a.button:hover {
   background-color: #9b5b27;
   border: 1px solid rgba(255, 255, 255, 0.5); }
+.theme-cae #content button.secondary, .theme-cae #content a.button.secondary, .theme-cae #content .secondary button, .theme-cae #content .secondary a.button {
+  background-color: #331100;
+  border: 1px solid #9b5b27; }
+.theme-cae #content button.secondary:hover, .theme-cae #content a.button.secondary:hover, .theme-cae #content .secondary button:hover, .theme-cae #content .secondary a.button:hover {
+  background-color: #9b5b27;
+  border: 1px solid rgba(255, 255, 255, 0.5); }
 .theme-cae #content button.info, .theme-cae #content a.button.info, .theme-cae #content .info button, .theme-cae #content .info a.button {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -1469,9 +1531,15 @@ button, a.button {
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content button.primary, .theme-bootstrap #content a.button.primary, .theme-bootstrap #content .primary button, .theme-bootstrap #content .primary a.button {
   background-color: #563d7c;
-  border: 1px solid #bbaad5; }
+  border: 1px solid #bfbfbf; }
 .theme-bootstrap #content button.primary:hover, .theme-bootstrap #content a.button.primary:hover, .theme-bootstrap #content .primary button:hover, .theme-bootstrap #content .primary a.button:hover {
-  background-color: #bbaad5;
+  background-color: #bfbfbf;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-bootstrap #content button.secondary, .theme-bootstrap #content a.button.secondary, .theme-bootstrap #content .secondary button, .theme-bootstrap #content .secondary a.button {
+  background-color: #563d7c;
+  border: 1px solid #bfbfbf; }
+.theme-bootstrap #content button.secondary:hover, .theme-bootstrap #content a.button.secondary:hover, .theme-bootstrap #content .secondary button:hover, .theme-bootstrap #content .secondary a.button:hover {
+  background-color: #bfbfbf;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content button.info, .theme-bootstrap #content a.button.info, .theme-bootstrap #content .info button, .theme-bootstrap #content .info a.button {
   background-color: #5bc0de;
@@ -1512,6 +1580,12 @@ button, a.button {
 .theme-light #content button.primary:hover, .theme-light #content a.button.primary:hover, .theme-light #content .primary button:hover, .theme-light #content .primary a.button:hover {
   background-color: #bfbfbf;
   border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-light #content button.secondary, .theme-light #content a.button.secondary, .theme-light #content .secondary button, .theme-light #content .secondary a.button {
+  background-color: #d9d9d9;
+  border: 1px solid #bfbfbf; }
+.theme-light #content button.secondary:hover, .theme-light #content a.button.secondary:hover, .theme-light #content .secondary button:hover, .theme-light #content .secondary a.button:hover {
+  background-color: #bfbfbf;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-light #content button.info, .theme-light #content a.button.info, .theme-light #content .info button, .theme-light #content .info a.button {
   background-color: #d1d5eb;
   border: 1px solid #9cacd3; }
@@ -1549,6 +1623,12 @@ button, a.button {
   background-color: #2a2d32;
   border: 1px solid #36393f; }
 .theme-dark #content button.primary:hover, .theme-dark #content a.button.primary:hover, .theme-dark #content .primary button:hover, .theme-dark #content .primary a.button:hover {
+  background-color: #36393f;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-dark #content button.secondary, .theme-dark #content a.button.secondary, .theme-dark #content .secondary button, .theme-dark #content .secondary a.button {
+  background-color: #2a2d32;
+  border: 1px solid #36393f; }
+.theme-dark #content button.secondary:hover, .theme-dark #content a.button.secondary:hover, .theme-dark #content .secondary button:hover, .theme-dark #content .secondary a.button:hover {
   background-color: #36393f;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-dark #content button.info, .theme-dark #content a.button.info, .theme-dark #content .info button, .theme-dark #content .info a.button {
@@ -1628,9 +1708,9 @@ button, a.button {
 
 .theme-wmu #content-bar-left > .bar-nav p, .theme-wmu #content-bar-right > .bar-nav p {
   font-size: 150%;
-  color: #fcc30f; }
+  color: #f2f2f2; }
 .theme-wmu #content-bar-left > .bar-nav p:hover, .theme-wmu #content-bar-right > .bar-nav p:hover {
-  color: #fde392; }
+  color: #331900; }
 .theme-wmu #content-bar-left .arrow-right, .theme-wmu #content-bar-left .arrow-left, .theme-wmu #content-bar-right .arrow-right, .theme-wmu #content-bar-right .arrow-left {
   font-size: 100% !important; }
 .theme-cae #content-bar-left > .bar-nav p, .theme-cae #content-bar-right > .bar-nav p {
@@ -1887,20 +1967,20 @@ button, a.button {
   font-weight: normal; }
 .theme-wmu #content div.panel a:not(.button) {
   font-weight: bold;
-  color: #fde392;
+  color: #331900;
   text-decoration: none; }
 .theme-wmu #content div.panel a:not(.button):hover {
-  color: white; }
+  color: black; }
 .theme-wmu #content div.panel > .header {
   font-size: 110%;
   font-weight: bold;
-  color: #fde392; }
+  color: #331900; }
   .theme-wmu #content div.panel > .header > h1, .theme-wmu #content div.panel > .header h2, .theme-wmu #content div.panel > .header h3, .theme-wmu #content div.panel > .header h4, .theme-wmu #content div.panel > .header h5, .theme-wmu #content div.panel > .header h6 {
     font-size: 110%; }
 .theme-wmu #content div.panel > .head {
   font-size: 110%;
   font-weight: bold;
-  color: #fde392; }
+  color: #331900; }
   .theme-wmu #content div.panel > .head > h1, .theme-wmu #content div.panel > .head h2, .theme-wmu #content div.panel > .head h3, .theme-wmu #content div.panel > .head h4, .theme-wmu #content div.panel > .head h5, .theme-wmu #content div.panel > .head h6 {
     font-size: 110%; }
 .theme-wmu #content div.panel > .content a:not(.button) {
@@ -1912,9 +1992,9 @@ button, a.button {
 .theme-wmu #content div.panel > .body a:not(.button):hover {
   color: #331900; }
 .theme-wmu #content div.panel > .footer {
-  color: #fde392; }
+  color: #331900; }
 .theme-wmu #content div.panel > .foot {
-  color: #fde392; }
+  color: #331900; }
 .theme-wmu #content div.panel:hover > .header {
   color: black; }
 .theme-wmu #content div.panel:hover > .head {
@@ -1924,17 +2004,29 @@ button, a.button {
 .theme-wmu #content div.panel:hover > .foot {
   color: black; }
 .theme-wmu #content div.panel.primary > .header {
-  color: #fcc30f; }
+  color: rgba(0, 0, 0, 0.75); }
+  .theme-wmu #content div.panel.primary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.primary > .header a:not(.button):hover {
+    color: white; }
 .theme-wmu #content div.panel.primary > .head {
-  color: #fcc30f; }
+  color: rgba(0, 0, 0, 0.75); }
+  .theme-wmu #content div.panel.primary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.primary > .head a:not(.button):hover {
+    color: white; }
 .theme-wmu #content div.panel.primary > .footer {
-  color: #fcc30f; }
+  color: rgba(0, 0, 0, 0.75); }
+  .theme-wmu #content div.panel.primary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.primary > .footer a:not(.button):hover {
+    color: white; }
 .theme-wmu #content div.panel.primary > .foot {
-  color: #fcc30f; }
-.theme-wmu #content div.panel.primary a:not(.button) {
-  color: rgba(255, 255, 255, 0.75); }
-.theme-wmu #content div.panel.primary a:not(.button):hover {
-  color: white; }
+  color: rgba(0, 0, 0, 0.75); }
+  .theme-wmu #content div.panel.primary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.primary > .foot a:not(.button):hover {
+    color: white; }
 .theme-wmu #content div.panel.primary:hover > .header {
   color: white; }
 .theme-wmu #content div.panel.primary:hover > .head {
@@ -1943,6 +2035,30 @@ button, a.button {
   color: white; }
 .theme-wmu #content div.panel.primary:hover > .foot {
   color: white; }
+.theme-wmu #content div.panel.secondary > .header {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .header a:not(.button):hover {
+    color: white; }
+.theme-wmu #content div.panel.secondary > .head {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .head a:not(.button):hover {
+    color: white; }
+.theme-wmu #content div.panel.secondary > .footer {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .footer a:not(.button):hover {
+    color: white; }
+.theme-wmu #content div.panel.secondary > .foot {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content div.panel.secondary > .foot a:not(.button):hover {
+    color: white; }
 .theme-wmu #content div.panel.info a:not(.button) {
   color: #003962; }
 .theme-wmu #content div.panel.info a:not(.button):hover {
@@ -2000,25 +2116,61 @@ button, a.button {
 .theme-cae #content div.panel:hover > .foot {
   color: white; }
 .theme-cae #content div.panel.primary > .header {
-  color: #c48b04; }
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.primary > .header a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.primary > .header a:not(.button):hover {
+    color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .head {
-  color: #c48b04; }
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.primary > .head a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.primary > .head a:not(.button):hover {
+    color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .footer {
-  color: #c48b04; }
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.primary > .footer a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.primary > .footer a:not(.button):hover {
+    color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .foot {
-  color: #c48b04; }
-.theme-cae #content div.panel.primary a:not(.button) {
-  color: #ffc354; }
-.theme-cae #content div.panel.primary a:not(.button):hover {
-  color: #f9e9d2; }
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.primary > .foot a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.primary > .foot a:not(.button):hover {
+    color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .header {
-  color: white; }
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .head {
-  color: white; }
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .footer {
-  color: white; }
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .foot {
-  color: white; }
+  color: #f9e9d2; }
+.theme-cae #content div.panel.secondary > .header {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.secondary > .header a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.secondary > .header a:not(.button):hover {
+    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary > .head {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.secondary > .head a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.secondary > .head a:not(.button):hover {
+    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary > .footer {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.secondary > .footer a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.secondary > .footer a:not(.button):hover {
+    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary > .foot {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content div.panel.secondary > .foot a:not(.button) {
+    color: #ffc354; }
+  .theme-cae #content div.panel.secondary > .foot a:not(.button):hover {
+    color: #f9e9d2; }
 .theme-cae #content div.panel.info a:not(.button) {
   color: #9289ff; }
 .theme-cae #content div.panel.info a:not(.button):hover {
@@ -2077,24 +2229,60 @@ button, a.button {
   color: black; }
 .theme-bootstrap #content div.panel.primary > .header {
   color: #cbbde2; }
+  .theme-bootstrap #content div.panel.primary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.primary > .header a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .head {
   color: #cbbde2; }
+  .theme-bootstrap #content div.panel.primary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.primary > .head a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .footer {
   color: #cbbde2; }
+  .theme-bootstrap #content div.panel.primary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.primary > .footer a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .foot {
   color: #cbbde2; }
-.theme-bootstrap #content div.panel.primary a:not(.button) {
-  color: rgba(255, 255, 255, 0.75); }
-.theme-bootstrap #content div.panel.primary a:not(.button):hover {
-  color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.primary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.primary > .foot a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .header {
-  color: black; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .head {
-  color: black; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .footer {
-  color: black; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .foot {
-  color: black; }
+  color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary > .header {
+  color: #cbbde2; }
+  .theme-bootstrap #content div.panel.secondary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.secondary > .header a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary > .head {
+  color: #cbbde2; }
+  .theme-bootstrap #content div.panel.secondary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.secondary > .head a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary > .footer {
+  color: #cbbde2; }
+  .theme-bootstrap #content div.panel.secondary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.secondary > .footer a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary > .foot {
+  color: #cbbde2; }
+  .theme-bootstrap #content div.panel.secondary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content div.panel.secondary > .foot a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.info a:not(.button) {
   color: #0c5460; }
 .theme-bootstrap #content div.panel.info a:not(.button):hover {
@@ -2152,25 +2340,61 @@ button, a.button {
 .theme-light #content div.panel:hover > .foot {
   color: black; }
 .theme-light #content div.panel.primary > .header {
-  color: #595959; }
+  color: black; }
+  .theme-light #content div.panel.primary > .header a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.primary > .header a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .head {
-  color: #595959; }
+  color: black; }
+  .theme-light #content div.panel.primary > .head a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.primary > .head a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .footer {
-  color: #595959; }
+  color: black; }
+  .theme-light #content div.panel.primary > .footer a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.primary > .footer a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .foot {
-  color: #595959; }
-.theme-light #content div.panel.primary a:not(.button) {
-  color: #737373; }
-.theme-light #content div.panel.primary a:not(.button):hover {
-  color: rgba(0, 0, 0, 0.75); }
+  color: black; }
+  .theme-light #content div.panel.primary > .foot a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.primary > .foot a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .header {
-  color: black; }
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .head {
-  color: black; }
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .footer {
-  color: black; }
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .foot {
+  color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary > .header {
   color: black; }
+  .theme-light #content div.panel.secondary > .header a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.secondary > .header a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary > .head {
+  color: black; }
+  .theme-light #content div.panel.secondary > .head a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.secondary > .head a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary > .footer {
+  color: black; }
+  .theme-light #content div.panel.secondary > .footer a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.secondary > .footer a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary > .foot {
+  color: black; }
+  .theme-light #content div.panel.secondary > .foot a:not(.button) {
+    color: #737373; }
+  .theme-light #content div.panel.secondary > .foot a:not(.button):hover {
+    color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.info a:not(.button) {
   color: #4040bf; }
 .theme-light #content div.panel.info a:not(.button):hover {
@@ -2229,24 +2453,60 @@ button, a.button {
   color: #ffffff; }
 .theme-dark #content div.panel.primary > .header {
   color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.primary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.primary > .header a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .head {
   color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.primary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.primary > .head a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .footer {
   color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.primary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.primary > .footer a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .foot {
   color: rgba(255, 255, 255, 0.75); }
-.theme-dark #content div.panel.primary a:not(.button) {
-  color: rgba(255, 255, 255, 0.5); }
-.theme-dark #content div.panel.primary a:not(.button):hover {
-  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.primary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.primary > .foot a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .header {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .head {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .footer {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .foot {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary > .header {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.secondary > .header a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.secondary > .header a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary > .head {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.secondary > .head a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.secondary > .head a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary > .footer {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.secondary > .footer a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.secondary > .footer a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary > .foot {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content div.panel.secondary > .foot a:not(.button) {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content div.panel.secondary > .foot a:not(.button):hover {
+    color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.info a:not(.button) {
   color: #7575f0; }
 .theme-dark #content div.panel.info a:not(.button):hover {
@@ -2265,49 +2525,64 @@ button, a.button {
   color: #ec8379; }
 
 .theme-wmu #content div.panel {
-  background-color: #c48b04;
-  border: 1px solid #d3a103; }
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc; }
   .theme-wmu #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-wmu #content div.panel a:hover:not(.button) {
-    background-color: #d3a103; }
+    background-color: #cccccc; }
   .theme-wmu #content div.panel > .header {
-    border-bottom: 1px solid #d3a103; }
+    border-bottom: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .head {
-    border-bottom: 1px solid #d3a103; }
+    border-bottom: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .content {
     background-color: #ffffff; }
     .theme-wmu #content div.panel > .content a:hover:not(.button) {
-      background-color: #d3a103; }
+      background-color: #d9d9d9; }
   .theme-wmu #content div.panel > .body {
     background-color: #ffffff; }
     .theme-wmu #content div.panel > .body a:hover:not(.button) {
-      background-color: #d3a103; }
+      background-color: #d9d9d9; }
   .theme-wmu #content div.panel > .footer {
-    border-top: 1px solid #d3a103; }
+    border-top: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .foot {
-    border-top: 1px solid #d3a103; }
+    border-top: 1px solid #cccccc; }
 .theme-wmu #content div.panel:hover {
-  background-color: #fcc30f;
-  border: 1px solid #fcc30f; }
+  background-color: #d9d9d9; }
   .theme-wmu #content div.panel:hover > .content {
     background-color: #ffffff; }
   .theme-wmu #content div.panel:hover > .body {
     background-color: #ffffff; }
 .theme-wmu #content div.panel.primary {
+  background-color: #c48b04;
+  border: 1px solid #d3a103; }
+  .theme-wmu #content div.panel.primary a:hover:not(.button) {
+    background-color: #d3a103; }
+  .theme-wmu #content div.panel.primary > .header {
+    border-bottom: 1px solid #d3a103; }
+  .theme-wmu #content div.panel.primary > .head {
+    border-bottom: 1px solid #d3a103; }
+  .theme-wmu #content div.panel.primary > .footer {
+    border-top: 1px solid #d3a103; }
+  .theme-wmu #content div.panel.primary > .foot {
+    border-top: 1px solid #d3a103; }
+.theme-wmu #content div.panel.primary:hover {
+  background-color: #fcc30f;
+  border: 1px solid #fcc30f; }
+.theme-wmu #content div.panel.secondary {
   background-color: #663300;
   border: 1px solid #331900; }
-  .theme-wmu #content div.panel.primary a:hover:not(.button) {
+  .theme-wmu #content div.panel.secondary a:hover:not(.button) {
     background-color: #663300; }
-  .theme-wmu #content div.panel.primary > .header {
+  .theme-wmu #content div.panel.secondary > .header {
     border-bottom: 1px solid #331900; }
-  .theme-wmu #content div.panel.primary > .head {
+  .theme-wmu #content div.panel.secondary > .head {
     border-bottom: 1px solid #331900; }
-  .theme-wmu #content div.panel.primary > .footer {
+  .theme-wmu #content div.panel.secondary > .footer {
     border-top: 1px solid #331900; }
-  .theme-wmu #content div.panel.primary > .foot {
+  .theme-wmu #content div.panel.secondary > .foot {
     border-top: 1px solid #331900; }
-.theme-wmu #content div.panel.primary:hover {
+.theme-wmu #content div.panel.secondary:hover {
   background-color: #986516;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content div.panel.info {
@@ -2398,8 +2673,7 @@ button, a.button {
   .theme-cae #content div.panel > .foot {
     border-top: 1px solid #9b5b27; }
 .theme-cae #content div.panel:hover {
-  background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  background-color: #663300; }
   .theme-cae #content div.panel:hover > .content {
     background-color: #3c1702; }
   .theme-cae #content div.panel:hover > .body {
@@ -2408,7 +2682,7 @@ button, a.button {
   background-color: #331100;
   border: 1px solid #9b5b27; }
   .theme-cae #content div.panel.primary a:hover:not(.button) {
-    background-color: #331100; }
+    background-color: #9b5b27; }
   .theme-cae #content div.panel.primary > .header {
     border-bottom: 1px solid #9b5b27; }
   .theme-cae #content div.panel.primary > .head {
@@ -2418,6 +2692,22 @@ button, a.button {
   .theme-cae #content div.panel.primary > .foot {
     border-top: 1px solid #9b5b27; }
 .theme-cae #content div.panel.primary:hover {
+  background-color: #663300;
+  border: 1px solid rgba(255, 255, 255, 0.5); }
+.theme-cae #content div.panel.secondary {
+  background-color: #331100;
+  border: 1px solid #9b5b27; }
+  .theme-cae #content div.panel.secondary a:hover:not(.button) {
+    background-color: #331100; }
+  .theme-cae #content div.panel.secondary > .header {
+    border-bottom: 1px solid #9b5b27; }
+  .theme-cae #content div.panel.secondary > .head {
+    border-bottom: 1px solid #9b5b27; }
+  .theme-cae #content div.panel.secondary > .footer {
+    border-top: 1px solid #9b5b27; }
+  .theme-cae #content div.panel.secondary > .foot {
+    border-top: 1px solid #9b5b27; }
+.theme-cae #content div.panel.secondary:hover {
   background-color: #663300;
   border: 1px solid rgba(255, 255, 255, 0.5); }
 .theme-cae #content div.panel.info {
@@ -2508,27 +2798,42 @@ button, a.button {
   .theme-bootstrap #content div.panel > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-bootstrap #content div.panel:hover {
-  background-color: #cccccc;
-  border: 1px solid rgba(127, 127, 127, 0.75); }
+  background-color: #cccccc; }
   .theme-bootstrap #content div.panel:hover > .content {
     background-color: #fff; }
   .theme-bootstrap #content div.panel:hover > .body {
     background-color: #fff; }
 .theme-bootstrap #content div.panel.primary {
   background-color: #563d7c;
-  border: 1px solid #bbaad5; }
+  border: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary a:hover:not(.button) {
-    background-color: #563d7c; }
+    background-color: #bfbfbf; }
   .theme-bootstrap #content div.panel.primary > .header {
-    border-bottom: 1px solid #bbaad5; }
+    border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary > .head {
-    border-bottom: 1px solid #bbaad5; }
+    border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary > .footer {
-    border-top: 1px solid #bbaad5; }
+    border-top: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary > .foot {
-    border-top: 1px solid #bbaad5; }
+    border-top: 1px solid #bfbfbf; }
 .theme-bootstrap #content div.panel.primary:hover {
-  background-color: #cbbde2;
+  background-color: #744eb1;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-bootstrap #content div.panel.secondary {
+  background-color: #563d7c;
+  border: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel.secondary a:hover:not(.button) {
+    background-color: #563d7c; }
+  .theme-bootstrap #content div.panel.secondary > .header {
+    border-bottom: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel.secondary > .head {
+    border-bottom: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel.secondary > .footer {
+    border-top: 1px solid #bfbfbf; }
+  .theme-bootstrap #content div.panel.secondary > .foot {
+    border-top: 1px solid #bfbfbf; }
+.theme-bootstrap #content div.panel.secondary:hover {
+  background-color: #744eb1;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content div.panel.info {
   background-color: #5bc0de;
@@ -2618,8 +2923,7 @@ button, a.button {
   .theme-light #content div.panel > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-light #content div.panel:hover {
-  background-color: #e5e5e5;
-  border: 1px solid rgba(127, 127, 127, 0.75); }
+  background-color: #e5e5e5; }
   .theme-light #content div.panel:hover > .content {
     background-color: white; }
   .theme-light #content div.panel:hover > .body {
@@ -2628,7 +2932,7 @@ button, a.button {
   background-color: #d9d9d9;
   border: 1px solid #bfbfbf; }
   .theme-light #content div.panel.primary a:hover:not(.button) {
-    background-color: #d9d9d9; }
+    background-color: #bfbfbf; }
   .theme-light #content div.panel.primary > .header {
     border-bottom: 1px solid #bfbfbf; }
   .theme-light #content div.panel.primary > .head {
@@ -2638,6 +2942,22 @@ button, a.button {
   .theme-light #content div.panel.primary > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-light #content div.panel.primary:hover {
+  background-color: #e5e5e5;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-light #content div.panel.secondary {
+  background-color: #d9d9d9;
+  border: 1px solid #bfbfbf; }
+  .theme-light #content div.panel.secondary a:hover:not(.button) {
+    background-color: #d9d9d9; }
+  .theme-light #content div.panel.secondary > .header {
+    border-bottom: 1px solid #bfbfbf; }
+  .theme-light #content div.panel.secondary > .head {
+    border-bottom: 1px solid #bfbfbf; }
+  .theme-light #content div.panel.secondary > .footer {
+    border-top: 1px solid #bfbfbf; }
+  .theme-light #content div.panel.secondary > .foot {
+    border-top: 1px solid #bfbfbf; }
+.theme-light #content div.panel.secondary:hover {
   background-color: #e5e5e5;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-light #content div.panel.info {
@@ -2728,17 +3048,16 @@ button, a.button {
   .theme-dark #content div.panel > .foot {
     border-top: 1px solid #5e646e; }
 .theme-dark #content div.panel:hover {
-  background-color: #5e646e;
-  border: 1px solid rgba(127, 127, 127, 0.75); }
+  background-color: #5e646e; }
   .theme-dark #content div.panel:hover > .content {
     background-color: #2a2d32; }
   .theme-dark #content div.panel:hover > .body {
     background-color: #2a2d32; }
 .theme-dark #content div.panel.primary {
   background-color: #2a2d32;
-  border: 1px solid #36393f; }
+  border: 1px solid #5e646e; }
   .theme-dark #content div.panel.primary a:hover:not(.button) {
-    background-color: #2a2d32; }
+    background-color: #36393f; }
   .theme-dark #content div.panel.primary > .header {
     border-bottom: 1px solid #36393f; }
   .theme-dark #content div.panel.primary > .head {
@@ -2748,6 +3067,22 @@ button, a.button {
   .theme-dark #content div.panel.primary > .foot {
     border-top: 1px solid #36393f; }
 .theme-dark #content div.panel.primary:hover {
+  background-color: #36393f;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-dark #content div.panel.secondary {
+  background-color: #2a2d32;
+  border: 1px solid #36393f; }
+  .theme-dark #content div.panel.secondary a:hover:not(.button) {
+    background-color: #2a2d32; }
+  .theme-dark #content div.panel.secondary > .header {
+    border-bottom: 1px solid #36393f; }
+  .theme-dark #content div.panel.secondary > .head {
+    border-bottom: 1px solid #36393f; }
+  .theme-dark #content div.panel.secondary > .footer {
+    border-top: 1px solid #36393f; }
+  .theme-dark #content div.panel.secondary > .foot {
+    border-top: 1px solid #36393f; }
+.theme-dark #content div.panel.secondary:hover {
   background-color: #36393f;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-dark #content div.panel.info {
@@ -2912,18 +3247,18 @@ div.panel {
 
 .theme-wmu #content #status-message-container .message a {
   font-weight: bold;
-  color: #fde392;
+  color: #331900;
   text-decoration: none; }
 .theme-wmu #content #status-message-container .message a:hover {
-  color: white; }
+  color: black; }
 .theme-wmu #content #status-message-container .message .exit {
   font-weight: bold;
-  color: #fde392; }
+  color: #331900; }
 .theme-wmu #content #status-message-container .message .exit:hover {
   font-weight: bold;
-  color: white; }
+  color: black; }
 .theme-wmu #content #status-message-container .message.primary {
-  color: #fcc30f; }
+  color: rgba(0, 0, 0, 0.75); }
   .theme-wmu #content #status-message-container .message.primary a {
     color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content #status-message-container .message.primary .exit {
@@ -2931,12 +3266,28 @@ div.panel {
   .theme-wmu #content #status-message-container .message.primary .exit:hover {
     color: white; }
 .theme-wmu #content #status-message-container .message.primary:hover {
-  color: white; }
+  color: rgba(0, 0, 0, 0.75); }
   .theme-wmu #content #status-message-container .message.primary:hover a {
     color: white; }
   .theme-wmu #content #status-message-container .message.primary:hover .exit {
     color: white; }
   .theme-wmu #content #status-message-container .message.primary:hover .exit:hover {
+    color: white; }
+.theme-wmu #content #status-message-container .message.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content #status-message-container .message.secondary a {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content #status-message-container .message.secondary .exit {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content #status-message-container .message.secondary .exit:hover {
+    color: white; }
+.theme-wmu #content #status-message-container .message.secondary:hover {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-wmu #content #status-message-container .message.secondary:hover a {
+    color: white; }
+  .theme-wmu #content #status-message-container .message.secondary:hover .exit {
+    color: white; }
+  .theme-wmu #content #status-message-container .message.secondary:hover .exit:hover {
     color: white; }
 .theme-wmu #content #status-message-container .message.info a {
   color: #003962; }
@@ -2975,7 +3326,7 @@ div.panel {
   font-weight: bold;
   color: #f9e9d2; }
 .theme-cae #content #status-message-container .message.primary {
-  color: #c48b04; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content #status-message-container .message.primary a {
     color: #ffc354; }
   .theme-cae #content #status-message-container .message.primary .exit {
@@ -2983,12 +3334,28 @@ div.panel {
   .theme-cae #content #status-message-container .message.primary .exit:hover {
     color: #f9e9d2; }
 .theme-cae #content #status-message-container .message.primary:hover {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content #status-message-container .message.primary:hover a {
     color: #f9e9d2; }
   .theme-cae #content #status-message-container .message.primary:hover .exit {
     color: #f9e9d2; }
   .theme-cae #content #status-message-container .message.primary:hover .exit:hover {
+    color: #f9e9d2; }
+.theme-cae #content #status-message-container .message.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content #status-message-container .message.secondary a {
+    color: #ffc354; }
+  .theme-cae #content #status-message-container .message.secondary .exit {
+    color: #ffc354; }
+  .theme-cae #content #status-message-container .message.secondary .exit:hover {
+    color: #f9e9d2; }
+.theme-cae #content #status-message-container .message.secondary:hover {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-cae #content #status-message-container .message.secondary:hover a {
+    color: #f9e9d2; }
+  .theme-cae #content #status-message-container .message.secondary:hover .exit {
+    color: #f9e9d2; }
+  .theme-cae #content #status-message-container .message.secondary:hover .exit:hover {
     color: #f9e9d2; }
 .theme-cae #content #status-message-container .message.info a {
   color: #9289ff; }
@@ -3035,12 +3402,28 @@ div.panel {
   .theme-bootstrap #content #status-message-container .message.primary .exit:hover {
     color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content #status-message-container .message.primary:hover {
-  color: black; }
+  color: #cbbde2; }
   .theme-bootstrap #content #status-message-container .message.primary:hover a {
     color: rgba(255, 255, 255, 0.75); }
   .theme-bootstrap #content #status-message-container .message.primary:hover .exit {
     color: rgba(255, 255, 255, 0.75); }
   .theme-bootstrap #content #status-message-container .message.primary:hover .exit:hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content #status-message-container .message.secondary {
+  color: #cbbde2; }
+  .theme-bootstrap #content #status-message-container .message.secondary a {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content #status-message-container .message.secondary .exit {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content #status-message-container .message.secondary .exit:hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content #status-message-container .message.secondary:hover {
+  color: #cbbde2; }
+  .theme-bootstrap #content #status-message-container .message.secondary:hover a {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content #status-message-container .message.secondary:hover .exit {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-bootstrap #content #status-message-container .message.secondary:hover .exit:hover {
     color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content #status-message-container .message.info a {
   color: #0c5460; }
@@ -3079,7 +3462,7 @@ div.panel {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.75); }
 .theme-light #content #status-message-container .message.primary {
-  color: #595959; }
+  color: black; }
   .theme-light #content #status-message-container .message.primary a {
     color: #737373; }
   .theme-light #content #status-message-container .message.primary .exit {
@@ -3093,6 +3476,22 @@ div.panel {
   .theme-light #content #status-message-container .message.primary:hover .exit {
     color: rgba(0, 0, 0, 0.75); }
   .theme-light #content #status-message-container .message.primary:hover .exit:hover {
+    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content #status-message-container .message.secondary {
+  color: black; }
+  .theme-light #content #status-message-container .message.secondary a {
+    color: #737373; }
+  .theme-light #content #status-message-container .message.secondary .exit {
+    color: #737373; }
+  .theme-light #content #status-message-container .message.secondary .exit:hover {
+    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content #status-message-container .message.secondary:hover {
+  color: black; }
+  .theme-light #content #status-message-container .message.secondary:hover a {
+    color: rgba(0, 0, 0, 0.75); }
+  .theme-light #content #status-message-container .message.secondary:hover .exit {
+    color: rgba(0, 0, 0, 0.75); }
+  .theme-light #content #status-message-container .message.secondary:hover .exit:hover {
     color: rgba(0, 0, 0, 0.75); }
 .theme-light #content #status-message-container .message.info a {
   color: #4040bf; }
@@ -3139,12 +3538,28 @@ div.panel {
   .theme-dark #content #status-message-container .message.primary .exit:hover {
     color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content #status-message-container .message.primary:hover {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content #status-message-container .message.primary:hover a {
     color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content #status-message-container .message.primary:hover .exit {
     color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content #status-message-container .message.primary:hover .exit:hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content #status-message-container .message.secondary {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content #status-message-container .message.secondary a {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content #status-message-container .message.secondary .exit {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark #content #status-message-container .message.secondary .exit:hover {
+    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content #status-message-container .message.secondary:hover {
+  color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content #status-message-container .message.secondary:hover a {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content #status-message-container .message.secondary:hover .exit {
+    color: rgba(255, 255, 255, 0.75); }
+  .theme-dark #content #status-message-container .message.secondary:hover .exit:hover {
     color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content #status-message-container .message.info a {
   color: #7575f0; }
@@ -3176,22 +3591,30 @@ div.panel {
 .theme-wmu #content #status-message-container a, .theme-wmu #content #status-message-container .exit {
   border-radius: 5em; }
 .theme-wmu #content #status-message-container .message {
-  background-color: #fcc30f;
-  border: 1px solid #d3a103; }
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc; }
   .theme-wmu #content #status-message-container .message a:hover, .theme-wmu #content #status-message-container .message .exit:hover {
-    background-color: #fcc30f; }
+    background-color: #f2f2f2; }
 .theme-wmu #content #status-message-container .message:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
 .theme-wmu #content #status-message-container .message:hover {
-  background-color: #d3a103;
+  background-color: #d9d9d9;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content #status-message-container .message.primary {
+  background-color: #fcc30f;
+  border: 1px solid #d3a103; }
+  .theme-wmu #content #status-message-container .message.primary a:hover, .theme-wmu #content #status-message-container .message.primary .exit:hover {
+    background-color: #fcc30f; }
+.theme-wmu #content #status-message-container .message.primary:hover {
+  background-color: #d3a103;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-wmu #content #status-message-container .message.secondary {
   background-color: #663300;
   border: 1px solid #331900; }
-  .theme-wmu #content #status-message-container .message.primary a:hover, .theme-wmu #content #status-message-container .message.primary .exit:hover {
+  .theme-wmu #content #status-message-container .message.secondary a:hover, .theme-wmu #content #status-message-container .message.secondary .exit:hover {
     background-color: #663300; }
-.theme-wmu #content #status-message-container .message.primary:hover {
+.theme-wmu #content #status-message-container .message.secondary:hover {
   background-color: #986516;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content #status-message-container .message.info {
@@ -3249,6 +3672,14 @@ div.panel {
 .theme-cae #content #status-message-container .message.primary:hover {
   background-color: #663300;
   border: 1px solid rgba(255, 255, 255, 0.5); }
+.theme-cae #content #status-message-container .message.secondary {
+  background-color: #331100;
+  border: 1px solid #9b5b27; }
+  .theme-cae #content #status-message-container .message.secondary a:hover, .theme-cae #content #status-message-container .message.secondary .exit:hover {
+    background-color: #331100; }
+.theme-cae #content #status-message-container .message.secondary:hover {
+  background-color: #663300;
+  border: 1px solid rgba(255, 255, 255, 0.5); }
 .theme-cae #content #status-message-container .message.info {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -3298,11 +3729,19 @@ div.panel {
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content #status-message-container .message.primary {
   background-color: #563d7c;
-  border: 1px solid #bbaad5; }
+  border: 1px solid #bfbfbf; }
   .theme-bootstrap #content #status-message-container .message.primary a:hover, .theme-bootstrap #content #status-message-container .message.primary .exit:hover {
     background-color: #563d7c; }
 .theme-bootstrap #content #status-message-container .message.primary:hover {
-  background-color: #cbbde2;
+  background-color: #744eb1;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-bootstrap #content #status-message-container .message.secondary {
+  background-color: #563d7c;
+  border: 1px solid #bfbfbf; }
+  .theme-bootstrap #content #status-message-container .message.secondary a:hover, .theme-bootstrap #content #status-message-container .message.secondary .exit:hover {
+    background-color: #563d7c; }
+.theme-bootstrap #content #status-message-container .message.secondary:hover {
+  background-color: #744eb1;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-bootstrap #content #status-message-container .message.info {
   background-color: #5bc0de;
@@ -3359,6 +3798,14 @@ div.panel {
 .theme-light #content #status-message-container .message.primary:hover {
   background-color: #e5e5e5;
   border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-light #content #status-message-container .message.secondary {
+  background-color: #d9d9d9;
+  border: 1px solid #bfbfbf; }
+  .theme-light #content #status-message-container .message.secondary a:hover, .theme-light #content #status-message-container .message.secondary .exit:hover {
+    background-color: #d9d9d9; }
+.theme-light #content #status-message-container .message.secondary:hover {
+  background-color: #e5e5e5;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-light #content #status-message-container .message.info {
   background-color: #d1d5eb;
   border: 1px solid #9cacd3; }
@@ -3412,6 +3859,14 @@ div.panel {
   .theme-dark #content #status-message-container .message.primary a:hover, .theme-dark #content #status-message-container .message.primary .exit:hover {
     background-color: #2a2d32; }
 .theme-dark #content #status-message-container .message.primary:hover {
+  background-color: #36393f;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
+.theme-dark #content #status-message-container .message.secondary {
+  background-color: #2a2d32;
+  border: 1px solid #36393f; }
+  .theme-dark #content #status-message-container .message.secondary a:hover, .theme-dark #content #status-message-container .message.secondary .exit:hover {
+    background-color: #2a2d32; }
+.theme-dark #content #status-message-container .message.secondary:hover {
   background-color: #36393f;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-dark #content #status-message-container .message.info {
@@ -3631,7 +4086,7 @@ div.panel {
   .theme-wmu #content table tbody tr:nth-child(even) {
     background-color: white; }
   .theme-wmu #content table tbody tr:hover {
-    background-color: #fcc30f; }
+    background-color: #f2f2f2; }
   .theme-wmu #content table tr {
     border-left: 1px solid rgba(255, 255, 255, 0.25);
     border-right: 1px solid rgba(255, 255, 255, 0.25); }
