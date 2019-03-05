@@ -174,7 +174,7 @@ body {
 body.theme-wmu {
   color: black; }
 body.theme-cae {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 body.theme-bootstrap {
   color: black; }
 body.theme-light {
@@ -541,7 +541,6 @@ header nav {
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
     justify-content: space-around;
-    /*@include align-items(center);*/
     margin-left: 5px;
     margin-right: 5px; }
     @media only screen and (min-width: 869px) {
@@ -676,7 +675,7 @@ header nav {
 .theme-bootstrap header nav li {
   color: #cbbde2; }
 .theme-bootstrap header nav li:hover {
-  color: #ffffff; }
+  color: black; }
 .theme-bootstrap header nav a, .theme-bootstrap header nav p {
   font-weight: bold;
   color: inherit;
@@ -698,7 +697,7 @@ header nav {
 .theme-dark header nav li {
   color: white; }
 .theme-dark header nav li:hover {
-  color: #ffffff; }
+  color: white; }
 .theme-dark header nav a, .theme-dark header nav p {
   font-weight: bold;
   color: inherit;
@@ -1217,7 +1216,7 @@ button, a.button {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75); }
 .theme-cae #content button:hover, .theme-cae #content a.button:hover {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content button, .theme-bootstrap #content a.button {
   font-size: 1rem;
   text-decoration: none;
@@ -1462,7 +1461,7 @@ button, a.button {
   font-size: 150%;
   color: #663300; }
 .theme-cae #content-bar-left > .bar-nav p:hover, .theme-cae #content-bar-right > .bar-nav p:hover {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-cae #content-bar-left .arrow-right, .theme-cae #content-bar-left .arrow-left, .theme-cae #content-bar-right .arrow-right, .theme-cae #content-bar-right .arrow-left {
   font-size: 100% !important; }
 .theme-bootstrap #content-bar-left > .bar-nav p, .theme-bootstrap #content-bar-right > .bar-nav p {
@@ -1741,13 +1740,13 @@ button, a.button {
 .theme-wmu #content div.panel > .foot {
   color: #fde392; }
 .theme-wmu #content div.panel:hover > .header {
-  color: white; }
+  color: black; }
 .theme-wmu #content div.panel:hover > .head {
-  color: white; }
+  color: black; }
 .theme-wmu #content div.panel:hover > .footer {
-  color: white; }
+  color: black; }
 .theme-wmu #content div.panel:hover > .foot {
-  color: white; }
+  color: black; }
 .theme-wmu #content div.panel.info a:not(.button) {
   color: #003962; }
 .theme-wmu #content div.panel.info a:not(.button):hover {
@@ -1775,13 +1774,13 @@ button, a.button {
 .theme-cae #content div.panel > .header {
   font-size: 110%;
   font-weight: bold;
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel > .header > h1, .theme-cae #content div.panel > .header h2, .theme-cae #content div.panel > .header h3, .theme-cae #content div.panel > .header h4, .theme-cae #content div.panel > .header h5, .theme-cae #content div.panel > .header h6 {
     font-size: 110%; }
 .theme-cae #content div.panel > .head {
   font-size: 110%;
   font-weight: bold;
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel > .head > h1, .theme-cae #content div.panel > .head h2, .theme-cae #content div.panel > .head h3, .theme-cae #content div.panel > .head h4, .theme-cae #content div.panel > .head h5, .theme-cae #content div.panel > .head h6 {
     font-size: 110%; }
 .theme-cae #content div.panel > .content a:not(.button) {
@@ -1793,9 +1792,9 @@ button, a.button {
 .theme-cae #content div.panel > .body a:not(.button):hover {
   color: #d68d1f; }
 .theme-cae #content div.panel > .footer {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-cae #content div.panel > .foot {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
 .theme-cae #content div.panel:hover > .header {
   color: white; }
 .theme-cae #content div.panel:hover > .head {
@@ -1965,13 +1964,13 @@ button, a.button {
 .theme-dark #content div.panel > .foot {
   color: white; }
 .theme-dark #content div.panel:hover > .header {
-  color: white; }
+  color: #ffffff; }
 .theme-dark #content div.panel:hover > .head {
-  color: white; }
+  color: #ffffff; }
 .theme-dark #content div.panel:hover > .footer {
-  color: white; }
+  color: #ffffff; }
 .theme-dark #content div.panel:hover > .foot {
-  color: white; }
+  color: #ffffff; }
 .theme-dark #content div.panel.info a:not(.button) {
   color: #7575f0; }
 .theme-dark #content div.panel.info a:not(.button):hover {
@@ -2590,7 +2589,7 @@ div.panel {
   color: #ffc354; }
 .theme-cae #content #status-message-container .message .exit:hover {
   font-weight: bold;
-  color: white !important; }
+  color: rgba(255, 255, 255, 0.75) !important; }
 .theme-cae #content #status-message-container .message.info a {
   color: #9289ff; }
 .theme-cae #content #status-message-container .message.info .exit {
@@ -3015,7 +3014,7 @@ div.panel {
     color: black;
     text-decoration: none; }
 .theme-cae #content {
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content a {
     color: #986516; }
   .theme-cae #content a:hover {
@@ -3027,7 +3026,7 @@ div.panel {
     .theme-cae #content table th > h1, .theme-cae #content table th h2, .theme-cae #content table th h3, .theme-cae #content table th h4, .theme-cae #content table th h5, .theme-cae #content table th h6 {
       font-size: 115%; }
   .theme-cae #content table th > a, .theme-cae #content table td > a {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: none; }
 .theme-bootstrap #content {
   color: black; }
@@ -3094,10 +3093,10 @@ div.panel {
   .theme-wmu #content table tbody tr:hover {
     background-color: #c48b04; }
   .theme-wmu #content table tr {
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25); }
   .theme-wmu #content table th {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
+    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-wmu #content hr {
   border-style: solid;
   border-color: #986516; }
@@ -3132,10 +3131,10 @@ div.panel {
   .theme-bootstrap #content table tbody tr:hover {
     background-color: #d9d9d9; }
   .theme-bootstrap #content table tr {
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25); }
   .theme-bootstrap #content table th {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
+    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-bootstrap #content hr {
   border-style: solid;
   border-color: #999999; }
