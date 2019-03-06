@@ -1,8 +1,100 @@
-html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+hgroup {
+  margin: 0;
+  padding: 0; }
+
+header {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  margin: 0;
+  padding: 0; }
+
+article {
+  margin: 0;
+  padding: 0; }
+
+section {
+  margin: 0;
+  padding: 0; }
+
+aside {
+  margin: 0;
+  padding: 0; }
+
+figure {
+  margin: 0;
+  padding: 0; }
+
+figcaption {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  margin: 0;
+  padding: 0; }
+
+h4 {
+  margin: 0;
+  padding: 0; }
+
+h5 {
+  margin: 0;
+  padding: 0; }
+
+h6 {
+  margin: 0;
+  padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0; }
+
+div {
+  margin: 0;
+  padding: 0; }
+
+span {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  margin: 0;
+  padding: 0; }
+
+a {
   margin: 0;
   padding: 0; }
 
@@ -35,54 +127,472 @@ h6 {
 @media only print {
   html {
     font-family: 'Lora', 'PT Serif', serif; } }
-html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a, button {
-    /*@media only screen {
-        font-size: 4.5vw;
-    }
+html {
+  font-size: 16px; }
 
-    @media only screen and (min-width: 400px) and (max-width: $screen-phone-small) {
-        font-size: 3.8vw;
-    }
+@media only screen {
+  .font-size-xs body {
+    font-size: 0.75rem; }
+  .font-size-sm body {
+    font-size: 0.875rem; }
+  .font-size-base body {
+    font-size: 1rem; }
+  .font-size-md body {
+    font-size: 1.125rem; }
+  .font-size-lg body {
+    font-size: 1.25rem; }
+  .font-size-xl body {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-phone-small) and (max-width: $screen-phone-mid) {
-        font-size: 3.4vw;
-    }
+@media only screen {
+  .font-size-xs hgroup {
+    font-size: 0.75rem; }
+  .font-size-sm hgroup {
+    font-size: 0.875rem; }
+  .font-size-base hgroup {
+    font-size: 1rem; }
+  .font-size-md hgroup {
+    font-size: 1.125rem; }
+  .font-size-lg hgroup {
+    font-size: 1.25rem; }
+  .font-size-xl hgroup {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-phone-mid) and (max-width: $screen-phone-max) {
-        font-size: 2.7vw;
-    }
+@media only screen {
+  .font-size-xs header {
+    font-size: 0.75rem; }
+  .font-size-sm header {
+    font-size: 0.875rem; }
+  .font-size-base header {
+    font-size: 1rem; }
+  .font-size-md header {
+    font-size: 1.125rem; }
+  .font-size-lg header {
+    font-size: 1.25rem; }
+  .font-size-xl header {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
-        font-size: 2.1vw;
-    }
+@media only screen {
+  .font-size-xs footer {
+    font-size: 0.75rem; }
+  .font-size-sm footer {
+    font-size: 0.875rem; }
+  .font-size-base footer {
+    font-size: 1rem; }
+  .font-size-md footer {
+    font-size: 1.125rem; }
+  .font-size-lg footer {
+    font-size: 1.25rem; }
+  .font-size-xl footer {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-tablet-mid) and (max-width: $screen-tablet-max) {
-        font-size: 1.8vw;
-    }
+@media only screen {
+  .font-size-xs nav {
+    font-size: 0.75rem; }
+  .font-size-sm nav {
+    font-size: 0.875rem; }
+  .font-size-base nav {
+    font-size: 1rem; }
+  .font-size-md nav {
+    font-size: 1.125rem; }
+  .font-size-lg nav {
+    font-size: 1.25rem; }
+  .font-size-xl nav {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-laptop-min) and (max-width: $screen-laptop-mid) {
-        font-size: 1.4vw;
-    }
+@media only screen {
+  .font-size-xs article {
+    font-size: 0.75rem; }
+  .font-size-sm article {
+    font-size: 0.875rem; }
+  .font-size-base article {
+    font-size: 1rem; }
+  .font-size-md article {
+    font-size: 1.125rem; }
+  .font-size-lg article {
+    font-size: 1.25rem; }
+  .font-size-xl article {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-laptop-mid) and (max-width: $screen-laptop-max) {
-        font-size: 1.1vw;
-    }
+@media only screen {
+  .font-size-xs section {
+    font-size: 0.75rem; }
+  .font-size-sm section {
+    font-size: 0.875rem; }
+  .font-size-base section {
+    font-size: 1rem; }
+  .font-size-md section {
+    font-size: 1.125rem; }
+  .font-size-lg section {
+    font-size: 1.25rem; }
+  .font-size-xl section {
+    font-size: 1.5rem; } }
 
-    @media only screen and (min-width: $screen-desktop-min) {
-        font-size: 0.9vw;
-    }*/ }
-  @media only print {
-    html, body, hgroup, header, footer, nav,
-    article, section, aside, figure, figcaption,
-    h1, h2, h3, h4, h5, h6,
-    ol, ul, li,
-    div, span, p, img, a, button {
-      font-size: 11px; } }
+@media only screen {
+  .font-size-xs aside {
+    font-size: 0.75rem; }
+  .font-size-sm aside {
+    font-size: 0.875rem; }
+  .font-size-base aside {
+    font-size: 1rem; }
+  .font-size-md aside {
+    font-size: 1.125rem; }
+  .font-size-lg aside {
+    font-size: 1.25rem; }
+  .font-size-xl aside {
+    font-size: 1.5rem; } }
 
+@media only screen {
+  .font-size-xs figure {
+    font-size: 0.75rem; }
+  .font-size-sm figure {
+    font-size: 0.875rem; }
+  .font-size-base figure {
+    font-size: 1rem; }
+  .font-size-md figure {
+    font-size: 1.125rem; }
+  .font-size-lg figure {
+    font-size: 1.25rem; }
+  .font-size-xl figure {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs figcaption {
+    font-size: 0.75rem; }
+  .font-size-sm figcaption {
+    font-size: 0.875rem; }
+  .font-size-base figcaption {
+    font-size: 1rem; }
+  .font-size-md figcaption {
+    font-size: 1.125rem; }
+  .font-size-lg figcaption {
+    font-size: 1.25rem; }
+  .font-size-xl figcaption {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h1 {
+    font-size: 0.75rem; }
+  .font-size-sm h1 {
+    font-size: 0.875rem; }
+  .font-size-base h1 {
+    font-size: 1rem; }
+  .font-size-md h1 {
+    font-size: 1.125rem; }
+  .font-size-lg h1 {
+    font-size: 1.25rem; }
+  .font-size-xl h1 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h2 {
+    font-size: 0.75rem; }
+  .font-size-sm h2 {
+    font-size: 0.875rem; }
+  .font-size-base h2 {
+    font-size: 1rem; }
+  .font-size-md h2 {
+    font-size: 1.125rem; }
+  .font-size-lg h2 {
+    font-size: 1.25rem; }
+  .font-size-xl h2 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h3 {
+    font-size: 0.75rem; }
+  .font-size-sm h3 {
+    font-size: 0.875rem; }
+  .font-size-base h3 {
+    font-size: 1rem; }
+  .font-size-md h3 {
+    font-size: 1.125rem; }
+  .font-size-lg h3 {
+    font-size: 1.25rem; }
+  .font-size-xl h3 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h4 {
+    font-size: 0.75rem; }
+  .font-size-sm h4 {
+    font-size: 0.875rem; }
+  .font-size-base h4 {
+    font-size: 1rem; }
+  .font-size-md h4 {
+    font-size: 1.125rem; }
+  .font-size-lg h4 {
+    font-size: 1.25rem; }
+  .font-size-xl h4 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h5 {
+    font-size: 0.75rem; }
+  .font-size-sm h5 {
+    font-size: 0.875rem; }
+  .font-size-base h5 {
+    font-size: 1rem; }
+  .font-size-md h5 {
+    font-size: 1.125rem; }
+  .font-size-lg h5 {
+    font-size: 1.25rem; }
+  .font-size-xl h5 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h6 {
+    font-size: 0.75rem; }
+  .font-size-sm h6 {
+    font-size: 0.875rem; }
+  .font-size-base h6 {
+    font-size: 1rem; }
+  .font-size-md h6 {
+    font-size: 1.125rem; }
+  .font-size-lg h6 {
+    font-size: 1.25rem; }
+  .font-size-xl h6 {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs ol {
+    font-size: 0.75rem; }
+  .font-size-sm ol {
+    font-size: 0.875rem; }
+  .font-size-base ol {
+    font-size: 1rem; }
+  .font-size-md ol {
+    font-size: 1.125rem; }
+  .font-size-lg ol {
+    font-size: 1.25rem; }
+  .font-size-xl ol {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs ul {
+    font-size: 0.75rem; }
+  .font-size-sm ul {
+    font-size: 0.875rem; }
+  .font-size-base ul {
+    font-size: 1rem; }
+  .font-size-md ul {
+    font-size: 1.125rem; }
+  .font-size-lg ul {
+    font-size: 1.25rem; }
+  .font-size-xl ul {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs li {
+    font-size: 0.75rem; }
+  .font-size-sm li {
+    font-size: 0.875rem; }
+  .font-size-base li {
+    font-size: 1rem; }
+  .font-size-md li {
+    font-size: 1.125rem; }
+  .font-size-lg li {
+    font-size: 1.25rem; }
+  .font-size-xl li {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs div {
+    font-size: 0.75rem; }
+  .font-size-sm div {
+    font-size: 0.875rem; }
+  .font-size-base div {
+    font-size: 1rem; }
+  .font-size-md div {
+    font-size: 1.125rem; }
+  .font-size-lg div {
+    font-size: 1.25rem; }
+  .font-size-xl div {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs span {
+    font-size: 0.75rem; }
+  .font-size-sm span {
+    font-size: 0.875rem; }
+  .font-size-base span {
+    font-size: 1rem; }
+  .font-size-md span {
+    font-size: 1.125rem; }
+  .font-size-lg span {
+    font-size: 1.25rem; }
+  .font-size-xl span {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs p {
+    font-size: 0.75rem; }
+  .font-size-sm p {
+    font-size: 0.875rem; }
+  .font-size-base p {
+    font-size: 1rem; }
+  .font-size-md p {
+    font-size: 1.125rem; }
+  .font-size-lg p {
+    font-size: 1.25rem; }
+  .font-size-xl p {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs img {
+    font-size: 0.75rem; }
+  .font-size-sm img {
+    font-size: 0.875rem; }
+  .font-size-base img {
+    font-size: 1rem; }
+  .font-size-md img {
+    font-size: 1.125rem; }
+  .font-size-lg img {
+    font-size: 1.25rem; }
+  .font-size-xl img {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs a {
+    font-size: 0.75rem; }
+  .font-size-sm a {
+    font-size: 0.875rem; }
+  .font-size-base a {
+    font-size: 1rem; }
+  .font-size-md a {
+    font-size: 1.125rem; }
+  .font-size-lg a {
+    font-size: 1.25rem; }
+  .font-size-xl a {
+    font-size: 1.5rem; } }
+
+@media only screen {
+  .font-size-xs h1 {
+    font-size: 1.5rem; }
+
+  .font-size-xs h2 {
+    font-size: 1.305rem; }
+
+  .font-size-xs h3 {
+    font-size: 1.1325rem; }
+
+  .font-size-xs h4 {
+    font-size: 0.99rem; }
+
+  .font-size-xs h5 {
+    font-size: 0.8625rem; }
+
+  .font-size-xs h6 {
+    font-size: 0.7875rem; }
+
+  .font-size-sm h1 {
+    font-size: 1.75rem; }
+
+  .font-size-sm h2 {
+    font-size: 1.5225rem; }
+
+  .font-size-sm h3 {
+    font-size: 1.32125rem; }
+
+  .font-size-sm h4 {
+    font-size: 1.155rem; }
+
+  .font-size-sm h5 {
+    font-size: 1.00625rem; }
+
+  .font-size-sm h6 {
+    font-size: 0.91875rem; }
+
+  .font-size-base h1 {
+    font-size: 2rem; }
+
+  .font-size-base h2 {
+    font-size: 1.74rem; }
+
+  .font-size-base h3 {
+    font-size: 1.51rem; }
+
+  .font-size-base h4 {
+    font-size: 1.32rem; }
+
+  .font-size-base h5 {
+    font-size: 1.15rem; }
+
+  .font-size-base h6 {
+    font-size: 1.05rem; }
+
+  .font-size-md h1 {
+    font-size: 2.25rem; }
+
+  .font-size-md h2 {
+    font-size: 1.9575rem; }
+
+  .font-size-md h3 {
+    font-size: 1.69875rem; }
+
+  .font-size-md h4 {
+    font-size: 1.485rem; }
+
+  .font-size-md h5 {
+    font-size: 1.29375rem; }
+
+  .font-size-md h6 {
+    font-size: 1.18125rem; }
+
+  .font-size-lg h1 {
+    font-size: 2.5rem; }
+
+  .font-size-lg h2 {
+    font-size: 2.175rem; }
+
+  .font-size-lg h3 {
+    font-size: 1.8875rem; }
+
+  .font-size-lg h4 {
+    font-size: 1.65rem; }
+
+  .font-size-lg h5 {
+    font-size: 1.4375rem; }
+
+  .font-size-lg h6 {
+    font-size: 1.3125rem; }
+
+  .font-size-xl h1 {
+    font-size: 3rem; }
+
+  .font-size-xl h2 {
+    font-size: 2.61rem; }
+
+  .font-size-xl h3 {
+    font-size: 2.265rem; }
+
+  .font-size-xl h4 {
+    font-size: 1.98rem; }
+
+  .font-size-xl h5 {
+    font-size: 1.725rem; }
+
+  .font-size-xl h6 {
+    font-size: 1.575rem; } }
+@media only print {
+  font-size: 11px;
+  h1 {
+    font-size: 200%; }
+
+  h2 {
+    font-size: 174%; }
+
+  h3 {
+    font-size: 151%; }
+
+  h4 {
+    font-size: 132%; }
+
+  h5 {
+    font-size: 115%; }
+
+  h6 {
+    font-size: 100%; } }
 h1 {
   text-align: center; }
 
@@ -101,29 +611,103 @@ h5 {
 h6 {
   text-align: center; }
 
+html {
+  vertical-align: baseline;
+  border: 0; }
+
+body {
+  vertical-align: baseline;
+  border: 0; }
+
+hgroup {
+  vertical-align: baseline;
+  border: 0; }
+
+header {
+  vertical-align: baseline;
+  border: 0; }
+
+footer {
+  vertical-align: baseline;
+  border: 0; }
+
+nav {
+  vertical-align: baseline;
+  border: 0; }
+
+article {
+  vertical-align: baseline;
+  border: 0; }
+
+section {
+  vertical-align: baseline;
+  border: 0; }
+
+aside {
+  vertical-align: baseline;
+  border: 0; }
+
+figure {
+  vertical-align: baseline;
+  border: 0; }
+
+figcaption {
+  vertical-align: baseline;
+  border: 0; }
+
 h1 {
-  font-size: 200%; }
+  vertical-align: baseline;
+  border: 0; }
 
 h2 {
-  font-size: 174%; }
+  vertical-align: baseline;
+  border: 0; }
 
 h3 {
-  font-size: 151%; }
+  vertical-align: baseline;
+  border: 0; }
 
 h4 {
-  font-size: 132%; }
+  vertical-align: baseline;
+  border: 0; }
 
 h5 {
-  font-size: 115%; }
+  vertical-align: baseline;
+  border: 0; }
 
 h6 {
-  font-size: 100%; }
+  vertical-align: baseline;
+  border: 0; }
 
-html, body, hgroup, header, footer, nav,
-article, section, aside, figure, figcaption,
-h1, h2, h3, h4, h5, h6,
-ol, ul, li,
-div, span, p, img, a {
+ol {
+  vertical-align: baseline;
+  border: 0; }
+
+ul {
+  vertical-align: baseline;
+  border: 0; }
+
+li {
+  vertical-align: baseline;
+  border: 0; }
+
+div {
+  vertical-align: baseline;
+  border: 0; }
+
+span {
+  vertical-align: baseline;
+  border: 0; }
+
+p {
+  vertical-align: baseline;
+  border: 0; }
+
+img {
+  vertical-align: baseline;
+  border: 0; }
+
+a {
   vertical-align: baseline;
   border: 0; }
 
