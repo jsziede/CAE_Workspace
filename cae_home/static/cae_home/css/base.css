@@ -1019,10 +1019,10 @@ header nav {
   .theme-wmu #content .alert:hover a:hover:not(.button) {
     background-color: #f2f2f2; }
 .theme-wmu #content .alert.primary {
-  background-color: #fcc30f;
+  background-color: #e9b50c;
   border: 1px solid #d3a103; }
   .theme-wmu #content .alert.primary a:hover:not(.button) {
-    background-color: #fcc30f; }
+    background-color: #e9b50c; }
 .theme-wmu #content .alert.primary:hover {
   background-color: #d3a103;
   border: 1px solid rgba(127, 127, 127, 0.75); }
@@ -1068,7 +1068,7 @@ header nav {
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-cae #content .alert {
   background-color: #331100;
-  border: 1px solid #9b5b27;
+  border: 1px solid #7a481f;
   border-radius: 5px; }
   .theme-cae #content .alert a:not(.button) {
     border-radius: 5em; }
@@ -1076,25 +1076,25 @@ header nav {
     background-color: #331100; }
 .theme-cae #content .alert:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
   .theme-cae #content .alert:hover a:hover:not(.button) {
     background-color: #331100; }
 .theme-cae #content .alert.primary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content .alert.primary a:hover:not(.button) {
     background-color: #331100; }
 .theme-cae #content .alert.primary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content .alert.secondary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content .alert.secondary a:hover:not(.button) {
     background-color: #331100; }
 .theme-cae #content .alert.secondary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content .alert.info {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -1102,7 +1102,7 @@ header nav {
     background-color: #19194d; }
 .theme-cae #content .alert.info:hover {
   background-color: #464079;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content .alert.success {
   background-color: #145214;
   border: 1px solid #457f3e; }
@@ -1110,7 +1110,7 @@ header nav {
     background-color: #145214; }
 .theme-cae #content .alert.success:hover {
   background-color: #457f3e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content .alert.warning {
   background-color: #a14412;
   border: 1px solid #be5a27; }
@@ -1118,7 +1118,7 @@ header nav {
     background-color: #a14412; }
 .theme-cae #content .alert.warning:hover {
   background-color: #be5a27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content .alert.error, .theme-cae #content .alert.danger {
   background-color: #821717;
   border: 1px solid #a32929; }
@@ -1126,7 +1126,7 @@ header nav {
     background-color: #821717; }
 .theme-cae #content .alert.error:hover, .theme-cae #content .alert.danger:hover {
   background-color: #b7493e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-bootstrap #content .alert {
   background-color: #d9d9d9;
   border: 1px solid #bfbfbf;
@@ -1322,29 +1322,29 @@ header nav {
     -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
     transition: color 0.5s, background-color 0.5s, border 0.5s; }
 
-article {
+#content article, #content div.article, #content article.color, #content div.article-color {
   padding: 10px; }
   @media only screen and (min-width: 869px) {
-    article {
+    #content article, #content div.article, #content article.color, #content div.article-color {
       padding: 15px;
       margin-top: 10px;
       margin-bottom: 10px; } }
-  article h1, article h2, article h3, article h4, article h5, article h6 {
+  #content article h1, #content article h2, #content article h3, #content article h4, #content article h5, #content article h6, #content div.article h1, #content div.article h2, #content div.article h3, #content div.article h4, #content div.article h5, #content div.article h6, #content article.color h1, #content article.color h2, #content article.color h3, #content article.color h4, #content article.color h5, #content article.color h6, #content div.article-color h1, #content div.article-color h2, #content div.article-color h3, #content div.article-color h4, #content div.article-color h5, #content div.article-color h6 {
     padding-top: 0; }
 
-.theme-wmu #content article {
+.theme-wmu #content article.color, .theme-wmu #content div.article-color {
   background-color: white;
   border: 1px solid white; }
-.theme-cae #content article {
+.theme-cae #content article.color, .theme-cae #content div.article-color {
   background-color: #3c1702;
   border: 1px solid #865628; }
-.theme-bootstrap #content article {
+.theme-bootstrap #content article.color, .theme-bootstrap #content div.article-color {
   background-color: #f2f2f2;
   border: 1px solid #bbaad5; }
-.theme-light #content article {
+.theme-light #content article.color, .theme-light #content div.article-color {
   background-color: #f2f2f2;
   border: 1px solid #a6a6a6; }
-.theme-dark #content article {
+.theme-dark #content article.color, .theme-dark #content div.article-color {
   background-color: #2a2d32;
   border: 1px solid #4c4c4c; }
 
@@ -1440,7 +1440,7 @@ button, a.button {
   background-color: #cccccc;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content button.primary, .theme-wmu #content a.button.primary, .theme-wmu #content .primary button, .theme-wmu #content .primary a.button {
-  background-color: #fcc30f;
+  background-color: #e9b50c;
   border: 1px solid #d3a103; }
 .theme-wmu #content button.primary:hover, .theme-wmu #content a.button.primary:hover, .theme-wmu #content .primary button:hover, .theme-wmu #content .primary a.button:hover {
   background-color: #d3a103;
@@ -1479,41 +1479,41 @@ button, a.button {
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-cae #content button, .theme-cae #content a.button {
   background-color: #331100;
-  border: 1px solid #9b5b27;
+  border: 1px solid #7a481f;
   border-radius: 5px; }
 .theme-cae #content button:hover, .theme-cae #content a.button:hover {
-  background-color: #9b5b27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  background-color: #7a481f;
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.primary, .theme-cae #content a.button.primary, .theme-cae #content .primary button, .theme-cae #content .primary a.button {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
 .theme-cae #content button.primary:hover, .theme-cae #content a.button.primary:hover, .theme-cae #content .primary button:hover, .theme-cae #content .primary a.button:hover {
-  background-color: #9b5b27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  background-color: #7a481f;
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.secondary, .theme-cae #content a.button.secondary, .theme-cae #content .secondary button, .theme-cae #content .secondary a.button {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
 .theme-cae #content button.secondary:hover, .theme-cae #content a.button.secondary:hover, .theme-cae #content .secondary button:hover, .theme-cae #content .secondary a.button:hover {
-  background-color: #9b5b27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  background-color: #7a481f;
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.info, .theme-cae #content a.button.info, .theme-cae #content .info button, .theme-cae #content .info a.button {
   background-color: #19194d;
   border: 1px solid #464079; }
 .theme-cae #content button.info:hover, .theme-cae #content a.button.info:hover, .theme-cae #content .info button:hover, .theme-cae #content .info a.button:hover {
   background-color: #464079;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.success, .theme-cae #content a.button.success, .theme-cae #content .success button, .theme-cae #content .success a.button {
   background-color: #145214;
   border: 1px solid #457f3e; }
 .theme-cae #content button.success:hover, .theme-cae #content a.button.success:hover, .theme-cae #content .success button:hover, .theme-cae #content .success a.button:hover {
   background-color: #457f3e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.warning, .theme-cae #content a.button.warning, .theme-cae #content .warning button, .theme-cae #content .warning a.button {
   background-color: #a14412;
   border: 1px solid #be5a27; }
 .theme-cae #content button.warning:hover, .theme-cae #content a.button.warning:hover, .theme-cae #content .warning button:hover, .theme-cae #content .warning a.button:hover {
   background-color: #be5a27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content button.error, .theme-cae #content a.button.error, .theme-cae #content .error button, .theme-cae #content .error a.button,
 .theme-cae #content button.danger, .theme-cae #content .button.danger, .theme-cae #content .danger button, .theme-cae #content .danger a.button {
   background-color: #821717;
@@ -1521,7 +1521,7 @@ button, a.button {
 .theme-cae #content button.error:hover, .theme-cae #content a.button.error:hover, .theme-cae #content .error button:hover, .theme-cae #content .error a.button:hover,
 .theme-cae #content button.danger:hover, .theme-cae #content a.button.danger:hover, .theme-cae #content .danger button:hover, .theme-cae #content .danger a.button:hover {
   background-color: #a32929;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-bootstrap #content button, .theme-bootstrap #content a.button {
   background-color: #d9d9d9;
   border: 1px solid #bfbfbf;
@@ -2004,29 +2004,29 @@ button, a.button {
 .theme-wmu #content div.panel:hover > .foot {
   color: black; }
 .theme-wmu #content div.panel.primary > .header {
-  color: rgba(0, 0, 0, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.primary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.primary > .header a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.primary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.primary > .head {
-  color: rgba(0, 0, 0, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.primary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.primary > .head a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.primary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.primary > .footer {
-  color: rgba(0, 0, 0, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.primary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.primary > .footer a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.primary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.primary > .foot {
-  color: rgba(0, 0, 0, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.primary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.primary > .foot a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.primary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.primary:hover > .header {
   color: white; }
 .theme-wmu #content div.panel.primary:hover > .head {
@@ -2039,26 +2039,26 @@ button, a.button {
   color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.secondary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.secondary > .header a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.secondary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.secondary > .head {
   color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.secondary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.secondary > .head a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.secondary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.secondary > .footer {
   color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.secondary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.secondary > .footer a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.secondary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.secondary > .foot {
   color: rgba(255, 255, 255, 0.75); }
   .theme-wmu #content div.panel.secondary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-wmu #content div.panel.secondary > .foot a:not(.button):hover {
-    color: white; }
+.theme-wmu #content div.panel.secondary a:not(.button):hover {
+  color: white; }
 .theme-wmu #content div.panel.info a:not(.button) {
   color: #003962; }
 .theme-wmu #content div.panel.info a:not(.button):hover {
@@ -2119,26 +2119,26 @@ button, a.button {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.primary > .header a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.primary > .header a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.primary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .head {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.primary > .head a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.primary > .head a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.primary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .footer {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.primary > .footer a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.primary > .footer a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.primary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary > .foot {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.primary > .foot a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.primary > .foot a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.primary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .header {
   color: #f9e9d2; }
 .theme-cae #content div.panel.primary:hover > .head {
@@ -2151,26 +2151,26 @@ button, a.button {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.secondary > .header a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.secondary > .header a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.secondary > .head {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.secondary > .head a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.secondary > .head a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.secondary > .footer {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.secondary > .footer a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.secondary > .footer a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.secondary > .foot {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content div.panel.secondary > .foot a:not(.button) {
     color: #ffc354; }
-  .theme-cae #content div.panel.secondary > .foot a:not(.button):hover {
-    color: #f9e9d2; }
+.theme-cae #content div.panel.secondary a:not(.button):hover {
+  color: #f9e9d2; }
 .theme-cae #content div.panel.info a:not(.button) {
   color: #9289ff; }
 .theme-cae #content div.panel.info a:not(.button):hover {
@@ -2231,26 +2231,26 @@ button, a.button {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.primary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.primary > .header a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .head {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.primary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.primary > .head a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .footer {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.primary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.primary > .footer a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary > .foot {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.primary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.primary > .foot a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .header {
   color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.primary:hover > .head {
@@ -2263,26 +2263,26 @@ button, a.button {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.secondary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.secondary > .header a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.secondary > .head {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.secondary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.secondary > .head a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.secondary > .footer {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.secondary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.secondary > .footer a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.secondary > .foot {
   color: #cbbde2; }
   .theme-bootstrap #content div.panel.secondary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.75); }
-  .theme-bootstrap #content div.panel.secondary > .foot a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-bootstrap #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-bootstrap #content div.panel.info a:not(.button) {
   color: #0c5460; }
 .theme-bootstrap #content div.panel.info a:not(.button):hover {
@@ -2298,7 +2298,7 @@ button, a.button {
 .theme-bootstrap #content div.panel.error a:not(.button), .theme-bootstrap #content div.panel.danger a:not(.button) {
   color: #721c24; }
 .theme-bootstrap #content div.panel.error a:not(.button):hover, .theme-bootstrap #content div.panel.danger a:not(.button):hover {
-  color: #843534; }
+  color: #5b2525; }
 .theme-light #content div.panel a.button, .theme-light #content div.panel button {
   font-weight: normal; }
 .theme-light #content div.panel a:not(.button) {
@@ -2343,26 +2343,26 @@ button, a.button {
   color: black; }
   .theme-light #content div.panel.primary > .header a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.primary > .header a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.primary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .head {
   color: black; }
   .theme-light #content div.panel.primary > .head a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.primary > .head a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.primary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .footer {
   color: black; }
   .theme-light #content div.panel.primary > .footer a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.primary > .footer a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.primary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary > .foot {
   color: black; }
   .theme-light #content div.panel.primary > .foot a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.primary > .foot a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.primary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .header {
   color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.primary:hover > .head {
@@ -2375,26 +2375,26 @@ button, a.button {
   color: black; }
   .theme-light #content div.panel.secondary > .header a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.secondary > .header a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.secondary > .head {
   color: black; }
   .theme-light #content div.panel.secondary > .head a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.secondary > .head a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.secondary > .footer {
   color: black; }
   .theme-light #content div.panel.secondary > .footer a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.secondary > .footer a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.secondary > .foot {
   color: black; }
   .theme-light #content div.panel.secondary > .foot a:not(.button) {
     color: #737373; }
-  .theme-light #content div.panel.secondary > .foot a:not(.button):hover {
-    color: rgba(0, 0, 0, 0.75); }
+.theme-light #content div.panel.secondary a:not(.button):hover {
+  color: rgba(0, 0, 0, 0.75); }
 .theme-light #content div.panel.info a:not(.button) {
   color: #4040bf; }
 .theme-light #content div.panel.info a:not(.button):hover {
@@ -2455,26 +2455,26 @@ button, a.button {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.primary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.primary > .header a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .head {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.primary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.primary > .head a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .footer {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.primary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.primary > .footer a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary > .foot {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.primary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.primary > .foot a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.primary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .header {
   color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.primary:hover > .head {
@@ -2487,26 +2487,26 @@ button, a.button {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.secondary > .header a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.secondary > .header a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.secondary > .head {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.secondary > .head a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.secondary > .head a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.secondary > .footer {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.secondary > .footer a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.secondary > .footer a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.secondary > .foot {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content div.panel.secondary > .foot a:not(.button) {
     color: rgba(255, 255, 255, 0.5); }
-  .theme-dark #content div.panel.secondary > .foot a:not(.button):hover {
-    color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content div.panel.secondary a:not(.button):hover {
+  color: rgba(255, 255, 255, 0.75); }
 .theme-dark #content div.panel.info a:not(.button) {
   color: #7575f0; }
 .theme-dark #content div.panel.info a:not(.button):hover {
@@ -2530,25 +2530,28 @@ button, a.button {
   .theme-wmu #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-wmu #content div.panel a:hover:not(.button) {
-    background-color: #cccccc; }
+    background-color: #f2f2f2; }
   .theme-wmu #content div.panel > .header {
     border-bottom: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .head {
     border-bottom: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .content {
-    background-color: #ffffff; }
-    .theme-wmu #content div.panel > .content a:hover:not(.button) {
-      background-color: #d9d9d9; }
+    background-color: #ffffff;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-wmu #content div.panel > .body {
-    background-color: #ffffff; }
-    .theme-wmu #content div.panel > .body a:hover:not(.button) {
-      background-color: #d9d9d9; }
+    background-color: #ffffff;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-wmu #content div.panel > .footer {
     border-top: 1px solid #cccccc; }
   .theme-wmu #content div.panel > .foot {
     border-top: 1px solid #cccccc; }
 .theme-wmu #content div.panel:hover {
-  background-color: #d9d9d9; }
+  background-color: #d9d9d9;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-wmu #content div.panel:hover > .content {
     background-color: #ffffff; }
   .theme-wmu #content div.panel:hover > .body {
@@ -2567,8 +2570,8 @@ button, a.button {
   .theme-wmu #content div.panel.primary > .foot {
     border-top: 1px solid #d3a103; }
 .theme-wmu #content div.panel.primary:hover {
-  background-color: #fcc30f;
-  border: 1px solid #fcc30f; }
+  background-color: #e9b50c;
+  border: 1px solid #e9b50c; }
 .theme-wmu #content div.panel.secondary {
   background-color: #663300;
   border: 1px solid #331900; }
@@ -2651,65 +2654,68 @@ button, a.button {
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-cae #content div.panel {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-cae #content div.panel a:hover:not(.button) {
-    background-color: #9b5b27; }
+    background-color: #331100; }
   .theme-cae #content div.panel > .header {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel > .head {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel > .content {
-    background-color: #1f0500; }
-    .theme-cae #content div.panel > .content a:hover:not(.button) {
-      background-color: #663300; }
+    background-color: #1f0500;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-cae #content div.panel > .body {
-    background-color: #1f0500; }
-    .theme-cae #content div.panel > .body a:hover:not(.button) {
-      background-color: #663300; }
+    background-color: #1f0500;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-cae #content div.panel > .footer {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
   .theme-cae #content div.panel > .foot {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
 .theme-cae #content div.panel:hover {
-  background-color: #663300; }
+  background-color: #663300;
+  border: 1px solid #9b5b27; }
   .theme-cae #content div.panel:hover > .content {
     background-color: #3c1702; }
   .theme-cae #content div.panel:hover > .body {
     background-color: #3c1702; }
 .theme-cae #content div.panel.primary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content div.panel.primary a:hover:not(.button) {
-    background-color: #9b5b27; }
+    background-color: #331100; }
   .theme-cae #content div.panel.primary > .header {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel.primary > .head {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel.primary > .footer {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
   .theme-cae #content div.panel.primary > .foot {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
 .theme-cae #content div.panel.primary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content div.panel.secondary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content div.panel.secondary a:hover:not(.button) {
     background-color: #331100; }
   .theme-cae #content div.panel.secondary > .header {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel.secondary > .head {
-    border-bottom: 1px solid #9b5b27; }
+    border-bottom: 1px solid #7a481f; }
   .theme-cae #content div.panel.secondary > .footer {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
   .theme-cae #content div.panel.secondary > .foot {
-    border-top: 1px solid #9b5b27; }
+    border-top: 1px solid #7a481f; }
 .theme-cae #content div.panel.secondary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content div.panel.info {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -2725,7 +2731,7 @@ button, a.button {
     border-top: 1px solid #464079; }
 .theme-cae #content div.panel.info:hover {
   background-color: #464079;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content div.panel.success {
   background-color: #145214;
   border: 1px solid #457f3e; }
@@ -2741,7 +2747,7 @@ button, a.button {
     border-top: 1px solid #457f3e; }
 .theme-cae #content div.panel.success:hover {
   background-color: #457f3e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content div.panel.warning {
   background-color: #a14412;
   border: 1px solid #be5a27; }
@@ -2757,7 +2763,7 @@ button, a.button {
     border-top: 1px solid #be5a27; }
 .theme-cae #content div.panel.warning:hover {
   background-color: #be5a27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content div.panel.error, .theme-cae #content div.panel.danger {
   background-color: #821717;
   border: 1px solid #a32929; }
@@ -2773,32 +2779,35 @@ button, a.button {
     border-top: 1px solid #a32929; }
 .theme-cae #content div.panel.error:hover, .theme-cae #content div.panel.danger:hover {
   background-color: #b7493e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-bootstrap #content div.panel {
   background-color: #d9d9d9;
   border: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-bootstrap #content div.panel a:hover:not(.button) {
-    background-color: #bfbfbf; }
+    background-color: #d9d9d9; }
   .theme-bootstrap #content div.panel > .header {
     border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel > .head {
     border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel > .content {
-    background-color: #fff; }
-    .theme-bootstrap #content div.panel > .content a:hover:not(.button) {
-      background-color: #cccccc; }
+    background-color: #fff;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-bootstrap #content div.panel > .body {
-    background-color: #fff; }
-    .theme-bootstrap #content div.panel > .body a:hover:not(.button) {
-      background-color: #cccccc; }
+    background-color: #fff;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-bootstrap #content div.panel > .footer {
     border-top: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-bootstrap #content div.panel:hover {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-bootstrap #content div.panel:hover > .content {
     background-color: #fff; }
   .theme-bootstrap #content div.panel:hover > .body {
@@ -2807,7 +2816,7 @@ button, a.button {
   background-color: #563d7c;
   border: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary a:hover:not(.button) {
-    background-color: #bfbfbf; }
+    background-color: #563d7c; }
   .theme-bootstrap #content div.panel.primary > .header {
     border-bottom: 1px solid #bfbfbf; }
   .theme-bootstrap #content div.panel.primary > .head {
@@ -2905,25 +2914,28 @@ button, a.button {
   .theme-light #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-light #content div.panel a:hover:not(.button) {
-    background-color: #bfbfbf; }
+    background-color: #d9d9d9; }
   .theme-light #content div.panel > .header {
     border-bottom: 1px solid #bfbfbf; }
   .theme-light #content div.panel > .head {
     border-bottom: 1px solid #bfbfbf; }
   .theme-light #content div.panel > .content {
-    background-color: #f2f2f2; }
-    .theme-light #content div.panel > .content a:hover:not(.button) {
-      background-color: #e5e5e5; }
+    background-color: #f2f2f2;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-light #content div.panel > .body {
-    background-color: #f2f2f2; }
-    .theme-light #content div.panel > .body a:hover:not(.button) {
-      background-color: #e5e5e5; }
+    background-color: #f2f2f2;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-light #content div.panel > .footer {
     border-top: 1px solid #bfbfbf; }
   .theme-light #content div.panel > .foot {
     border-top: 1px solid #bfbfbf; }
 .theme-light #content div.panel:hover {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-light #content div.panel:hover > .content {
     background-color: white; }
   .theme-light #content div.panel:hover > .body {
@@ -2932,7 +2944,7 @@ button, a.button {
   background-color: #d9d9d9;
   border: 1px solid #bfbfbf; }
   .theme-light #content div.panel.primary a:hover:not(.button) {
-    background-color: #bfbfbf; }
+    background-color: #d9d9d9; }
   .theme-light #content div.panel.primary > .header {
     border-bottom: 1px solid #bfbfbf; }
   .theme-light #content div.panel.primary > .head {
@@ -3030,34 +3042,37 @@ button, a.button {
   .theme-dark #content div.panel a:not(.button) {
     border-radius: 5em; }
   .theme-dark #content div.panel a:hover:not(.button) {
-    background-color: #5e646e; }
+    background-color: #4f545c; }
   .theme-dark #content div.panel > .header {
     border-bottom: 1px solid #5e646e; }
   .theme-dark #content div.panel > .head {
     border-bottom: 1px solid #5e646e; }
   .theme-dark #content div.panel > .content {
-    background-color: #36393f; }
-    .theme-dark #content div.panel > .content a:hover:not(.button) {
-      background-color: #5e646e; }
+    background-color: #36393f;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-dark #content div.panel > .body {
-    background-color: #36393f; }
-    .theme-dark #content div.panel > .body a:hover:not(.button) {
-      background-color: #5e646e; }
+    background-color: #36393f;
+    /*a:hover:not(.button) {
+        background-color: theme-status($theme, 'default', 'primary-hover');
+    }*/ }
   .theme-dark #content div.panel > .footer {
     border-top: 1px solid #5e646e; }
   .theme-dark #content div.panel > .foot {
     border-top: 1px solid #5e646e; }
 .theme-dark #content div.panel:hover {
-  background-color: #5e646e; }
+  background-color: #5e646e;
+  border: 1px solid rgba(127, 127, 127, 0.75); }
   .theme-dark #content div.panel:hover > .content {
     background-color: #2a2d32; }
   .theme-dark #content div.panel:hover > .body {
     background-color: #2a2d32; }
 .theme-dark #content div.panel.primary {
   background-color: #2a2d32;
-  border: 1px solid #5e646e; }
+  border: 1px solid #36393f; }
   .theme-dark #content div.panel.primary a:hover:not(.button) {
-    background-color: #36393f; }
+    background-color: #2a2d32; }
   .theme-dark #content div.panel.primary > .header {
     border-bottom: 1px solid #36393f; }
   .theme-dark #content div.panel.primary > .head {
@@ -3448,7 +3463,7 @@ div.panel {
 .theme-bootstrap #content #status-message-container .message.error .exit, .theme-bootstrap #content #status-message-container .message.danger .exit {
   color: #721c24; }
 .theme-bootstrap #content #status-message-container .message.error .exit:hover, .theme-bootstrap #content #status-message-container .message.danger .exit:hover {
-  color: #843534; }
+  color: #5b2525; }
 .theme-light #content #status-message-container .message a {
   font-weight: bold;
   color: #737373;
@@ -3602,10 +3617,10 @@ div.panel {
   background-color: #d9d9d9;
   border: 1px solid rgba(127, 127, 127, 0.75); }
 .theme-wmu #content #status-message-container .message.primary {
-  background-color: #fcc30f;
+  background-color: #e9b50c;
   border: 1px solid #d3a103; }
   .theme-wmu #content #status-message-container .message.primary a:hover, .theme-wmu #content #status-message-container .message.primary .exit:hover {
-    background-color: #fcc30f; }
+    background-color: #e9b50c; }
 .theme-wmu #content #status-message-container .message.primary:hover {
   background-color: #d3a103;
   border: 1px solid rgba(127, 127, 127, 0.75); }
@@ -3655,7 +3670,7 @@ div.panel {
   border-radius: 5em; }
 .theme-cae #content #status-message-container .message {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content #status-message-container .message a:hover, .theme-cae #content #status-message-container .message .exit:hover {
     background-color: #331100; }
 .theme-cae #content #status-message-container .message:last-child {
@@ -3663,23 +3678,23 @@ div.panel {
   border-bottom-left-radius: 5px; }
 .theme-cae #content #status-message-container .message:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.primary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content #status-message-container .message.primary a:hover, .theme-cae #content #status-message-container .message.primary .exit:hover {
     background-color: #331100; }
 .theme-cae #content #status-message-container .message.primary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.secondary {
   background-color: #331100;
-  border: 1px solid #9b5b27; }
+  border: 1px solid #7a481f; }
   .theme-cae #content #status-message-container .message.secondary a:hover, .theme-cae #content #status-message-container .message.secondary .exit:hover {
     background-color: #331100; }
 .theme-cae #content #status-message-container .message.secondary:hover {
   background-color: #663300;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.info {
   background-color: #19194d;
   border: 1px solid #464079; }
@@ -3687,7 +3702,7 @@ div.panel {
     background-color: #19194d; }
 .theme-cae #content #status-message-container .message.info:hover {
   background-color: #464079;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.success {
   background-color: #145214;
   border: 1px solid #457f3e; }
@@ -3695,7 +3710,7 @@ div.panel {
     background-color: #145214; }
 .theme-cae #content #status-message-container .message.success:hover {
   background-color: #457f3e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.warning {
   background-color: #a14412;
   border: 1px solid #be5a27; }
@@ -3703,7 +3718,7 @@ div.panel {
     background-color: #a14412; }
 .theme-cae #content #status-message-container .message.warning:hover {
   background-color: #be5a27;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-cae #content #status-message-container .message.error, .theme-cae #content #status-message-container .message.danger {
   background-color: #821717;
   border: 1px solid #a32929; }
@@ -3711,7 +3726,7 @@ div.panel {
     background-color: #821717; }
 .theme-cae #content #status-message-container .message.error:hover, .theme-cae #content #status-message-container .message.danger:hover {
   background-color: #b7493e;
-  border: 1px solid rgba(255, 255, 255, 0.5); }
+  border: 1px solid #9b5b27; }
 .theme-bootstrap #content #status-message-container li {
   list-style-type: none; }
 .theme-bootstrap #content #status-message-container a, .theme-bootstrap #content #status-message-container .exit {
@@ -3920,28 +3935,192 @@ div.panel {
     transition: color 0.5s, background-color 0.5s, border 0.5s;
     cursor: pointer; }
 
+#content table {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto; }
+  #content table th > *, #content table td > * {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    padding-left: 3px; }
+  @media only screen and (min-width: 869px) {
+    #content table {
+      width: 100%; }
+      #content table th > *, #content table td > * {
+        padding-right: 8px;
+        padding-left: 8px; } }
+
+.theme-wmu #content table thead, .theme-wmu #content table tfoot {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-wmu #content table th {
+  font-weight: bold; }
+  .theme-wmu #content table th > h1, .theme-wmu #content table th h2, .theme-wmu #content table th h3, .theme-wmu #content table th h4, .theme-wmu #content table th h5, .theme-wmu #content table th h6 {
+    font-size: 115%; }
+.theme-wmu #content table th > a, .theme-wmu #content table th a:hover, .theme-wmu #content table td > a, .theme-wmu #content table td a:hover {
+  color: black;
+  text-decoration: none; }
+.theme-wmu #content table tr:hover th > a, .theme-wmu #content table tr:hover td > a {
+  color: #986516; }
+.theme-wmu #content table tr:hover th > a:hover, .theme-wmu #content table tr:hover td > a:hover {
+  color: #331900; }
+.theme-cae #content table thead, .theme-cae #content table tfoot {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-cae #content table th {
+  font-weight: bold; }
+  .theme-cae #content table th > h1, .theme-cae #content table th h2, .theme-cae #content table th h3, .theme-cae #content table th h4, .theme-cae #content table th h5, .theme-cae #content table th h6 {
+    font-size: 115%; }
+.theme-cae #content table th > a, .theme-cae #content table th a:hover, .theme-cae #content table td > a, .theme-cae #content table td a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none; }
+.theme-cae #content table tr:hover th > a, .theme-cae #content table tr:hover td > a {
+  color: #986516; }
+.theme-cae #content table tr:hover th > a:hover, .theme-cae #content table tr:hover td > a:hover {
+  color: #d68d1f; }
+.theme-bootstrap #content table thead, .theme-bootstrap #content table tfoot {
+  color: #cbbde2; }
+.theme-bootstrap #content table th {
+  font-weight: bold; }
+  .theme-bootstrap #content table th > h1, .theme-bootstrap #content table th h2, .theme-bootstrap #content table th h3, .theme-bootstrap #content table th h4, .theme-bootstrap #content table th h5, .theme-bootstrap #content table th h6 {
+    font-size: 115%; }
+.theme-bootstrap #content table th > a, .theme-bootstrap #content table th a:hover, .theme-bootstrap #content table td > a, .theme-bootstrap #content table td a:hover {
+  color: black;
+  text-decoration: none; }
+.theme-bootstrap #content table tr:hover th > a, .theme-bootstrap #content table tr:hover td > a {
+  color: #737373; }
+.theme-bootstrap #content table tr:hover th > a:hover, .theme-bootstrap #content table tr:hover td > a:hover {
+  color: #191919; }
+.theme-light #content table thead, .theme-light #content table tfoot {
+  color: black; }
+.theme-light #content table th {
+  font-weight: bold; }
+  .theme-light #content table th > h1, .theme-light #content table th h2, .theme-light #content table th h3, .theme-light #content table th h4, .theme-light #content table th h5, .theme-light #content table th h6 {
+    font-size: 115%; }
+.theme-light #content table th > a, .theme-light #content table th a:hover, .theme-light #content table td > a, .theme-light #content table td a:hover {
+  color: black;
+  text-decoration: none; }
+.theme-light #content table tr:hover th > a, .theme-light #content table tr:hover td > a {
+  color: #4040bf; }
+.theme-light #content table tr:hover th > a:hover, .theme-light #content table tr:hover td > a:hover {
+  color: #4040bf; }
+.theme-dark #content table thead, .theme-dark #content table tfoot {
+  color: rgba(255, 255, 255, 0.75); }
+.theme-dark #content table th {
+  font-weight: bold; }
+  .theme-dark #content table th > h1, .theme-dark #content table th h2, .theme-dark #content table th h3, .theme-dark #content table th h4, .theme-dark #content table th h5, .theme-dark #content table th h6 {
+    font-size: 115%; }
+.theme-dark #content table th > a, .theme-dark #content table th a:hover, .theme-dark #content table td > a, .theme-dark #content table td a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none; }
+.theme-dark #content table tr:hover th > a, .theme-dark #content table tr:hover td > a {
+  color: #6767e4; }
+.theme-dark #content table tr:hover th > a:hover, .theme-dark #content table tr:hover td > a:hover {
+  color: #a8a8f0; }
+
+.theme-wmu #content table {
+  border-collapse: collapse; }
+  .theme-wmu #content table thead, .theme-wmu #content table tfoot {
+    background-color: #663300; }
+  .theme-wmu #content table tbody tr:nth-child(odd) {
+    background-color: #fff8e6; }
+  .theme-wmu #content table tbody tr:nth-child(even) {
+    background-color: #fff1cc; }
+  .theme-wmu #content table tbody tr:hover {
+    background-color: #cccccc; }
+  .theme-wmu #content table tr {
+    border-left: 1px solid #331900;
+    border-right: 1px solid #331900; }
+  .theme-wmu #content table th {
+    border: 1px solid #331900; }
+.theme-cae #content table {
+  border-collapse: collapse; }
+  .theme-cae #content table thead, .theme-cae #content table tfoot {
+    background-color: #331100; }
+  .theme-cae #content table tbody tr:nth-child(odd) {
+    background-color: #1f0500; }
+  .theme-cae #content table tbody tr:nth-child(even) {
+    background-color: #290b00; }
+  .theme-cae #content table tbody tr:hover {
+    background-color: #7a481f; }
+  .theme-cae #content table tr {
+    border-left: 1px solid #7a481f;
+    border-right: 1px solid #7a481f; }
+  .theme-cae #content table th {
+    border: 1px solid #7a481f; }
+.theme-bootstrap #content table {
+  border-collapse: collapse; }
+  .theme-bootstrap #content table thead, .theme-bootstrap #content table tfoot {
+    background-color: #563d7c; }
+  .theme-bootstrap #content table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; }
+  .theme-bootstrap #content table tbody tr:nth-child(even) {
+    background-color: #e5e5e5; }
+  .theme-bootstrap #content table tbody tr:hover {
+    background-color: #bfbfbf; }
+  .theme-bootstrap #content table tr {
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf; }
+  .theme-bootstrap #content table th {
+    border: 1px solid #bfbfbf; }
+.theme-light #content table {
+  border-collapse: collapse; }
+  .theme-light #content table thead, .theme-light #content table tfoot {
+    background-color: #d9d9d9; }
+  .theme-light #content table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; }
+  .theme-light #content table tbody tr:nth-child(even) {
+    background-color: #e5e5e5; }
+  .theme-light #content table tbody tr:hover {
+    background-color: #bfbfbf; }
+  .theme-light #content table tr {
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf; }
+  .theme-light #content table th {
+    border: 1px solid #bfbfbf; }
+.theme-dark #content table {
+  border-collapse: collapse; }
+  .theme-dark #content table thead, .theme-dark #content table tfoot {
+    background-color: #2a2d32; }
+  .theme-dark #content table tbody tr:nth-child(odd) {
+    background-color: #2e3238; }
+  .theme-dark #content table tbody tr:nth-child(even) {
+    background-color: #2a2d32; }
+  .theme-dark #content table tbody tr:hover {
+    background-color: #36393f; }
+  .theme-dark #content table tr {
+    border-left: 1px solid #36393f;
+    border-right: 1px solid #36393f; }
+  .theme-dark #content table th {
+    border: 1px solid #36393f; }
+
+#content table {
+  box-sizing: border-box;
+  -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+  transition: color 0.5s, background-color 0.5s, border 0.5s; }
+  #content table thead, #content table tbody, #content table tfoot {
+    box-sizing: border-box;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s; }
+  #content table tr, #content table th, #content table td {
+    box-sizing: border-box;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s; }
+    #content table tr > *, #content table th > *, #content table td > * {
+      box-sizing: border-box; }
+
 #content {
   padding-bottom: 10px; }
   #content ul {
     padding-left: 20px; }
-  #content table {
-    margin-top: 10px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-left: auto; }
-    #content table th > *, #content table td > * {
-      display: inline-block;
-      width: 100%;
-      padding-top: 5px;
-      padding-right: 3px;
-      padding-bottom: 5px;
-      padding-left: 3px; }
-    @media only screen and (min-width: 869px) {
-      #content table {
-        width: 100%; }
-        #content table th > *, #content table td > * {
-          padding-right: 8px;
-          padding-left: 8px; } }
 
 @media only print {
   #content .display-only-web {
@@ -3989,15 +4168,6 @@ div.panel {
     color: #986516; }
   .theme-wmu #content a:hover {
     color: #331900; }
-  .theme-wmu #content table thead, .theme-wmu #content table tfoot {
-    color: #fcc30f; }
-  .theme-wmu #content table th {
-    font-weight: bold; }
-    .theme-wmu #content table th > h1, .theme-wmu #content table th h2, .theme-wmu #content table th h3, .theme-wmu #content table th h4, .theme-wmu #content table th h5, .theme-wmu #content table th h6 {
-      font-size: 115%; }
-  .theme-wmu #content table th > a, .theme-wmu #content table td > a {
-    color: black;
-    text-decoration: none; }
 .theme-cae #content {
   color: rgba(255, 255, 255, 0.75); }
   .theme-cae #content > h1, .theme-cae #content > h2, .theme-cae #content > h3, .theme-cae #content > h4, .theme-cae #content > h5, .theme-cae #content > h6 {
@@ -4006,15 +4176,6 @@ div.panel {
     color: #986516; }
   .theme-cae #content a:hover {
     color: #d68d1f; }
-  .theme-cae #content table thead, .theme-cae #content table tfoot {
-    color: #c48b04; }
-  .theme-cae #content table th {
-    font-weight: bold; }
-    .theme-cae #content table th > h1, .theme-cae #content table th h2, .theme-cae #content table th h3, .theme-cae #content table th h4, .theme-cae #content table th h5, .theme-cae #content table th h6 {
-      font-size: 115%; }
-  .theme-cae #content table th > a, .theme-cae #content table td > a {
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none; }
 .theme-bootstrap #content {
   color: black; }
   .theme-bootstrap #content > h1, .theme-bootstrap #content > h2, .theme-bootstrap #content > h3, .theme-bootstrap #content > h4, .theme-bootstrap #content > h5, .theme-bootstrap #content > h6 {
@@ -4023,15 +4184,6 @@ div.panel {
     color: #737373; }
   .theme-bootstrap #content a:hover {
     color: #191919; }
-  .theme-bootstrap #content table thead, .theme-bootstrap #content table tfoot {
-    color: #cbbde2; }
-  .theme-bootstrap #content table th {
-    font-weight: bold; }
-    .theme-bootstrap #content table th > h1, .theme-bootstrap #content table th h2, .theme-bootstrap #content table th h3, .theme-bootstrap #content table th h4, .theme-bootstrap #content table th h5, .theme-bootstrap #content table th h6 {
-      font-size: 115%; }
-  .theme-bootstrap #content table th > a, .theme-bootstrap #content table td > a {
-    color: black;
-    text-decoration: none; }
 .theme-light #content {
   color: black; }
   .theme-light #content > h1, .theme-light #content > h2, .theme-light #content > h3, .theme-light #content > h4, .theme-light #content > h5, .theme-light #content > h6 {
@@ -4040,15 +4192,6 @@ div.panel {
     color: #4040bf; }
   .theme-light #content a:hover {
     color: #4040bf; }
-  .theme-light #content table thead, .theme-light #content table tfoot {
-    color: #595959; }
-  .theme-light #content table th {
-    font-weight: bold; }
-    .theme-light #content table th > h1, .theme-light #content table th h2, .theme-light #content table th h3, .theme-light #content table th h4, .theme-light #content table th h5, .theme-light #content table th h6 {
-      font-size: 115%; }
-  .theme-light #content table th > a, .theme-light #content table td > a {
-    color: black;
-    text-decoration: none; }
 .theme-dark #content {
   color: rgba(255, 255, 255, 0.75); }
   .theme-dark #content > h1, .theme-dark #content > h2, .theme-dark #content > h3, .theme-dark #content > h4, .theme-dark #content > h5, .theme-dark #content > h6 {
@@ -4057,15 +4200,6 @@ div.panel {
     color: #6767e4; }
   .theme-dark #content a:hover {
     color: #a8a8f0; }
-  .theme-dark #content table thead, .theme-dark #content table tfoot {
-    color: rgba(255, 255, 255, 0.75); }
-  .theme-dark #content table th {
-    font-weight: bold; }
-    .theme-dark #content table th > h1, .theme-dark #content table th h2, .theme-dark #content table th h3, .theme-dark #content table th h4, .theme-dark #content table th h5, .theme-dark #content table th h6 {
-      font-size: 115%; }
-  .theme-dark #content table th > a, .theme-dark #content table td > a {
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none; }
 
 #content .javascript-warn {
   font-weight: bold;
@@ -4076,98 +4210,18 @@ div.panel {
 
 .theme-wmu #content > h1, .theme-wmu #content > h2, .theme-wmu #content > h3, .theme-wmu #content > h4, .theme-wmu #content > h5, .theme-wmu #content > h6 {
   border-bottom: 1px solid #b3b3b3; }
-.theme-wmu #content table {
-  border: 1px solid white;
-  border-collapse: collapse; }
-  .theme-wmu #content table thead, .theme-wmu #content table tfoot {
-    background-color: #331900; }
-  .theme-wmu #content table tbody tr:nth-child(odd) {
-    background-color: white; }
-  .theme-wmu #content table tbody tr:nth-child(even) {
-    background-color: white; }
-  .theme-wmu #content table tbody tr:hover {
-    background-color: #f2f2f2; }
-  .theme-wmu #content table tr {
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    border-right: 1px solid rgba(255, 255, 255, 0.25); }
-  .theme-wmu #content table th {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-wmu #content hr {
   border-style: solid;
   border-color: white; }
-.theme-cae #content table {
-  border: 1px solid #865628;
-  border-collapse: collapse; }
-  .theme-cae #content table thead, .theme-cae #content table tfoot {
-    background-color: #331100; }
-  .theme-cae #content table tbody tr:nth-child(odd) {
-    background-color: #3c1702; }
-  .theme-cae #content table tbody tr:nth-child(even) {
-    background-color: #1f0500; }
-  .theme-cae #content table tbody tr:hover {
-    background-color: #331100; }
-  .theme-cae #content table tr {
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    border-right: 1px solid rgba(255, 255, 255, 0.25); }
-  .theme-cae #content table th {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-cae #content hr {
   border-style: solid;
   border-color: #865628; }
-.theme-bootstrap #content table {
-  border: 1px solid #bbaad5;
-  border-collapse: collapse; }
-  .theme-bootstrap #content table thead, .theme-bootstrap #content table tfoot {
-    background-color: #563d7c; }
-  .theme-bootstrap #content table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2; }
-  .theme-bootstrap #content table tbody tr:nth-child(even) {
-    background-color: white; }
-  .theme-bootstrap #content table tbody tr:hover {
-    background-color: #d9d9d9; }
-  .theme-bootstrap #content table tr {
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    border-right: 1px solid rgba(255, 255, 255, 0.25); }
-  .theme-bootstrap #content table th {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-bootstrap #content hr {
   border-style: solid;
   border-color: #bbaad5; }
-.theme-light #content table {
-  border: 1px solid #a6a6a6;
-  border-collapse: collapse; }
-  .theme-light #content table thead, .theme-light #content table tfoot {
-    background-color: #d9d9d9; }
-  .theme-light #content table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2; }
-  .theme-light #content table tbody tr:nth-child(even) {
-    background-color: white; }
-  .theme-light #content table tbody tr:hover {
-    background-color: #d9d9d9; }
-  .theme-light #content table tr {
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-right: 1px solid rgba(0, 0, 0, 0.25); }
-  .theme-light #content table th {
-    border: 1px solid rgba(0, 0, 0, 0.25); }
 .theme-light #content hr {
   border-style: solid;
   border-color: #a6a6a6; }
-.theme-dark #content table {
-  border: 1px solid #4c4c4c;
-  border-collapse: collapse; }
-  .theme-dark #content table thead, .theme-dark #content table tfoot {
-    background-color: #2a2d32; }
-  .theme-dark #content table tbody tr:nth-child(odd) {
-    background-color: #2a2d32; }
-  .theme-dark #content table tbody tr:nth-child(even) {
-    background-color: #36393f; }
-  .theme-dark #content table tbody tr:hover {
-    background-color: #4f545c; }
-  .theme-dark #content table tr {
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    border-right: 1px solid rgba(255, 255, 255, 0.25); }
-  .theme-dark #content table th {
-    border: 1px solid rgba(255, 255, 255, 0.25); }
 .theme-dark #content hr {
   border-style: solid;
   border-color: #4c4c4c; }
@@ -4228,26 +4282,6 @@ div.panel {
   -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
   -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
   transition: color 0.5s, background-color 0.5s, border 0.5s; }
-#content table {
-  box-sizing: border-box;
-  -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-  -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-  -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-  transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  #content table thead, #content table tbody, #content table tfoot {
-    box-sizing: border-box;
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-  #content table tr, #content table th, #content table td {
-    box-sizing: border-box;
-    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s, border 0.5s;
-    transition: color 0.5s, background-color 0.5s, border 0.5s; }
-    #content table tr > *, #content table th > *, #content table td > * {
-      box-sizing: border-box; }
 
 #content .hover-highlight:hover {
   cursor: pointer; }
